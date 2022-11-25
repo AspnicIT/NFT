@@ -145,8 +145,8 @@ button {
 }
 
 .main {
-  width: 100%;
-  padding: 0 115px;
+  max-width: 1050px;
+  margin: 0 auto;
   margin-bottom: 80px;
 }
 .main__welcome {
@@ -219,8 +219,9 @@ button {
 }
 
 .trend {
+  max-width: 1050px;
+  margin: 0 auto;
   margin-bottom: 80px;
-  padding: 0 115px;
   padding-top: 80px;
 }
 .trend__container {
@@ -300,10 +301,9 @@ button {
 }
 .creats__grid_item {
   position: relative;
-  width: 240px;
-  height: 238px;
   border-radius: 20px;
   background: #3B3B3B;
+  padding-bottom: 20px;
 }
 .creats__grid_number {
   border-radius: 120px;
@@ -333,4 +333,38 @@ button {
 }
 .creats__grid_price span {
   color: #858584;
+}
+
+.category {
+  padding-top: 80px;
+  max-width: 1050px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.category__title {
+  margin-bottom: 60px;
+}
+.category__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.category__grid_item {
+  position: relative;
+  background: #3b3b3b;
+  border-radius: 20px;
+  max-width: 240px;
+  overflow: hidden;
+}
+.category__grid_img {
+  filter: blur(7px);
+}
+.category__grid_icon {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.category__grid_name {
+  padding: 20px 30px 25px 30px;
 }/*# sourceMappingURL=style.css.map */
