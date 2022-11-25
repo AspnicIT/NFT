@@ -41,6 +41,13 @@ h3 {
   line-height: 45px;
 }
 
+h2 {
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 56px;
+  font-family: "Work Sans", sans-serif;
+}
+
 button {
   color: #fff;
   font-size: 16px;
@@ -367,4 +374,134 @@ button {
 }
 .category__grid_name {
   padding: 20px 30px 25px 30px;
+}
+
+.discover {
+  max-width: 1050px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding-top: 80px;
+  position: relative;
+}
+.discover__wrapBtn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+.discover__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.discover__grid_item {
+  max-width: 330px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #3b3b3b;
+}
+.discover__grid_descr {
+  padding: 20px 30px 25px 30px;
+}
+.discover__grid_autor {
+  display: flex;
+  justify-content: start;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  margin-bottom: 25px;
+}
+.discover__grid_name {
+  margin-bottom: 5px;
+}
+.discover__grid_nickname {
+  font-family: "Space Mono", monospace;
+}
+.discover__grid_price {
+  display: flex;
+  justify-content: space-between;
+}
+.discover__grid_wETH {
+  text-align: right;
+}
+.discover__grid_span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #858584;
+  font-family: "Space Mono", monospace;
+}
+
+.opher {
+  width: 100%;
+  height: 640px;
+  background-image: url("../src/img/opher-mashroom.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.opher__wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(162, 89, 255) 0%, rgba(162, 89, 255, 0) 100%);
+}
+.opher__container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  max-width: 1050px;
+  padding-bottom: 60px;
+}
+.opher__left_link {
+  width: 200px;
+  background: #3B3B3B;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.opher__left_title {
+  margin-bottom: 30px;
+}
+.opher__left_btn {
+  position: relative;
+  padding: 19px 50px 19px 82px;
+  background: white;
+  color: #111;
+  border-radius: 20px;
+}
+.opher__left_btn img {
+  position: absolute;
+  top: 20px;
+  left: 34px;
+}
+.opher__right {
+  position: relative;
+}
+
+.timer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.timer__body {
+  width: 295px;
+  height: 144px;
+  background: rgba(59, 59, 59, 0.5);
+  border-radius: 20px;
+}
+
+.works {
+  padding-top: 80px;
 }/*# sourceMappingURL=style.css.map */
