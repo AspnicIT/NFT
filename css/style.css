@@ -35,6 +35,13 @@ h4 {
   line-height: 39px;
 }
 
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 45px;
+}
+
 .header {
   width: 100%;
   padding: 20px 50px 20px 53px;
@@ -146,6 +153,7 @@ h4 {
   margin-bottom: 20px;
 }
 .main__left_subtitle {
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 35px;
@@ -159,6 +167,15 @@ h4 {
 .main__left_statistic {
   display: flex;
   justify-content: space-between;
+  max-width: 450px;
+}
+.main__left_item {
+  wight: fit-content;
+}
+.main__left_statSubtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
 }
 .main__right {
   max-width: 510px;
@@ -186,4 +203,18 @@ h4 {
   align-items: center;
   -moz-column-gap: 12px;
        column-gap: 12px;
+}
+
+.trend {
+  margin-top: 80px;
+  padding: 0 115px;
+}
+.trend__title {
+  margin-bottom: 10px;
+}
+.trend__subtitle {
+  margin-bottom: 60px;
+}
+.trend__container {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
