@@ -22,6 +22,19 @@ li {
   list-style: none;
 }
 
+h5 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 31px;
+}
+
+h4 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 39px;
+}
+
 .header {
   width: 100%;
   padding: 20px 50px 20px 53px;
@@ -85,7 +98,8 @@ li {
 .header__link a {
   padding: 12px 20px;
 }
-.header__signUP {
+
+.signUP {
   position: relative;
   background: #A259FF;
   border-radius: 20px;
@@ -95,19 +109,81 @@ li {
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
 }
-.header__signUP_img-1, .header__signUP_img-2 {
+.signUP__img-1, .signUP__img-2 {
   position: absolute;
 }
-.header__signUP_img-1 {
+.signUP__img-1 {
   top: 22px;
   left: 34px;
 }
-.header__signUP_img-2 {
+.signUP__img-2 {
   top: 32px;
   left: 32px;
 }
 
 .main {
   width: 100%;
+  padding: 0 115px;
+  margin-bottom: 80px;
+}
+.main__welcome {
+  display: flex;
+  justify-content: space-between;
+}
+.main__left {
+  max-width: 510px;
+}
+.main__left_title {
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 74px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.main__left_subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.main__left_btn {
+  padding: 19px 50px 19px 82px;
+  margin-bottom: 30px;
+}
+.main__left_statistic {
+  display: flex;
+  justify-content: space-between;
+}
+.main__right {
+  max-width: 510px;
+}
+
+.nft__item {
+  width: 100%;
+}
+.nft__item_img {
+  display: block;
+  width: 100%;
+}
+.nft__item_descr {
+  width: 100%;
+  background: #3B3B3B;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: start;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+.nft__item_autor {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
 }/*# sourceMappingURL=style.css.map */
