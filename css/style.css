@@ -292,4 +292,45 @@ button {
   position: absolute;
   top: 22px;
   left: 34px;
+}
+.creats__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.creats__grid_item {
+  position: relative;
+  width: 240px;
+  height: 238px;
+  border-radius: 20px;
+  background: #3B3B3B;
+}
+.creats__grid_number {
+  border-radius: 120px;
+  background: #2b2b2b;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  color: #858584;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 3px;
+}
+.creats__grid_avatar {
+  padding: 20px 55px 20px 65px;
+}
+.creats__grid_name {
+  text-align: center;
+}
+.creats__grid_price {
+  width: 100%;
+  text-align: center;
+}
+.creats__grid_price span {
+  color: #858584;
 }/*# sourceMappingURL=style.css.map */
