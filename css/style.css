@@ -2,5 +2,112 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #2B2B2B;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 50px 20px 53px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 80px;
+}
+.header__logo {
+  display: block;
+  width: 244px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__imgs {
+  width: 26px;
+  height: 26px;
   position: relative;
+}
+.header__img {
+  position: absolute;
+}
+.header__img_logo-1 {
+  top: 0;
+  left: 0;
+}
+.header__img_logo-2 {
+  top: 3px;
+  left: 0;
+}
+.header__img_logo-3 {
+  top: 3px;
+  left: 8px;
+}
+.header__img_logo-4 {
+  top: 3px;
+  left: 16px;
+}
+.header__img_logo-5 {
+  bottom: 0;
+  left: 2px;
+}
+.header__title {
+  width: 200px;
+}
+.header__nav {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.header__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.header__link a {
+  padding: 12px 20px;
+}
+.header__signUP {
+  position: relative;
+  background: #A259FF;
+  border-radius: 20px;
+  padding: 19px 30px 19px 62px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.header__signUP_img-1, .header__signUP_img-2 {
+  position: absolute;
+}
+.header__signUP_img-1 {
+  top: 22px;
+  left: 34px;
+}
+.header__signUP_img-2 {
+  top: 32px;
+  left: 32px;
+}
+
+.main {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
