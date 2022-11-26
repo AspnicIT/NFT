@@ -644,4 +644,47 @@ input:focus {
 .join__right_btn img {
   display: inline-block;
   margin-bottom: -4px;
+}
+
+.footer {
+  width: 100%;
+  background: #3b3b3b;
+  padding: 40px 0;
+}
+.footer__container {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo {
+  margin-bottom: 33px;
+}
+.footer__text {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+.footer__join {
+  margin-bottom: 15px;
+}
+.footer__contacts {
+  width: 158px;
+}
+.footer__svg {
+  display: inline-block;
+}
+.footer__left {
+  max-width: 245px;
+}
+.footer__center_title {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 25px;
+}
+.footer__right {
+  max-width: 425px;
+}
+.footer__right_central {
+  max-width: 330px;
 }/*# sourceMappingURL=style.css.map */
