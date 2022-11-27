@@ -284,6 +284,24 @@
   .create__form {
     max-width: 325px;
   }
+  .wallet {
+    max-width: 325px;
+  }
+  .wallet__link {
+    padding: 14px 20px 14px 92px;
+  }
+  .wallet__img {
+    width: 32px;
+  }
+  #metamask {
+    top: 14px;
+  }
+  #wallet_connect {
+    top: 90px;
+  }
+  #coinbase {
+    top: 164px;
+  }
 }
 @media (max-width: 800px) {
   .header {
@@ -523,6 +541,23 @@
   }
   .create__right {
     padding: 30px 30px 40px 30px;
+  }
+  .wallet {
+    max-width: 320px;
+  }
+  .wallet__link {
+    padding: 14px 20px 14px 82px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #metamask {
+    top: 10px;
+  }
+  #wallet_connect {
+    top: 78px;
+  }
+  #coinbase {
+    top: 144px;
   }
 }
 .thin {
