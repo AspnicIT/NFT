@@ -5,40 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/adaptiv.css">
     <title>NFT marketplace</title>
 </head>
 <body>
+    <header class="header">
+        <a href="./index.html" class="header__logo">
+            <div class="header__imgs">
+                <img src="./src/icons/header/logo_top.svg" alt="logo" class="header__img header__img_logo-1">
+                <img src="./src/icons/header/logo_midle.svg" alt="" class="header__img header__img_logo-2">
+                <img src="./src/icons/header/logo_midle.svg" alt="" class="header__img header__img_logo-3">
+                <img src="./src/icons/header/logo_midle.svg" alt="" class="header__img header__img_logo-4">
+                <img src="./src/icons/header/logo_down.svg" alt="" class="header__img header__img_logo-5">
+            </div>
+            <img src="./src/icons/NFT Marketplace.svg" alt="" class="header__title">
+        </a>
+
+        <nav class="header__nav header__burgerNav">
+            <ul class="header__ul">
+                <li class="header__link"><a href="">Marketplace</a></li>
+                <li class="header__link"><a href="">Rankings</a></li>
+                <li class="header__link"><a href="">Connect a wallet</a></li>
+                <button class="signUP">
+                    <img src="./src/icons/header/sign-1.svg" alt="" class="signUP__img-1">
+                    <img src="./src/icons/header/sign-2.svg" alt="" class="signUP__img-2">
+                    Sign Up
+                </button>
+            </ul>
+        </nav>
+
+        <button class="header__burgerMenu">
+            <div class="header__burgerMenu_line"></d>
+        </button>
+    </header>
     <main class="main">
-        <header class="header">
-            <a href="./index.html" class="header__logo">
-                <div class="header__imgs">
-                    <img src="./src/icons/header/logo_top.svg" alt="logo" class="header__img header__img_logo-1">
-                    <img src="./src/icons/header/logo_midle.svg" alt="" class="header__img header__img_logo-2">
-                    <img src="./src/icons/header/logo_midle.svg" alt="" class="header__img header__img_logo-3">
-                    <img src="./src/icons/header/logo_midle.svg" alt="" class="header__img header__img_logo-4">
-                    <img src="./src/icons/header/logo_down.svg" alt="" class="header__img header__img_logo-5">
-                </div>
-                <img src="./src/icons/NFT Marketplace.svg" alt="" class="header__title">
-            </a>
-
-            <nav class="header__nav">
-                <ul class="header__ul">
-                    <li class="header__link"><a href="">Marketplace</a></li>
-                    <li class="header__link"><a href="">Rankings</a></li>
-                    <li class="header__link"><a href="">Connect a wallet</a></li>
-                    <button class="signUP">
-                        <img src="./src/icons/header/sign-1.svg" alt="" class="signUP__img-1">
-                        <img src="./src/icons/header/sign-2.svg" alt="" class="signUP__img-2">
-                        Sign Up
-                    </button>
-                </ul>
-            </nav>
-
-        </header>
-
         <div class="main__welcome">
             <div class="main__left">
 
@@ -92,7 +95,7 @@
 
         <div class="trend__container">
 
-            <div class="trend__card">
+            <div id="animals" class="trend__card">
                 <img src="./src/img/trend/trend_top_card_1.jpg" alt="dog" class="trend__card_topImg">
 
                 <div class="trend__card_inner">
@@ -109,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            <div class="trend__card">
+            <div id="mushrooms" class="trend__card">
                 <img src="./src/img/trend/trend_top_card_2.jpg" alt="dog" class="trend__card_topImg">
 
                 <div class="trend__card_inner">
@@ -126,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="trend__card">
+            <div id="machines" class="trend__card">
                 <img src="./src/img/trend/trend_top_card_3.jpg" alt="dog" class="trend__card_topImg">
 
                 <div class="trend__card_inner">
@@ -148,8 +151,8 @@
     </section>
 
     <section class="creats">
-        <h3 class="title">Trending Collection</h3>
-        <h4 class="subtitle creats_subtitle">Checkout our weekly updated trending collection.</h4>
+        <h3 class="title">Top creators</h3>
+        <h4 class="subtitle creats__subtitle">Checkout Top Rated Creators on the NFT Marketplace</h4>
 
         <div class="creats__wrapBtn">
             <button class="creats__btn">
@@ -159,7 +162,7 @@
         </div>
 
         <div class="creats__grid">
-            <div class="creats__grid_item">
+            <div id="autor1" class="creats__grid_item">
                 <div class="creats__grid_number">1</div>
                 <img src="./src/img/grid/grid-1.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -167,7 +170,7 @@
                     <div class="nft__item_nickname creats__grid_price"><span>Total Sales:</span> 34.53 ETH</div>
                 </div>
             </div>
-            <div class="creats__grid_item">
+            <div id="autor2" class="creats__grid_item">
                 <div class="creats__grid_number">2</div>
                 <img src="./src/img/grid/grid-2.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -175,7 +178,7 @@
                     <div class="nft__item_nickname creats__grid_price"><span>Total Sales:</span> 34.53 ETH</div>
                 </div>
             </div>
-            <div class="creats__grid_item">
+            <div id="autor3" class="creats__grid_item">
                 <div class="creats__grid_number">3</div>
                 <img src="./src/img/grid/grid-3.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -183,7 +186,7 @@
                     <div class="nft__item_nickname creats__grid_price"><span>Total Sales:</span> 34.53 ETH</div>
                 </div>
             </div>
-            <div class="creats__grid_item">
+            <div id="autor4" class="creats__grid_item">
                 <div class="creats__grid_number">4</div>
                 <img src="./src/img/grid/grid-4.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -191,7 +194,7 @@
                     <div class="nft__item_nickname creats__grid_price"><span>Total Sales:</span> 34.53 ETH</div>
                 </div>
             </div>
-            <div class="creats__grid_item">
+            <div id="autor5" class="creats__grid_item">
                 <div class="creats__grid_number">5</div>
                 <img src="./src/img/grid/grid-5.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -199,7 +202,7 @@
                     <div class="nft__item_nickname creats__grid_price"><span>Total Sales:</span> 34.53 ETH</div>
                 </div>
             </div>
-            <div class="creats__grid_item">
+            <div id="autor6" class="creats__grid_item">
                 <div class="creats__grid_number">6</div>
                 <img src="./src/img/grid/grid-6.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -207,7 +210,7 @@
                     <div class="nft__item_nickname creats__grid_price"><span>Total Sales:</span> 34.53 ETH</div>
                 </div>
             </div>
-            <div class="creats__grid_item">
+            <div id="autor7" class="creats__grid_item">
                 <div class="creats__grid_number">7</div>
                 <img src="./src/img/grid/grid-7.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -215,7 +218,7 @@
                     <div class="nft__item_nickname creats__grid_price"><span>Total Sales:</span> 34.53 ETH</div>
                 </div>
             </div>
-            <div class="creats__grid_item">
+            <div id="autor8" class="creats__grid_item">
                 <div class="creats__grid_number">8</div>
                 <img src="./src/img/grid/grid-8.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -223,7 +226,7 @@
                     <div class="nft__item_nickname creats__grid_price"><span>Total Sales:</span> 34.53 ETH</div>
                 </div>
             </div>
-            <div class="creats__grid_item">
+            <div id="autor9" class="creats__grid_item">
                 <div class="creats__grid_number">9</div>
                 <img src="./src/img/grid/grid-9.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -231,7 +234,7 @@
                     <div class="nft__item_nickname creats__grid_price"><span>Total Sales:</span> 34.53 ETH</div>
                 </div>
             </div>
-            <div class="creats__grid_item">
+            <div id="autor10" class="creats__grid_item">
                 <div class="creats__grid_number">10</div>
                 <img src="./src/img/grid/grid-10.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -239,7 +242,7 @@
                     <div class="nft__item_nickname creats__grid_price"><span>Total Sales:</span> 34.53 ETH</div>
                 </div>
             </div>
-            <div class="creats__grid_item">
+            <div id="autor11" class="creats__grid_item">
                 <div class="creats__grid_number">11</div>
                 <img src="./src/img/grid/grid-11.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -247,7 +250,7 @@
                     <div class="nft__item_nickname creats__grid_price"><span>Total Sales:</span> 34.53 ETH</div>
                 </div>
             </div>
-            <div class="creats__grid_item">
+            <div id="autor12" class="creats__grid_item">
                 <div class="creats__grid_number">12</div>
                 <img src="./src/img/grid/grid-12.svg" alt="ava" class="creats__grid_avatar">
                 <div class="trend__card_descr">
@@ -307,8 +310,8 @@
     </section>
 
     <section class="discover">
-        <h3 class="title">Trending Collection</h3>
-        <h4 class="subtitle">Checkout our weekly updated trending collection.</h4>
+        <h3 class="title">Discover More NFTs</h3>
+        <h4 class="subtitle">Explore new trending NFTs</h4>
 
         <div class="discover__wrapBtn">
             <button class="creats__btn">
@@ -319,7 +322,7 @@
 
         <div class="discover__grid">
 
-            <div class="discover__grid_item">
+            <div id="keepitreal" class="discover__grid_item">
                 <img src="./src/img/discover/discover-1.jpg" alt="nft" class="discover__grid">
                 <div class="discover__grid_descr">
                     
@@ -341,7 +344,7 @@
                     
                 </div>
             </div>
-            <div class="discover__grid_item">
+            <div id="Edena" class="discover__grid_item">
                 <img src="./src/img/discover/discover-2.jpg" alt="nft" class="discover__grid">
                 <div class="discover__grid_descr">
                     
@@ -363,7 +366,7 @@
                     
                 </div>
             </div>
-            <div class="discover__grid_item">
+            <div id="astroFiction" class="discover__grid_item">
                 <img src="./src/img/discover/discover-3.jpg" alt="nft" class="discover__grid">
                 <div class="discover__grid_descr">
                     
@@ -400,7 +403,7 @@
                   
                     <h2 class="opher__left_title">Magic Mashrooms</h2>
                     
-                    <a href="#" class="opher__left_btn"><img src="./src/icons/Eye.svg" alt="">See NFT</a>
+                    <button class="opher__left_btn"><img src="./src/icons/Eye.svg" alt="">See NFT</button>
 
                 </div>
                 <div class="opher__right">
@@ -461,9 +464,7 @@
     <section class="join">
         <div class="join__container">
             <div class="join__left">
-                <div class="join__left_img">
-                    <img src="./src/img/cosmonaut.jpg" alt="cosmonaut">
-                </div>
+                <div class="join__left_img"></div>
                 
             </div>
             <div class="join__right">
@@ -545,9 +546,9 @@
                 <h5 class="footer__center_title">Join our weekly digest</h5>
                 <p class="footer__text footer__right_central">Get exclusive promotions & updates straight to your inbox.</p>
                 <div class="footer__form">
-                    <form class="join__right_form">
-                        <input type="text" class="join__right_input" placeholder="Enter your email here">
-                        <button type="submit" class="join__right_btn">
+                    <form class="join__right_form footer__right_form">
+                        <input type="text" class="join__right_input footer__right_input" placeholder="Enter your email here">
+                        <button type="submit" class="join__right_btn footer__right_btn">
                             <img src="./src/icons/Envelope.svg" alt="Envelope">
                             <span>Subscribe</span>
                         </button>
@@ -555,8 +556,11 @@
                 </div>
   
             </div>
+            
         </div>
-
+            <p class="footer__bottom">
+                Ⓒ NFT Market. Use this template freely.
+            </p>
     </footer>
     
     <script src="./js/timer.js"></script>

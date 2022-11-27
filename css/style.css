@@ -61,6 +61,7 @@ button {
   font-weight: 600;
   line-height: 22px;
   font-family: "Work Sans", sans-serif;
+  border: none;
 }
 
 input::-moz-placeholder {
@@ -70,6 +71,7 @@ input::-moz-placeholder {
   font-family: "Work Sans", sans-serif;
   color: #2b2b2b;
   opacity: 100%;
+  text-transform: capitalize;
 }
 
 input:-ms-input-placeholder {
@@ -79,6 +81,7 @@ input:-ms-input-placeholder {
   font-family: "Work Sans", sans-serif;
   color: #2b2b2b;
   opacity: 100%;
+  text-transform: capitalize;
 }
 
 input::placeholder {
@@ -88,6 +91,7 @@ input::placeholder {
   font-family: "Work Sans", sans-serif;
   color: #2b2b2b;
   opacity: 100%;
+  text-transform: capitalize;
 }
 
 input:focus {
@@ -107,8 +111,9 @@ input:focus {
 }
 
 .header {
-  width: 100%;
-  padding: 20px 50px 20px 53px;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -332,7 +337,6 @@ input:focus {
   padding: 19px 50px 19px 82px;
   border-radius: 20px;
   position: relative;
-  top: 0;
 }
 .creats__img-1 {
   position: absolute;
@@ -371,6 +375,7 @@ input:focus {
 }
 .creats__grid_name {
   text-align: center;
+  margin-bottom: 5px;
 }
 .creats__grid_price {
   width: 100%;
@@ -429,12 +434,12 @@ input:focus {
   height: -moz-fit-content;
   height: fit-content;
   position: absolute;
-  top: 100px;
+  top: 84px;
   right: 0;
 }
 .discover__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   grid-gap: 30px;
 }
 .discover__grid_item {
@@ -490,9 +495,6 @@ input:focus {
 }
 .opher__container {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -501,6 +503,7 @@ input:focus {
   justify-content: space-between;
   max-width: 1050px;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 .opher__left_link {
   width: 200px;
@@ -601,10 +604,12 @@ input:focus {
   max-width: 425px;
 }
 .join__left_img {
-  overflow: hidden;
-}
-.join__left_img img {
-  width: 100%;
+  width: 425px;
+  height: 310px;
+  background-image: url(../src/img/cosmonaut.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 22px;
 }
 .join__right {
@@ -634,7 +639,7 @@ input:focus {
   border: none;
 }
 .join__right_btn {
-  padding: 19px 50px;
+  padding: 19px 50px 19px 38px;
   background: #A259FF;
   color: #fff;
   border-radius: 20px;
@@ -644,6 +649,7 @@ input:focus {
 .join__right_btn img {
   display: inline-block;
   margin-bottom: -4px;
+  margin-right: 12px;
 }
 
 .footer {
@@ -682,9 +688,32 @@ input:focus {
   line-height: 35px;
   margin-bottom: 25px;
 }
+.footer__center p:last-child {
+  margin-bottom: 0;
+}
 .footer__right {
-  max-width: 425px;
+  width: 425px;
 }
 .footer__right_central {
   max-width: 330px;
+}
+.footer__right_btn {
+  min-width: 211px;
+  padding: 19px 50px;
+}
+.footer__right_btn img {
+  display: none;
+}
+.footer__bottom {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: block;
+  text-align: left;
+  margin-top: 40px;
+  padding-top: 20px;
+  width: 100%;
+  border-top: 1px solid #858584;
+  font-size: 12px;
+  line-height: 13px;
+  color: #ccc;
 }/*# sourceMappingURL=style.css.map */
