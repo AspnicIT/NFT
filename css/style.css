@@ -119,7 +119,6 @@ input:focus {
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
-  margin-bottom: 80px;
 }
 .header__logo {
   width: 244px;
@@ -177,8 +176,7 @@ input:focus {
 
 .main {
   max-width: 1050px;
-  margin: 0 auto;
-  margin-bottom: 80px;
+  margin: 80px auto;
 }
 .main__welcome {
   display: flex;
@@ -688,4 +686,72 @@ input:focus {
   font-size: 12px;
   line-height: 13px;
   color: #ccc;
+}
+
+.create {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.create__left {
+  background-image: url(../src/img/create_account.jpg);
+  width: 100%;
+  max-width: 610px;
+  height: 691px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.create__right {
+  width: 100%;
+  max-width: 610px;
+  padding: 100px 0;
+}
+.create__title {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.create__text {
+  font-size: 22px;
+  line-height: 35px;
+  margin-bottom: 40px;
+  max-width: 425px;
+}
+.create__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  max-width: 330px;
+  position: relative;
+}
+.create__input {
+  border-radius: 20px;
+  border: none;
+  padding: 12px 20px 12px 52px;
+}
+.create__btn {
+  margin-top: 15px;
+}
+.create__img {
+  position: absolute;
+  left: 18px;
+}
+
+#create_name {
+  top: 11px;
+}
+
+#create_email {
+  top: 65px;
+}
+
+#create_password {
+  top: 118px;
+}
+
+#create_confirm {
+  top: 174px;
 }/*# sourceMappingURL=style.css.map */
