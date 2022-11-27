@@ -229,6 +229,12 @@
     max-width: 834px;
     margin: 0 auto;
   }
+  .footer__container {
+    max-width: 690px;
+    margin: 0 auto;
+    flex-direction: column;
+    row-gap: 30px;
+  }
   .footer__logo {
     margin-bottom: 23px;
   }
@@ -464,6 +470,27 @@
   }
   .join__left_img {
     width: 315px;
+  }
+  .footer__container {
+    max-width: 315px;
+  }
+  .footer__right {
+    max-width: 100%;
+  }
+  .footer__right_central {
+    max-width: 100%;
+  }
+  .footer__right_form {
+    width: 100%;
+    flex-direction: column;
+    background: 0;
+    row-gap: 16px;
+  }
+  .footer__right_input {
+    padding: 15px 20px;
+  }
+  .footer__right_btn {
+    padding: 12px;
   }
 }
 .thin {

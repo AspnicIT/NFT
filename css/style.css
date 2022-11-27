@@ -638,11 +638,8 @@ input:focus {
   display: flex;
   justify-content: space-between;
 }
-.footer__logo {
-  margin-bottom: 33px;
-}
 .footer__text {
-  margin-bottom: 20px;
+  margin: 20px 0;
   color: #ccc;
 }
 .footer__join {
