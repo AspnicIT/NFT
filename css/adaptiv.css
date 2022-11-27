@@ -455,10 +455,11 @@
     display: block;
   }
   .opher {
-    max-width: 315px;
+    max-width: 375px;
     margin-bottom: 40px;
   }
   .opher__container {
+    max-width: 315px;
     flex-direction: column;
     bottom: 70px;
   }
@@ -506,7 +507,7 @@
     width: 315px;
   }
   .footer {
-    max-width: 320px;
+    max-width: 375px;
     padding: 40px 30px;
   }
   .footer__container {
