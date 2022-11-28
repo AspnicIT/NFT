@@ -302,6 +302,58 @@
   #coinbase {
     top: 164px;
   }
+  .artist {
+    max-width: 834px;
+  }
+  .artist__topwall {
+    margin-bottom: 80px;
+  }
+  .artist__avatar {
+    left: 72px;
+  }
+  .artist__container {
+    max-width: 690px;
+  }
+  .artist__header {
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 30px;
+  }
+  .artist__btns {
+    justify-content: start;
+  }
+  .artist__title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .artist__info {
+    margin-bottom: 30px;
+  }
+  .artist__info_num {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .artist__info_subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .artist__bio_title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .artist__links_img {
+    width: 24px;
+  }
+  .artist__btn {
+    padding: 19px 0;
+  }
+  .artist__counter {
+    font-size: 12px;
+    line-height: 13px;
+  }
+  .artist__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 800px) {
   .header {
@@ -446,6 +498,10 @@
     flex-direction: column;
     row-gap: 20px;
   }
+  .discover__grid_item {
+    max-width: 315px;
+    margin: 0 auto;
+  }
   .discover__wrapBtn {
     top: auto;
     bottom: 0;
@@ -559,6 +615,26 @@
   }
   #coinbase {
     top: 144px;
+  }
+  .artist {
+    max-width: 375px;
+  }
+  .artist__avatar {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .artist__container {
+    max-width: 320px;
+  }
+  .artist__btns {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .artist__counter {
+    display: none;
+  }
+  .artist__grid {
+    grid-template-columns: 1fr;
   }
 }
 .thin {
