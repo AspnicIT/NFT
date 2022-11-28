@@ -386,6 +386,39 @@
   .content {
     max-width: 690px;
   }
+  .section_active::after {
+    width: 200px;
+    bottom: -22px;
+  }
+  .search,
+.search__line {
+    max-width: 690px;
+  }
+  .toplist__header {
+    grid-template-columns: 42px 380px 0px 100px auto;
+  }
+  .toplist__list_item {
+    grid-template-columns: 50px 380px 0px 100px auto;
+  }
+  .toplist_nft {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+  .toplist__list_number {
+    background: none;
+  }
+  .toplist__list_artist {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .toplist__list_avatar {
+    width: 24px;
+  }
+  .toplist__list_name {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 @media (max-width: 800px) {
   .header {
@@ -700,6 +733,59 @@
   }
   .content__grid {
     padding-top: 40px;
+  }
+  .search,
+.search__line {
+    max-width: 315px;
+  }
+  .section_active::after {
+    width: 100px;
+  }
+  .toplist__header {
+    grid-template-columns: 20px 180px 0px 0px auto;
+    padding-left: 18px;
+  }
+  .toplist__list_item {
+    grid-template-columns: 20px 180px 0px 0px auto;
+  }
+  .toplist_chance {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+  .toplist__list_number {
+    background: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .toplist__list_artist {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .toplist__list_avatar {
+    width: 24px;
+  }
+  .toplist__list_name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #today:before {
+    content: "1d";
+    padding: 0 20px;
+  }
+  #week:before {
+    content: "7d";
+    padding: 0 20px;
+  }
+  #month:before {
+    content: "30d";
+    padding: 0 20px;
+  }
+  #time:before {
+    content: "All Time";
+    padding: 0 20px;
   }
 }
 .thin {

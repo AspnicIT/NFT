@@ -908,6 +908,22 @@ input:focus {
   margin-bottom: 10px;
 }
 
+#today:before {
+  content: "Today";
+}
+
+#week:before {
+  content: "This Week";
+}
+
+#month:before {
+  content: "This Month";
+}
+
+#time:before {
+  content: "All Time";
+}
+
 .line {
   width: 100%;
   max-width: 1280px;
@@ -946,6 +962,19 @@ input:focus {
 
 .section_active {
   color: #fff;
+  position: relative;
+}
+
+.section_active::after {
+  display: block;
+  content: "";
+  width: 300px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .counter_active {
@@ -1093,4 +1122,127 @@ input:focus {
 }
 .content__arrow {
   display: none;
+}
+
+.search {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  position: relative;
+}
+.search__title {
+  margin-top: 80px;
+}
+.search__subtitle {
+  margin-bottom: 30px;
+}
+.search__wrap {
+  width: 100%;
+  position: relative;
+}
+.search__input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #848485;
+  background: none;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+.search__input::-moz-placeholder {
+  color: #848485;
+  font-size: 16px;
+  line-height: 22px;
+}
+.search__input:-ms-input-placeholder {
+  color: #848485;
+  font-size: 16px;
+  line-height: 22px;
+}
+.search__input::placeholder {
+  color: #848485;
+  font-size: 16px;
+  line-height: 22px;
+}
+.search__btn {
+  position: absolute;
+  padding-right: 20px;
+  right: 0;
+  height: 100%;
+  width: 100px;
+  background: none;
+  text-align: right;
+}
+.search__line {
+  max-width: 1050px;
+}
+.search__sections {
+  border-bottom: 1px solid #3b3b3b;
+}
+
+.toplist__subtitle {
+  margin-bottom: 80px;
+}
+
+.toplist__header {
+  margin-top: 40px;
+  width: 100%;
+  border: solid 1px #3b3b3b;
+  padding: 12px 0;
+  border-radius: 20px;
+  padding-left: 28px;
+  display: grid;
+  grid-template-columns: 42px 440px 180px 180px 160px;
+  margin-bottom: 20px;
+}
+.toplist__header_item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Space Mono", monospace;
+  color: #858584;
+}
+.toplist__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  row-gap: 20px;
+}
+.toplist__list_item {
+  padding: 12px 0;
+  border-radius: 20px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 50px 440px 180px 180px 160px;
+  background: #3b3b3b;
+  align-items: center;
+}
+.toplist__list_number {
+  width: 30px;
+  height: 30px;
+  background: #2b2b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.toplist__list_artist {
+  display: flex;
+  justify-content: start;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+}
+.toplist__list_avatar {
+  width: 60px;
+}
+.toplist__list_chance {
+  color: #00AC4F;
+}
+.toplist__list_sold, .toplist__list_volume {
+  font-family: "Space Mono", monospace;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
