@@ -1211,7 +1211,17 @@ input:focus {
   align-items: center;
   row-gap: 20px;
 }
+.toplist__list_miror {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 .toplist__list_item {
+  position: relative;
+  z-index: 1;
   padding: 12px 0;
   border-radius: 20px;
   padding-left: 20px;

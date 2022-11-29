@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/adaptiv.css">
     <title>NFT marketplace</title>
 </head>
 
-<body>
+<body class="artistPage">
     <header class="header">
         <a href="./index.html" class="header__logo">
-            
+
             <img src="../src/icons/header/logo_top.svg" alt="logo" class="header__img">
-            
+
             <img src="../src/icons/NFT Marketplace.svg" alt="" class="header__title">
         </a>
 
@@ -30,73 +32,87 @@
                 <button class="signUP">
                     <img src="../src/icons/header/sign-1.svg" alt="" class="signUP__img-1">
                     <img src="../src/icons/header/sign-2.svg" alt="" class="signUP__img-2">
-                    <span>Sign Up</span>    
+                    <span>Sign Up</span>
                 </button>
             </ul>
         </nav>
 
         <button class="header__burgerMenu hide">
-            <div class="header__burgerMenu_line"></d>
+            <div class="header__burgerMenu_line">
+                </d>
         </button>
     </header>
-
     <section class="artist">
-        <div class="artist__topwall">
-            <div class="artist__gradient"></div>
-            <div class="artist__avatar">
-                <div class="artist__avawrap">
-                    <img src="../src/icons/artists/randy.svg" alt="randy">
-                </div>
-            </div>
-        </div>
-
-        <div class="artist__container">
-            <div class="artist__header">
-                <h2 class="artist__title" >Animakid</h2>
-                <div class="artist__btns">
-                    <button class="artist__copykey">
-                        <img src="../src/icons/Copy.svg" alt="copy" class="artist__copykey_img">
-                        0xc0E3...B79C
-                    </button>
-                    <button class="artist__follow">
-                        <img src="../src/icons/Plus.svg" alt="plus" class="artist__follow_img">
-                        Follow
-                    </button>
-                </div>
-            </div>
-            <div class="artist__info">
-                <div class="artist__info_counter">
-                    <div class="artist__info_block">
-                        <h4 class="artist__info_num">250k+</h4>
-                        <h5 class="artist__info_subtitle">Volume</h5>
-                    </div>
-                    <div class="artist__info_block">
-                        <h4 class="artist__info_num">50+</h4>
-                        <h5 class="artist__info_subtitle">NFTs Sold</h5>
-                    </div>
-                    <div class="artist__info_block">
-                        <h4 class="artist__info_num">3000+</h4>
-                        <h5 class="artist__info_subtitle">Followers</h5>
-                    </div>
-                </div>
-
-                <div class="artist__bio">
-                    <h5 class="artist__bio_title">Bio</h5>
-                    <div class="artist__info_subtitle">The internet's friendliest designer kid.</div>
-                </div>
-
-                <div class="artist__links">
-                    <h5 class="artist__bio_title">Links</h5>
-                    <div class="artist__links_block">
-                        <a href="#"><img src="../src/icons/footer/Globe.svg" alt="globe" class="artist__links_img"></a>
-                        <a href="#"><img src="../src/icons/footer/DiscordLogo.svg" alt="dscrd" class="artist__links_img"></a>
-                        <a href="#"><img src="../src/icons/footer/YoutubeLogo.svg" alt="YT" class="artist__links_img"></a>
-                        <a href="#"><img src="../src/icons/footer/TwitterLogo.svg" alt="twit" class="artist__links_img"></a>
-                        <a href="#"><img src="../src/icons/footer/InstagramLogo.svg" alt="inst" class="artist__links_img"></a>
+        <div class="welcome"></div>
+        <!-- <div class="artist__welcome">
+            <div class="artist__topwall">
+                <div class="artist__gradient"></div>
+                <div class="artist__avatar">
+                    <div class="artist__avawrap">
+                        <img src="../src/icons/artists/randy.svg" alt="randy">
                     </div>
                 </div>
             </div>
-        </div>
+            <style>
+                .artist__topwall{
+                    background-image: url(../src/img/artistPages/topwall/randy.jpg);
+                } 
+            </style>
+
+            <div id="welcomeArtist" class="artist__container">
+                <div class="artist__header">
+                    <h2 class="artist__title">Animakid</h2>
+                    <div class="artist__btns">
+                        <button class="artist__copykey">
+                            <img src="../src/icons/Copy.svg" alt="copy" class="artist__copykey_img">
+                            0xc0E3...B79C
+                        </button>
+                        <button class="artist__follow">
+                            <img src="../src/icons/Plus.svg" alt="plus" class="artist__follow_img">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+                <div class="artist__info">
+                    <div class="artist__info_counter">
+                        <div class="artist__info_block">
+                            <h4 class="artist__info_num">250k+</h4>
+                            <h5 class="artist__info_subtitle">Volume</h5>
+                        </div>
+                        <div class="artist__info_block">
+                            <h4 class="artist__info_num">50+</h4>
+                            <h5 class="artist__info_subtitle">NFTs Sold</h5>
+                        </div>
+                        <div class="artist__info_block">
+                            <h4 class="artist__info_num">3000+</h4>
+                            <h5 class="artist__info_subtitle">Followers</h5>
+                        </div>
+                    </div>
+
+                    <div class="artist__bio">
+                        <h5 class="artist__bio_title">Bio</h5>
+                        <div class="artist__info_subtitle">The internet's friendliest designer kid.</div>
+                    </div>
+
+                    <div class="artist__links">
+                        <h5 class="artist__bio_title">Links</h5>
+                        <div class="artist__links_block">
+                            <a href="#"><img src="../src/icons/footer/Globe.svg" alt="globe"
+                                    class="artist__links_img"></a>
+                            <a href="#"><img src="../src/icons/footer/DiscordLogo.svg" alt="dscrd"
+                                    class="artist__links_img"></a>
+                            <a href="#"><img src="../src/icons/footer/YoutubeLogo.svg" alt="YT"
+                                    class="artist__links_img"></a>
+                            <a href="#"><img src="../src/icons/footer/TwitterLogo.svg" alt="twit"
+                                    class="artist__links_img"></a>
+                            <a href="#"><img src="../src/icons/footer/InstagramLogo.svg" alt="inst"
+                                    class="artist__links_img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
         <div class="line"></div>
         <div class="artist__container">
             <div class="artist__btnsTwo">
@@ -117,221 +133,213 @@
         <div class="artist__tabs">
             <div class="artist__wrap">
                 <div class="artist__container">
-                <div class="artist__grid">
+                    <div class="artist__grid">
 
-                    <div id="keepitreal" class="discover__grid_item">
-                        <img src="../src/img/NFT_IMG/Keepitreal.jpg" alt="nft" class="discover__grid">
-                        <div class="discover__grid_descr artist__descr">
-                            
-                            <h5 class="nft__item_name discover__grid_name">Keepitreal</h5>
-                            <div class="discover__grid_autor">
-                                <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
-                                <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
-                            </div>
-                            <div class="discover__grid_price">
-                                <div class="discover__grid_ETH">
-                                    <span class="discover__grid_span">Price</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                        <div id="keepitreal" class="discover__grid_item">
+                            <img src="../src/img/NFT_IMG/Keepitreal.jpg" alt="nft" class="discover__grid">
+                            <div class="discover__grid_descr artist__descr">
+
+                                <h5 class="nft__item_name discover__grid_name">Keepitreal</h5>
+                                <div class="discover__grid_autor">
+                                    <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
+                                    <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
                                 </div>
-                                <div class="discover__grid_wETH">
-                                    <span class="discover__grid_span">Highest Bid</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                <div class="discover__grid_price">
+                                    <div class="discover__grid_ETH">
+                                        <span class="discover__grid_span">Price</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                                    </div>
+                                    <div class="discover__grid_wETH">
+                                        <span class="discover__grid_span">Highest Bid</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="Edena" class="discover__grid_item">
-                        <img src="../src/img/NFT_IMG/LifeOnEdena.jpg" alt="nft" class="discover__grid">
-                        <div class="discover__grid_descr artist__descr">
-                            
-                            <h5 class="nft__item_name discover__grid_name">Life On Edena</h5>
-                            <div class="discover__grid_autor">
-                                <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
-                                <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
-                            </div>
-                            <div class="discover__grid_price">
-                                <div class="discover__grid_ETH">
-                                    <span class="discover__grid_span">Price</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                        <div id="Edena" class="discover__grid_item">
+                            <img src="../src/img/NFT_IMG/LifeOnEdena.jpg" alt="nft" class="discover__grid">
+                            <div class="discover__grid_descr artist__descr">
+
+                                <h5 class="nft__item_name discover__grid_name">Life On Edena</h5>
+                                <div class="discover__grid_autor">
+                                    <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
+                                    <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
                                 </div>
-                                <div class="discover__grid_wETH">
-                                    <span class="discover__grid_span">Highest Bid</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                <div class="discover__grid_price">
+                                    <div class="discover__grid_ETH">
+                                        <span class="discover__grid_span">Price</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                                    </div>
+                                    <div class="discover__grid_wETH">
+                                        <span class="discover__grid_span">Highest Bid</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="AstroFiction" class="discover__grid_item">
-                        <img src="../src/img/NFT_IMG/AstroFiction.jpg" alt="nft" class="discover__grid">
-                        <div class="discover__grid_descr artist__descr">
-                            
-                            <h5 class="nft__item_name discover__grid_name">AstroFiction</h5>
-                            <div class="discover__grid_autor">
-                                <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
-                                <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
-                            </div>
-                            <div class="discover__grid_price">
-                                <div class="discover__grid_ETH">
-                                    <span class="discover__grid_span">Price</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                        <div id="AstroFiction" class="discover__grid_item">
+                            <img src="../src/img/NFT_IMG/AstroFiction.jpg" alt="nft" class="discover__grid">
+                            <div class="discover__grid_descr artist__descr">
+
+                                <h5 class="nft__item_name discover__grid_name">AstroFiction</h5>
+                                <div class="discover__grid_autor">
+                                    <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
+                                    <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
                                 </div>
-                                <div class="discover__grid_wETH">
-                                    <span class="discover__grid_span">Highest Bid</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                <div class="discover__grid_price">
+                                    <div class="discover__grid_ETH">
+                                        <span class="discover__grid_span">Price</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                                    </div>
+                                    <div class="discover__grid_wETH">
+                                        <span class="discover__grid_span">Highest Bid</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="CriptoCity" class="discover__grid_item">
-                        <img src="../src/img/NFT_IMG/CriptoCity.jpg" alt="nft" class="discover__grid">
-                        <div class="discover__grid_descr artist__descr">
-                            
-                            <h5 class="nft__item_name discover__grid_name">CriptoCity</h5>
-                            <div class="discover__grid_autor">
-                                <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
-                                <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
-                            </div>
-                            <div class="discover__grid_price">
-                                <div class="discover__grid_ETH">
-                                    <span class="discover__grid_span">Price</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                        <div id="CriptoCity" class="discover__grid_item">
+                            <img src="../src/img/NFT_IMG/CriptoCity.jpg" alt="nft" class="discover__grid">
+                            <div class="discover__grid_descr artist__descr">
+
+                                <h5 class="nft__item_name discover__grid_name">CriptoCity</h5>
+                                <div class="discover__grid_autor">
+                                    <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
+                                    <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
                                 </div>
-                                <div class="discover__grid_wETH">
-                                    <span class="discover__grid_span">Highest Bid</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                <div class="discover__grid_price">
+                                    <div class="discover__grid_ETH">
+                                        <span class="discover__grid_span">Price</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                                    </div>
+                                    <div class="discover__grid_wETH">
+                                        <span class="discover__grid_span">Highest Bid</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="ColorfulDog0524" class="discover__grid_item">
-                        <img src="../src/img/NFT_IMG/ColorfulDog1.jpg" alt="nft" class="discover__grid">
-                        <div class="discover__grid_descr artist__descr">
-                            
-                            <h5 class="nft__item_name discover__grid_name">ColorfulDog 0524</h5>
-                            <div class="discover__grid_autor">
-                                <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
-                                <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
-                            </div>
-                            <div class="discover__grid_price">
-                                <div class="discover__grid_ETH">
-                                    <span class="discover__grid_span">Price</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                        <div id="ColorfulDog0524" class="discover__grid_item">
+                            <img src="../src/img/NFT_IMG/ColorfulDog1.jpg" alt="nft" class="discover__grid">
+                            <div class="discover__grid_descr artist__descr">
+
+                                <h5 class="nft__item_name discover__grid_name">ColorfulDog 0524</h5>
+                                <div class="discover__grid_autor">
+                                    <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
+                                    <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
                                 </div>
-                                <div class="discover__grid_wETH">
-                                    <span class="discover__grid_span">Highest Bid</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                <div class="discover__grid_price">
+                                    <div class="discover__grid_ETH">
+                                        <span class="discover__grid_span">Price</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                                    </div>
+                                    <div class="discover__grid_wETH">
+                                        <span class="discover__grid_span">Highest Bid</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="SpaceTales" class="discover__grid_item">
-                        <img src="../src/img/NFT_IMG/SpaceTales.jpg" alt="nft" class="discover__grid">
-                        <div class="discover__grid_descr artist__descr">
-                            
-                            <h5 class="nft__item_name discover__grid_name">SpaceTales</h5>
-                            <div class="discover__grid_autor">
-                                <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
-                                <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
-                            </div>
-                            <div class="discover__grid_price">
-                                <div class="discover__grid_ETH">
-                                    <span class="discover__grid_span">Price</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                        <div id="SpaceTales" class="discover__grid_item">
+                            <img src="../src/img/NFT_IMG/SpaceTales.jpg" alt="nft" class="discover__grid">
+                            <div class="discover__grid_descr artist__descr">
+
+                                <h5 class="nft__item_name discover__grid_name">SpaceTales</h5>
+                                <div class="discover__grid_autor">
+                                    <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
+                                    <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
                                 </div>
-                                <div class="discover__grid_wETH">
-                                    <span class="discover__grid_span">Highest Bid</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                <div class="discover__grid_price">
+                                    <div class="discover__grid_ETH">
+                                        <span class="discover__grid_span">Price</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                                    </div>
+                                    <div class="discover__grid_wETH">
+                                        <span class="discover__grid_span">Highest Bid</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="CherryBlossomGirl" class="discover__grid_item">
-                        <img src="../src/img/NFT_IMG/CherryBlossomGirl.jpg" alt="nft" class="discover__grid">
-                        <div class="discover__grid_descr artist__descr">
-                            
-                            <h5 class="nft__item_name discover__grid_name">Cherry Blossom Girl 037</h5>
-                            <div class="discover__grid_autor">
-                                <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
-                                <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
-                            </div>
-                            <div class="discover__grid_price">
-                                <div class="discover__grid_ETH">
-                                    <span class="discover__grid_span">Price</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                        <div id="CherryBlossomGirl" class="discover__grid_item">
+                            <img src="../src/img/NFT_IMG/CherryBlossomGirl.jpg" alt="nft" class="discover__grid">
+                            <div class="discover__grid_descr artist__descr">
+
+                                <h5 class="nft__item_name discover__grid_name">Cherry Blossom Girl 037</h5>
+                                <div class="discover__grid_autor">
+                                    <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
+                                    <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
                                 </div>
-                                <div class="discover__grid_wETH">
-                                    <span class="discover__grid_span">Highest Bid</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                <div class="discover__grid_price">
+                                    <div class="discover__grid_ETH">
+                                        <span class="discover__grid_span">Price</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                                    </div>
+                                    <div class="discover__grid_wETH">
+                                        <span class="discover__grid_span">Highest Bid</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="DancingRobots0987" class="discover__grid_item">
-                        <img src="../src/img/NFT_IMG/DancingRobots0987.jpg" alt="nft" class="discover__grid">
-                        <div class="discover__grid_descr artist__descr">
-                            
-                            <h5 class="nft__item_name discover__grid_name">DancingRobots 0987</h5>
-                            <div class="discover__grid_autor">
-                                <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
-                                <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
-                            </div>
-                            <div class="discover__grid_price">
-                                <div class="discover__grid_ETH">
-                                    <span class="discover__grid_span">Price</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
-                                </div>
-                                <div class="discover__grid_wETH">
-                                    <span class="discover__grid_span">Highest Bid</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <div id="DancingRobots0987" class="discover__grid_item">
+                            <img src="../src/img/NFT_IMG/DancingRobots0987.jpg" alt="nft" class="discover__grid">
+                            <div class="discover__grid_descr artist__descr">
 
-                    <div id="IceCreamApe" class="discover__grid_item">
-                        <img src="../src/img/NFT_IMG/IceCreamApe.jpg" alt="nft" class="discover__grid">
-                        <div class="discover__grid_descr artist__descr">
-                            
-                            <h5 class="nft__item_name discover__grid_name">IceCream Ape</h5>
-                            <div class="discover__grid_autor">
-                                <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
-                                <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
-                            </div>
-                            <div class="discover__grid_price">
-                                <div class="discover__grid_ETH">
-                                    <span class="discover__grid_span">Price</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                                <h5 class="nft__item_name discover__grid_name">DancingRobots 0987</h5>
+                                <div class="discover__grid_autor">
+                                    <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
+                                    <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
                                 </div>
-                                <div class="discover__grid_wETH">
-                                    <span class="discover__grid_span">Highest Bid</span>
-                                    <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                <div class="discover__grid_price">
+                                    <div class="discover__grid_ETH">
+                                        <span class="discover__grid_span">Price</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                                    </div>
+                                    <div class="discover__grid_wETH">
+                                        <span class="discover__grid_span">Highest Bid</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div id="IceCreamApe" class="discover__grid_item">
+                            <img src="../src/img/NFT_IMG/IceCreamApe.jpg" alt="nft" class="discover__grid">
+                            <div class="discover__grid_descr artist__descr">
+
+                                <h5 class="nft__item_name discover__grid_name">IceCream Ape</h5>
+                                <div class="discover__grid_autor">
+                                    <img src="../src/icons/artists/randy.svg" alt="ava" class="nft__item_avatar">
+                                    <div class="nft__item_nickname discover__grid_nickname">Animakid</div>
+                                </div>
+                                <div class="discover__grid_price">
+                                    <div class="discover__grid_ETH">
+                                        <span class="discover__grid_span">Price</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">1.63 ETH</div>
+                                    </div>
+                                    <div class="discover__grid_wETH">
+                                        <span class="discover__grid_span">Highest Bid</span>
+                                        <div class="nft__item_nickname discover__grid_nickname">0.33 wETH</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-              
-              
-
-                    
-
                 </div>
             </div>
-            </div>
-            
+
             <div class="line lineTwo"></div>
         </div>
-        
-
     </section>
-    
-
 
 
     <footer class="footer">
@@ -340,13 +348,13 @@
                 <a href="./index.html" class="header__logo footer__logo">
                     <div class="header__imgs">
                         <img src="../src/icons/header/logo_top.svg" alt="logo" class="header__img header__img_logo-1">
-    
+
                         <img src="../src/icons/NFT Marketplace.svg" alt="" class="header__title">
                     </div>
                 </a>
                 <p class="footer__text">NFT marketplace UI created with Anima for Figma.</p>
                 <p class="footer__text footer__join">Join our community</p>
-    
+
                 <div class="footer__contacts">
                     <div class="footer__svg footer__discord">
                         <div class="artist__links_block">
@@ -382,16 +390,14 @@
                         </button>
                     </form>
                 </div>
-    
             </div>
-    
         </div>
         <p class="footer__bottom">
             Ⓒ NFT Market. Use this template freely.
         </p>
     </footer>
 
-    <script src="../js/artist.js"></script>
-    </body>
-    
-    </html>
+    <script src="../js/bundle.js"></script>
+</body>
+
+</html>
