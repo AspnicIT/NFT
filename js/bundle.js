@@ -15,14 +15,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.sort.js */ "./node_modules/core-js/modules/es.array.sort.js");
 /* harmony import */ var core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.number.to-fixed.js */ "./node_modules/core-js/modules/es.number.to-fixed.js");
-/* harmony import */ var core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
-/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.values.js */ "./node_modules/core-js/modules/es.object.values.js");
+/* harmony import */ var core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.number.to-fixed.js */ "./node_modules/core-js/modules/es.number.to-fixed.js");
+/* harmony import */ var core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -44,7 +47,7 @@ var artistsDB = {
     avatar: 'alfredo',
     name: 'Alfredo Septimus',
     change: 1.41,
-    sold: 601,
+    sold: 439,
     volume: 0,
     followers: 4000,
     bio: 'Consectetur adipisicing elit. Culpa....'
@@ -79,9 +82,9 @@ var artistsDB = {
     followers: 1000,
     bio: 'Voluptatem ea omnis optio! Blanditiis...'
   },
-  davisWork: {
+  davisWorkman: {
     number: 0,
-    avatar: 'davisWork',
+    avatar: 'davisWorkman',
     name: 'Davis Workman',
     change: 1.41,
     sold: 515,
@@ -230,7 +233,7 @@ var artistsDB = {
     bio: 'Molestias, veniam voluptatem ea omnis optio!'
   }
 };
-var artists = new Array(artistsDB.jaydon, artistsDB.alfredo, artistsDB.allison, artistsDB.angel, artistsDB.davis, artistsDB.davisWork, artistsDB.jocelyn, artistsDB.kianaST, artistsDB.kianna, artistsDB.lindsey, artistsDB.livia, artistsDB.lydia, artistsDB.maria, artistsDB.marylin, artistsDB.philip, artistsDB.randy, artistsDB.rayna, artistsDB.ruben, artistsDB.skylar, artistsDB.terry).sort(sortRait);
+var artists = Object.values(artistsDB).sort(sortRait);
 function sortRait(a, b) {
   return a.sold < b.sold ? 1 : b.sold < a.sold ? -1 : 0;
 }
@@ -239,7 +242,7 @@ function getVolume(obj, sold, volume, cours) {
   obj[volume] = k.toFixed(2);
 }
 artists.forEach(function (item) {
-  return getVolume(item, 'sold', 'volume', 0.006);
+  return getVolume(item, 'sold', 'volume', 0.033);
 });
 
 
@@ -438,6 +441,74 @@ function creatorsList(arrDB) {
 
 /***/ }),
 
+/***/ "./js/modules/footer.js":
+/*!******************************!*\
+  !*** ./js/modules/footer.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function insertFooter() {
+  var parentElement = document.querySelector('footer');
+  var headerContent = document.createElement('div');
+  headerContent.classList.add('footer');
+  headerContent.innerHTML = "\n    <div class=\"footer__container\">\n    <div class=\"footer__left\">\n        <a href=\"./index.html\" class=\"header__logo footer__logo\">\n            <div class=\"header__imgs\">\n                <img src=\"../src/icons/header/logo_top.svg\" alt=\"logo\" class=\"header__img header__img_logo-1\">\n\n                <img src=\"../src/icons/NFT Marketplace.svg\" alt=\"\" class=\"header__title\">\n            </div>\n        </a>\n        <p class=\"footer__text\">NFT marketplace UI created with Anima for Figma.</p>\n        <p class=\"footer__text footer__join\">Join our community</p>\n\n        <div class=\"footer__contacts\">\n            <div class=\"footer__svg footer__discord\">\n                <div class=\"artist__links_block\">\n                    <a href=\"#\"><img src=\"../src/icons/footer/DiscordLogo.svg\" alt=\"dscrd\"\n                            class=\"artist__links_img\"></a>\n                    <a href=\"#\"><img src=\"../src/icons/footer/YoutubeLogo.svg\" alt=\"YT\"\n                            class=\"artist__links_img\"></a>\n                    <a href=\"#\"><img src=\"../src/icons/footer/TwitterLogo.svg\" alt=\"twit\"\n                            class=\"artist__links_img\"></a>\n                    <a href=\"#\"><img src=\"../src/icons/footer/InstagramLogo.svg\" alt=\"inst\"\n                            class=\"artist__links_img\"></a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"footer__center\">\n        <h5 class=\"footer__center_title\">Explore</h5>\n        <p class=\"footer__text\">Marketplace</p>\n        <p class=\"footer__text\">Rankings</p>\n        <p class=\"footer__text\">Connect a wallet</p>\n    </div>\n    <div class=\"footer__right\">\n        <h5 class=\"footer__center_title\">Join our weekly digest</h5>\n        <p class=\"footer__text footer__right_central\">Get exclusive promotions & updates straight to your inbox.\n        </p>\n        <div class=\"footer__form\">\n            <form class=\"join__right_form footer__right_form\">\n                <input type=\"text\" class=\"join__right_input footer__right_input\"\n                    placeholder=\"Enter your email here\">\n                <button type=\"submit\" class=\"join__right_btn footer__right_btn\">\n                    <img src=\"../src/icons/Envelope.svg\" alt=\"Envelope\">\n                    <span>Subscribe</span>\n                </button>\n            </form>\n        </div>\n    </div>\n    </div>\n    <p class=\"footer__bottom\">\n        \u24B8 NFT Market. Use this template freely.\n    </p>";
+  parentElement.append(headerContent);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (insertFooter);
+
+/***/ }),
+
+/***/ "./js/modules/header.js":
+/*!******************************!*\
+  !*** ./js/modules/header.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.timers.js */ "./node_modules/core-js/modules/web.timers.js");
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0__);
+
+function insertHeader() {
+  var parentElement = document.querySelector('header');
+  var headerContent = document.createElement('div');
+  headerContent.classList.add('header');
+  headerContent.innerHTML = "\n        <a href=\"../index.html\" class=\"header__logo\">\n\n            <img src=\"../src/icons/header/logo_top.svg\" alt=\"logo\" class=\"header__img\">\n\n            <img src=\"../src/icons/NFT Marketplace.svg\" alt=\"\" class=\"header__title\">\n        </a>\n\n        <nav class=\"header__nav header__burgerNav\">\n            <ul class=\"header__ul\">\n                <li class=\"header__link\"><a href=\"./marketplace.html\">Marketplace</a></li>\n                <li class=\"header__link\"><a href=\"./topCreators.html\">Rankings</a></li>\n                <li class=\"header__link\"><a href=\"./wallet.html\">Connect a wallet</a></li>\n                <button class=\"signUP\">\n                    <img src=\"../src/icons/header/sign-1.svg\" alt=\"\" class=\"signUP__img-1\">\n                    <img src=\"../src/icons/header/sign-2.svg\" alt=\"\" class=\"signUP__img-2\">\n                    <span>Sign Up</span>\n                </button>\n            </ul>\n        </nav>\n\n        <button class=\"header__burgerMenu\">\n            <div class=\"header__burgerMenu_line\">\n                </d>\n        </button>";
+  parentElement.append(headerContent);
+  var burgerBtn = document.querySelector('.header__burgerMenu'),
+    burgerNav = document.querySelector('.header__burgerNav');
+  burgerBtn.addEventListener('click', function () {
+    if (burgerNav.classList.contains('thin')) {
+      headerOff();
+    } else {
+      headerOn();
+    }
+  });
+  function headerOff() {
+    burgerNav.classList.remove('thin');
+    setTimeout(function () {
+      burgerNav.style.display = 'none';
+    }, 700);
+  }
+  function headerOn() {
+    burgerNav.style.display = 'block';
+    setTimeout(function () {
+      burgerNav.classList.add('thin');
+    }, 0);
+  }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (insertHeader);
+
+/***/ }),
+
 /***/ "./js/modules/nftCards.js":
 /*!********************************!*\
   !*** ./js/modules/nftCards.js ***!
@@ -509,7 +580,7 @@ function createNftCard(objectNFT, selectorForParent) {
         value: function render() {
           var card = document.createElement('div');
           card.classList.add('discover__grid_item');
-          card.innerHTML = "                                    \n                <img src=\"../src/img/discover/".concat(this.img, ".jpg\" alt=\"nft\" class=\"discover__grid\">\n                <div class=\"discover__grid_descr\">\n                    <h5 class=\"nft__item_name discover__grid_name\">").concat(this.title, "</h5>\n                    <div class=\"discover__grid_autor\">\n                        <img src=\"./src/icons/artists/").concat(this.artistAvat, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                        <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.artist, "</div>\n                    </div>\n                    <div class=\"discover__grid_price\">\n                        <div class=\"discover__grid_ETH\">\n                            <span class=\"discover__grid_span\">Price</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.price, " ETH</div>\n                        </div>\n                        <div class=\"discover__grid_wETH\">\n                            <span class=\"discover__grid_span\">Highest Bid</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.hBid, " wETH</div>\n                        </div>\n                    </div>\n                    \n                </div>                    \n                ");
+          card.innerHTML = "                                    \n                <img src=\"../src/img/NFT_IMG/".concat(this.img, ".jpg\" alt=\"nft\" class=\"discover__grid\">\n                <div class=\"discover__grid_descr\">\n                    <h5 class=\"nft__item_name discover__grid_name\">").concat(this.title, "</h5>\n                    <div class=\"discover__grid_autor\">\n                        <img src=\"../src/icons/artists/").concat(this.artistAvat, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                        <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.artist, "</div>\n                    </div>\n                    <div class=\"discover__grid_price\">\n                        <div class=\"discover__grid_ETH\">\n                            <span class=\"discover__grid_span\">Price</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.price, " ETH</div>\n                        </div>\n                        <div class=\"discover__grid_wETH\">\n                            <span class=\"discover__grid_span\">Highest Bid</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.hBid, " wETH</div>\n                        </div>\n                    </div>\n                    \n                </div>                    \n                ");
           parentElement.append(card);
         }
       }]);
@@ -520,6 +591,398 @@ function createNftCard(objectNFT, selectorForParent) {
   nftCards(objectNFT);
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createNftCard);
+
+/***/ }),
+
+/***/ "./js/modules/nftDB.js":
+/*!*****************************!*\
+  !*** ./js/modules/nftDB.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "nft": () => (/* binding */ nft),
+/* harmony export */   "nftDBarr": () => (/* binding */ nftDBarr)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.object.values.js */ "./node_modules/core-js/modules/es.object.values.js");
+/* harmony import */ var core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_0__);
+
+var nft = {
+  catFromFuture: {
+    img: 'CatFromFuture',
+    title: 'Cat From Future',
+    artist: 'lindsey',
+    artistAvat: 'lindsey',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'animakid'
+  },
+  colorfulDog0344: {
+    img: 'ColorfulDog0344',
+    title: 'ColorfulDog 0344',
+    artist: 'lindsey',
+    artistAvat: 'lindsey',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'animakid'
+  },
+  colorfulDog0356: {
+    img: 'ColorfulDog0356',
+    title: 'ColorfulDog 0356',
+    artist: 'lindsey',
+    artistAvat: 'lindsey',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'animakid'
+  },
+  colorfulDog0524: {
+    img: 'ColorfulDog0524',
+    title: 'ColorfulDog 0524',
+    artist: 'lindsey',
+    artistAvat: 'lindsey',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'animakid'
+  },
+  psychoDog: {
+    img: 'PsychoDog',
+    title: 'PsychoDog',
+    artist: 'lindsey',
+    artistAvat: 'lindsey',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'animakid'
+  },
+  designerBear: {
+    img: 'DesignerBear',
+    title: 'Designer Bear',
+    artist: 'lindsey',
+    artistAvat: 'lindsey',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'animakid'
+  },
+  foxiLife: {
+    img: 'FoxiLife',
+    title: 'FoxiLife',
+    artist: 'lindsey',
+    artistAvat: 'lindsey',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'animakid'
+  },
+  distantGalaxy: {
+    img: 'DistantGalaxy',
+    title: 'Distant Galaxy',
+    artist: 'kianaST',
+    artistAvat: 'kianaST',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'moonDancer'
+  },
+  spaceMeet: {
+    img: 'SpaceMeet',
+    title: 'SpaceMeet',
+    artist: 'kianaST',
+    artistAvat: 'kianaST',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'moonDancer'
+  },
+  spaceTales: {
+    img: 'SpaceTales',
+    title: 'SpaceTales',
+    artist: 'kianaST',
+    artistAvat: 'kianaST',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'moonDancer'
+  },
+  spaceTravel: {
+    img: 'SpaceTravel',
+    title: 'SpaceTravel',
+    artist: 'kianaST',
+    artistAvat: 'kianaST',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'moonDancer'
+  },
+  spaceWalking: {
+    img: 'SpaceWalking',
+    title: 'SpaceWalking',
+    artist: 'kianaST',
+    artistAvat: 'kianaST',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'moonDancer'
+  },
+  spaceWhale: {
+    img: 'SpaceWhale',
+    title: 'SpaceWhale',
+    artist: 'kianaST',
+    artistAvat: 'kianaST',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'moonDancer'
+  },
+  sunsetDimension: {
+    img: 'SunsetDimension',
+    title: 'SunsetDimension',
+    artist: 'kianaST',
+    artistAvat: 'kianaST',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'moonDancer'
+  },
+  lifeOnEdena: {
+    img: 'LifeOnEdena',
+    title: 'LifeOnEdena',
+    artist: 'lydia',
+    artistAvat: 'lydia',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'nebulaKid'
+  },
+  lifeOnEdit: {
+    img: 'LifeOnEdit',
+    title: 'LifeOnEdit',
+    artist: 'lydia',
+    artistAvat: 'lydia',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'nebulaKid'
+  },
+  lifeOnJona: {
+    img: 'LifeOnJona',
+    title: 'LifeOnJona',
+    artist: 'lydia',
+    artistAvat: 'lydia',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'nebulaKid'
+  },
+  lifeOnMusic: {
+    img: 'LifeOnMusic',
+    title: 'LifeOnMusic',
+    artist: 'lydia',
+    artistAvat: 'lydia',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'nebulaKid'
+  },
+  happyRobot024: {
+    img: 'HappyRobot024',
+    title: 'HappyRobot 024',
+    artist: 'allison',
+    artistAvat: 'allison',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'happyRoboto'
+  },
+  happyRobot029: {
+    img: 'HappyRobot029',
+    title: 'HappyRobot 029',
+    artist: 'allison',
+    artistAvat: 'allison',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'happyRoboto'
+  },
+  happyRobot032: {
+    img: 'HappyRobot032',
+    title: 'HappyRobot 032',
+    artist: 'allison',
+    artistAvat: 'allison',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'happyRoboto'
+  },
+  happyRobot033: {
+    img: 'HappyRobot033',
+    title: 'HappyRobot 033',
+    artist: 'allison',
+    artistAvat: 'allison',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'happyRoboto'
+  },
+  happyRobot034: {
+    img: 'HappyRobot034',
+    title: 'HappyRobot 034',
+    artist: 'allison',
+    artistAvat: 'allison',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'happyRoboto'
+  },
+  happyRobot035: {
+    img: 'HappyRobot035',
+    title: 'HappyRobot 035',
+    artist: 'allison',
+    artistAvat: 'allison',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'happyRoboto'
+  },
+  dancingRobot12: {
+    img: 'DancingRobot12',
+    title: 'DancingRobot 12',
+    artist: 'davisWorkman',
+    artistAvat: 'davisWorkman',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'dancingRobots'
+  },
+  dancingRobot21: {
+    img: 'DancingRobot21',
+    title: 'DancingRobot 21',
+    artist: 'davisWorkman',
+    artistAvat: 'davisWorkman',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'dancingRobots'
+  },
+  dancingRobot23: {
+    img: 'DancingRobot23',
+    title: 'DancingRobot 23',
+    artist: 'davisWorkman',
+    artistAvat: 'davisWorkman',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'dancingRobots'
+  },
+  dancingRobot24: {
+    img: 'DancingRobot24',
+    title: 'DancingRobot 24',
+    artist: 'davisWorkman',
+    artistAvat: 'davisWorkman',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'dancingRobots'
+  },
+  dancingRobot56: {
+    img: 'DancingRobot56',
+    title: 'DancingRobot 56',
+    artist: 'davisWorkman',
+    artistAvat: 'davisWorkman',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'dancingRobots'
+  },
+  dancingRobot75: {
+    img: 'DancingRobot75',
+    title: 'DancingRobot 75',
+    artist: 'davisWorkman',
+    artistAvat: 'davisWorkman',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'dancingRobots'
+  },
+  dancingRobot76: {
+    img: 'DancingRobot76',
+    title: 'DancingRobot 76',
+    artist: 'davisWorkman',
+    artistAvat: 'davisWorkman',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'dancingRobots'
+  },
+  dancingRobot87: {
+    img: 'DancingRobot87',
+    title: 'DancingRobot 87',
+    artist: 'davisWorkman',
+    artistAvat: 'davisWorkman',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'dancingRobots'
+  },
+  cryptoCity: {
+    img: 'CryptoCity',
+    title: 'CryptoCity',
+    artist: 'angel',
+    artistAvat: 'angel',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'criptoCity'
+  },
+  cryptoCity02: {
+    img: 'CryptoCity02',
+    title: 'CryptoCity 02',
+    artist: 'angel',
+    artistAvat: 'angel',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'criptoCity'
+  },
+  cryptoCity03: {
+    img: 'CryptoCity03',
+    title: 'CryptoCity 03',
+    artist: 'angel',
+    artistAvat: 'angel',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'criptoCity'
+  },
+  astroFiction: {
+    img: 'AstroFiction',
+    title: 'AstroFiction',
+    artist: 'alfredo',
+    artistAvat: 'alfredo',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'other'
+  },
+  iceCreamApe: {
+    img: 'IceCreamApe',
+    title: 'IceCreamApe',
+    artist: 'alfredo',
+    artistAvat: 'alfredo',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'other'
+  },
+  iceCreamApe24: {
+    img: 'IceCreamApe24',
+    title: 'IceCreamApe 24',
+    artist: 'alfredo',
+    artistAvat: 'alfredo',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'other'
+  },
+  cherryTower: {
+    img: 'CryptoCity03',
+    title: 'cherryTower',
+    artist: 'alfredo',
+    artistAvat: 'alfredo',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'other'
+  },
+  cherryBlossomGirl: {
+    img: 'CherryBlossomGirl',
+    title: 'Cherry Blossom Girl',
+    artist: 'alfredo',
+    artistAvat: 'alfredo',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'other'
+  },
+  cherryBlossomGirl02: {
+    img: 'CherryBlossomGirl02',
+    title: 'Cherry Blossom Girl 02',
+    artist: 'alfredo',
+    artistAvat: 'alfredo',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'other'
+  }
+};
+var nftDBarr = Object.values(nft);
+
+
 
 /***/ }),
 
@@ -2992,6 +3455,52 @@ module.exports = Object.setPrototypeOf || ('__proto__' in {} ? function () {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/internals/object-to-array.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/core-js/internals/object-to-array.js ***!
+  \***********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ "./node_modules/core-js/internals/descriptors.js");
+var uncurryThis = __webpack_require__(/*! ../internals/function-uncurry-this */ "./node_modules/core-js/internals/function-uncurry-this.js");
+var objectKeys = __webpack_require__(/*! ../internals/object-keys */ "./node_modules/core-js/internals/object-keys.js");
+var toIndexedObject = __webpack_require__(/*! ../internals/to-indexed-object */ "./node_modules/core-js/internals/to-indexed-object.js");
+var $propertyIsEnumerable = (__webpack_require__(/*! ../internals/object-property-is-enumerable */ "./node_modules/core-js/internals/object-property-is-enumerable.js").f);
+
+var propertyIsEnumerable = uncurryThis($propertyIsEnumerable);
+var push = uncurryThis([].push);
+
+// `Object.{ entries, values }` methods implementation
+var createMethod = function (TO_ENTRIES) {
+  return function (it) {
+    var O = toIndexedObject(it);
+    var keys = objectKeys(O);
+    var length = keys.length;
+    var i = 0;
+    var result = [];
+    var key;
+    while (length > i) {
+      key = keys[i++];
+      if (!DESCRIPTORS || propertyIsEnumerable(O, key)) {
+        push(result, TO_ENTRIES ? [key, O[key]] : O[key]);
+      }
+    }
+    return result;
+  };
+};
+
+module.exports = {
+  // `Object.entries` method
+  // https://tc39.es/ecma262/#sec-object.entries
+  entries: createMethod(true),
+  // `Object.values` method
+  // https://tc39.es/ecma262/#sec-object.values
+  values: createMethod(false)
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/internals/object-to-string.js":
 /*!************************************************************!*\
   !*** ./node_modules/core-js/internals/object-to-string.js ***!
@@ -4541,6 +5050,26 @@ var toString = __webpack_require__(/*! ../internals/object-to-string */ "./node_
 if (!TO_STRING_TAG_SUPPORT) {
   defineBuiltIn(Object.prototype, 'toString', toString, { unsafe: true });
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/es.object.values.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/modules/es.object.values.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var $values = (__webpack_require__(/*! ../internals/object-to-array */ "./node_modules/core-js/internals/object-to-array.js").values);
+
+// `Object.values` method
+// https://tc39.es/ecma262/#sec-object.values
+$({ target: 'Object', stat: true }, {
+  values: function values(O) {
+    return $values(O);
+  }
+});
 
 
 /***/ }),
@@ -6438,11 +6967,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../js/modules/creatorsList */ "./js/modules/creatorsList.js");
-/* harmony import */ var _js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../js/modules/createArtistPage */ "./js/modules/createArtistPage.js");
-/* harmony import */ var _modules_nftCards__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/nftCards */ "./js/modules/nftCards.js");
-/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/timer */ "./js/modules/timer.js");
-/* harmony import */ var _js_modules_artistDB__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../js/modules/artistDB */ "./js/modules/artistDB.js");
+/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/header */ "./js/modules/header.js");
+/* harmony import */ var _modules_footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/footer */ "./js/modules/footer.js");
+/* harmony import */ var _js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/modules/creatorsList */ "./js/modules/creatorsList.js");
+/* harmony import */ var _js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../js/modules/createArtistPage */ "./js/modules/createArtistPage.js");
+/* harmony import */ var _modules_nftCards__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/nftCards */ "./js/modules/nftCards.js");
+/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/timer */ "./js/modules/timer.js");
+/* harmony import */ var _js_modules_artistDB__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../js/modules/artistDB */ "./js/modules/artistDB.js");
+/* harmony import */ var _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../js/modules/nftDB */ "./js/modules/nftDB.js");
 
 
 
@@ -6453,13 +6985,33 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+function topAutors(ids) {
+  _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_10__.nftDBarr.forEach(function (item) {
+    if (item.artist == ids) {
+      (0,_modules_nftCards__WEBPACK_IMPORTED_MODULE_7__["default"])(item, '.artist__grid');
+    }
+  });
+}
+function otherAutors() {
+  _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_10__.nftDBarr.forEach(function (item) {
+    if (item.collection == 'other') {
+      (0,_modules_nftCards__WEBPACK_IMPORTED_MODULE_7__["default"])(item, '.artist__grid');
+    }
+  });
+}
 document.addEventListener('DOMContentLoaded', function () {
   var body = document.querySelector('body');
 
   // timer();
 
   if (body.classList.contains('toplist')) {
-    (0,_js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_3__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_7__.artists);
+    (0,_modules_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_modules_footer__WEBPACK_IMPORTED_MODULE_4__["default"])();
+    (0,_js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_5__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_9__.artists);
     var goToartistPage = document.querySelectorAll('.toplist__list_item');
     goToartistPage.forEach(function (item) {
       item.addEventListener('click', function (e) {
@@ -6471,11 +7023,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   if (body.classList.contains('artistPage')) {
+    (0,_modules_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_modules_footer__WEBPACK_IMPORTED_MODULE_4__["default"])();
     var artistId;
     if (localStorage.getItem('artist')) {
       artistId = localStorage.getItem('artist');
     }
-    (0,_js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_4__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_7__.artistsDB[artistId]);
+    (0,_js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_6__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_9__.artistsDB[artistId]);
+
+    //chek for development stage. Not enough pictures. for production only 'topAutors' function.
+    if (artistId === 'lindsey' || artistId === 'kianaST' || artistId === 'allison' || artistId === 'davisWorkman' || artistId === 'angel' || artistId === 'lydia') {
+      topAutors(artistId);
+    } else {
+      otherAutors();
+    }
   }
 });
 })();

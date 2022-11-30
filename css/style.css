@@ -124,6 +124,9 @@ input:focus {
   font-weight: 600;
   line-height: 22px;
 }
+.header__burgerMenu {
+  display: none;
+}
 .header__logo {
   width: 244px;
   display: flex;
@@ -822,6 +825,7 @@ input:focus {
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 90px;
+  z-index: 1;
 }
 .artist__gradient {
   width: 100%;

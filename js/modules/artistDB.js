@@ -4,7 +4,7 @@ const artistsDB = {
         bio: 'Lorem ipsum dolor sit amet...'
     },
     alfredo: {
-        number: 0, avatar: 'alfredo', name: 'Alfredo Septimus', change: 1.41, sold: 601, volume: 0, followers: 4000,
+        number: 0, avatar: 'alfredo', name: 'Alfredo Septimus', change: 1.41, sold: 439, volume: 0, followers: 4000,
         bio: 'Consectetur adipisicing elit. Culpa....'
     },
     allison: {
@@ -19,8 +19,8 @@ const artistsDB = {
         number: 0, avatar: 'davis', name: 'Davis Franci', change: 1.41, sold: 308, volume: 0, followers: 1000,
         bio: 'Voluptatem ea omnis optio! Blanditiis...'
     },
-    davisWork: {
-        number: 0, avatar: 'davisWork', name: 'Davis Workman', change: 1.41, sold: 515, volume: 0, followers: 4000,
+    davisWorkman: {
+        number: 0, avatar: 'davisWorkman', name: 'Davis Workman', change: 1.41, sold: 515, volume: 0, followers: 4000,
         bio: 'Laudantium repudiandae quo nemo explicabo...'
     },
     jocelyn: {
@@ -81,28 +81,7 @@ const artistsDB = {
     }
 };
 
-let artists = new Array(
-    artistsDB.jaydon,
-    artistsDB.alfredo,
-    artistsDB.allison,
-    artistsDB.angel,
-    artistsDB.davis,
-    artistsDB.davisWork,
-    artistsDB.jocelyn,
-    artistsDB.kianaST,
-    artistsDB.kianna,
-    artistsDB.lindsey,
-    artistsDB.livia,
-    artistsDB.lydia,
-    artistsDB.maria,
-    artistsDB.marylin,
-    artistsDB.philip,
-    artistsDB.randy,
-    artistsDB.rayna,
-    artistsDB.ruben,
-    artistsDB.skylar,
-    artistsDB.terry
-    ).sort(sortRait);
+let artists = Object.values(artistsDB).sort(sortRait);
 
     function sortRait(a, b) {
         return a.sold < b.sold ? 1 : b.sold < a.sold ? -1 : 0;
@@ -111,7 +90,7 @@ let artists = new Array(
         let k = obj[sold] * cours;
         obj[volume] = k.toFixed(2);
     }
-    artists.forEach(item => getVolume(item, 'sold', 'volume', 0.006));
+    artists.forEach(item => getVolume(item, 'sold', 'volume', 0.033));
     
 export {artistsDB};
 export {artists};

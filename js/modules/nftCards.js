@@ -18,11 +18,11 @@ function createNftCard(objectNFT, selectorForParent) {
                 card.classList.add('discover__grid_item');
                 card.innerHTML =
                 `                                    
-                <img src="../src/img/discover/${this.img}.jpg" alt="nft" class="discover__grid">
+                <img src="../src/img/NFT_IMG/${this.img}.jpg" alt="nft" class="discover__grid">
                 <div class="discover__grid_descr">
                     <h5 class="nft__item_name discover__grid_name">${this.title}</h5>
                     <div class="discover__grid_autor">
-                        <img src="./src/icons/artists/${this.artistAvat}.jpg" alt="ava" class="nft__item_avatar">
+                        <img src="../src/icons/artists/${this.artistAvat}.jpg" alt="ava" class="nft__item_avatar">
                         <div class="nft__item_nickname discover__grid_nickname">${this.artist}</div>
                     </div>
                     <div class="discover__grid_price">

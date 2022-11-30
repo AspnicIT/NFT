@@ -1,5 +1,4 @@
-const nftDB = {
-    // img, title, artist, artistAvat, price, hBid, collection
+const nft = {
     catFromFuture: {
         img: 'CatFromFuture',
         title: 'Cat From Future',
@@ -219,8 +218,8 @@ const nftDB = {
     dancingRobot12: {
         img: 'DancingRobot12',
         title: 'DancingRobot 12',
-        artist: 'davisWork',
-        artistAvat: 'davisWork',
+        artist: 'davisWorkman',
+        artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
         collection: 'dancingRobots'
@@ -228,8 +227,8 @@ const nftDB = {
     dancingRobot21: {
         img: 'DancingRobot21',
         title: 'DancingRobot 21',
-        artist: 'davisWork',
-        artistAvat: 'davisWork',
+        artist: 'davisWorkman',
+        artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
         collection: 'dancingRobots'
@@ -237,8 +236,8 @@ const nftDB = {
     dancingRobot23: {
         img: 'DancingRobot23',
         title: 'DancingRobot 23',
-        artist: 'davisWork',
-        artistAvat: 'davisWork',
+        artist: 'davisWorkman',
+        artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
         collection: 'dancingRobots'
@@ -246,8 +245,8 @@ const nftDB = {
     dancingRobot24: {
         img: 'DancingRobot24',
         title: 'DancingRobot 24',
-        artist: 'davisWork',
-        artistAvat: 'davisWork',
+        artist: 'davisWorkman',
+        artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
         collection: 'dancingRobots'
@@ -255,8 +254,8 @@ const nftDB = {
     dancingRobot56: {
         img: 'DancingRobot56',
         title: 'DancingRobot 56',
-        artist: 'davisWork',
-        artistAvat: 'davisWork',
+        artist: 'davisWorkman',
+        artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
         collection: 'dancingRobots'
@@ -264,8 +263,8 @@ const nftDB = {
     dancingRobot75: {
         img: 'DancingRobot75',
         title: 'DancingRobot 75',
-        artist: 'davisWork',
-        artistAvat: 'davisWork',
+        artist: 'davisWorkman',
+        artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
         collection: 'dancingRobots'
@@ -273,8 +272,8 @@ const nftDB = {
     dancingRobot76: {
         img: 'DancingRobot76',
         title: 'DancingRobot 76',
-        artist: 'davisWork',
-        artistAvat: 'davisWork',
+        artist: 'davisWorkman',
+        artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
         collection: 'dancingRobots'
@@ -282,8 +281,8 @@ const nftDB = {
     dancingRobot87: {
         img: 'DancingRobot87',
         title: 'DancingRobot 87',
-        artist: 'davisWork',
-        artistAvat: 'davisWork',
+        artist: 'davisWorkman',
+        artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
         collection: 'dancingRobots'
@@ -370,3 +369,8 @@ const nftDB = {
         collection: 'other'
     }
 };
+
+const nftDBarr = Object.values(nft);
+
+export {nftDBarr};
+export {nft};
