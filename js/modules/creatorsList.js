@@ -25,7 +25,7 @@ function creatorsList() {
                         <p class="toplist__header_item">${this.number}</p>
                     </div>
                     <div class="toplist__list_artist">
-                        <img src="../src/icons/artists/${this.avatar}.svg" alt="ava" class="toplist__list_avatar">
+                        <img src="../src/icons/artists/${this.avatar}.jpg" alt="ava" class="toplist__list_avatar">
                         <h5 class="toplist__list_name">${this.name}</h5>
                     </div>
                     <p class="toplist__list_chance toplist_chance">+${this.change}%</p>

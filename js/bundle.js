@@ -10,7 +10,8 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "artists": () => (/* binding */ artists)
+/* harmony export */   "artists": () => (/* binding */ artists),
+/* harmony export */   "artistsDB": () => (/* binding */ artistsDB)
 /* harmony export */ });
 /* harmony import */ var core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.sort.js */ "./node_modules/core-js/modules/es.array.sort.js");
 /* harmony import */ var core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -27,207 +28,209 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var jaydon = {
-  number: 0,
-  avatar: 'jaydon',
-  name: 'Jaydon Ekstrom',
-  change: 1.41,
-  sold: 361,
-  volume: 0,
-  followers: 2000,
-  bio: 'Lorem ipsum dolor sit amet...'
+var artistsDB = {
+  jaydon: {
+    number: 0,
+    avatar: 'jaydon',
+    name: 'Jaydon Ekstrom',
+    change: 1.41,
+    sold: 361,
+    volume: 0,
+    followers: 2000,
+    bio: 'Lorem ipsum dolor sit amet...'
+  },
+  alfredo: {
+    number: 0,
+    avatar: 'alfredo',
+    name: 'Alfredo Septimus',
+    change: 1.41,
+    sold: 601,
+    volume: 0,
+    followers: 4000,
+    bio: 'Consectetur adipisicing elit. Culpa....'
+  },
+  allison: {
+    number: 0,
+    avatar: 'allison',
+    name: 'Allison Torff',
+    change: 1.41,
+    sold: 527,
+    volume: 0,
+    followers: 5000,
+    bio: 'Suscipit dolores qui nisi. Sint odio...'
+  },
+  angel: {
+    number: 0,
+    avatar: 'angel',
+    name: 'Angel Lubin',
+    change: 1.41,
+    sold: 503,
+    volume: 0,
+    followers: 6000,
+    bio: 'Veritatis ullam debitis molestias, veniam...'
+  },
+  davis: {
+    number: 0,
+    avatar: 'davis',
+    name: 'Davis Franci',
+    change: 1.41,
+    sold: 308,
+    volume: 0,
+    followers: 1000,
+    bio: 'Voluptatem ea omnis optio! Blanditiis...'
+  },
+  davisWork: {
+    number: 0,
+    avatar: 'davisWork',
+    name: 'Davis Workman',
+    change: 1.41,
+    sold: 420,
+    volume: 0,
+    followers: 4000,
+    bio: 'Laudantium repudiandae quo nemo explicabo...'
+  },
+  jocelyn: {
+    number: 0,
+    avatar: 'jocelyn',
+    name: 'Jocelyn Westervelt',
+    change: 1.41,
+    sold: 372,
+    volume: 0,
+    followers: 8000,
+    bio: 'Lorem ipsum dolor sit amet consectetur...'
+  },
+  kianaST: {
+    number: 0,
+    avatar: 'kianaST',
+    name: 'Kianna Stanton',
+    change: 1.41,
+    sold: 689,
+    volume: 0,
+    followers: 6000,
+    bio: 'Adipisicing elit. Culpa suscipit dolores...'
+  },
+  kianna: {
+    number: 0,
+    avatar: 'kianna',
+    name: 'Kianna Donin',
+    change: 1.41,
+    sold: 331,
+    volume: 0,
+    followers: 9000,
+    bio: 'Qui nisi. Sint odio veritatis ullam debitis...'
+  },
+  lindsey: {
+    number: 0,
+    avatar: 'lindsey',
+    name: 'Lindsey Lipshutz',
+    change: 1.41,
+    sold: 309,
+    volume: 0,
+    followers: 3000,
+    bio: 'Molestias, veniam voluptatem ea omnis optio!'
+  },
+  livia: {
+    number: 0,
+    avatar: 'livia',
+    name: 'Livia Rosser',
+    change: 1.41,
+    sold: 411,
+    volume: 0,
+    followers: 3000,
+    bio: 'Blanditiis laudantium repudiandae quo nemo explicabo.'
+  },
+  lydia: {
+    number: 0,
+    avatar: 'lydia',
+    name: 'Lydia Culhane',
+    change: 1.41,
+    sold: 702,
+    volume: 0,
+    followers: 6000,
+    bio: 'The internet`s friendliest designer kid.'
+  },
+  maria: {
+    number: 0,
+    avatar: 'maria',
+    name: 'Maria Rosser',
+    change: 1.41,
+    sold: 99,
+    volume: 0,
+    followers: 9000,
+    bio: 'Lorem ipsum dolor sit...'
+  },
+  marylin: {
+    number: 0,
+    avatar: 'marylin',
+    name: 'Marilyn Torff',
+    change: 1.41,
+    sold: 248,
+    volume: 0,
+    followers: 3000,
+    bio: 'Amet consectetur adipisicing elit....'
+  },
+  philip: {
+    number: 0,
+    avatar: 'philip',
+    name: 'Phillip Lipshutz',
+    change: 1.41,
+    sold: 110,
+    volume: 0,
+    followers: 4500,
+    bio: 'Culpa suscipit dolores qui nisi...'
+  },
+  randy: {
+    number: 0,
+    avatar: 'randy',
+    name: 'randy',
+    change: 1.41,
+    sold: 439,
+    volume: 0,
+    followers: 7300,
+    bio: 'Sint odio veritatis ullam debitis molestias...'
+  },
+  rayna: {
+    number: 0,
+    avatar: 'rayna',
+    name: 'Rayna Bator',
+    change: 1.41,
+    sold: 129,
+    volume: 0,
+    followers: 3400,
+    bio: 'Veniam voluptatem ea omnis optio!...'
+  },
+  ruben: {
+    number: 0,
+    avatar: 'ruben',
+    name: 'Ruben Carder',
+    change: 1.41,
+    sold: 371,
+    volume: 0,
+    followers: 4900,
+    bio: 'Blanditiis laudantium repudiandae quo nemo explicabo.'
+  },
+  skylar: {
+    number: 0,
+    avatar: 'skylar',
+    name: 'Skylar Levin',
+    change: 1.41,
+    sold: 200,
+    volume: 0,
+    followers: 7200,
+    bio: 'The internet`s friendliest designer kid.'
+  },
+  terry: {
+    number: 0,
+    avatar: 'terry',
+    name: 'Terry Dorwart',
+    change: 1.41,
+    sold: 502,
+    volume: 0,
+    followers: 8000,
+    bio: 'Molestias, veniam voluptatem ea omnis optio!'
+  }
 };
-var alfredo = {
-  number: 0,
-  avatar: 'alfredo',
-  name: 'Alfredo Septimus',
-  change: 1.41,
-  sold: 601,
-  volume: 0,
-  followers: 4000,
-  bio: 'Consectetur adipisicing elit. Culpa....'
-};
-var allison = {
-  number: 0,
-  avatar: 'allison',
-  name: 'Allison Torff',
-  change: 1.41,
-  sold: 527,
-  volume: 0,
-  followers: 5000,
-  bio: 'Suscipit dolores qui nisi. Sint odio...'
-};
-var angel = {
-  number: 0,
-  avatar: 'angel',
-  name: 'Angel Lubin',
-  change: 1.41,
-  sold: 503,
-  volume: 0,
-  followers: 6000,
-  bio: 'Veritatis ullam debitis molestias, veniam...'
-};
-var davis = {
-  number: 0,
-  avatar: 'davis',
-  name: 'Davis Franci',
-  change: 1.41,
-  sold: 308,
-  volume: 0,
-  followers: 1000,
-  bio: 'Voluptatem ea omnis optio! Blanditiis...'
-};
-var davisWork = {
-  number: 0,
-  avatar: 'davisWork',
-  name: 'Davis Workman',
-  change: 1.41,
-  sold: 420,
-  volume: 0,
-  followers: 4000,
-  bio: 'Laudantium repudiandae quo nemo explicabo...'
-};
-var jocelyn = {
-  number: 0,
-  avatar: 'jocelyn',
-  name: 'Jocelyn Westervelt',
-  change: 1.41,
-  sold: 372,
-  volume: 0,
-  followers: 8000,
-  bio: 'Lorem ipsum dolor sit amet consectetur...'
-};
-var kianaST = {
-  number: 0,
-  avatar: 'kianaST',
-  name: 'Kianna Stanton',
-  change: 1.41,
-  sold: 689,
-  volume: 0,
-  followers: 6000,
-  bio: 'Adipisicing elit. Culpa suscipit dolores...'
-};
-var kianna = {
-  number: 0,
-  avatar: 'kianna',
-  name: 'Kianna Donin',
-  change: 1.41,
-  sold: 331,
-  volume: 0,
-  followers: 9000,
-  bio: 'Qui nisi. Sint odio veritatis ullam debitis...'
-};
-var lindsey = {
-  number: 0,
-  avatar: 'lindsey',
-  name: 'Lindsey Lipshutz',
-  change: 1.41,
-  sold: 309,
-  volume: 0,
-  followers: 3000,
-  bio: 'Molestias, veniam voluptatem ea omnis optio!'
-};
-var livia = {
-  number: 0,
-  avatar: 'livia',
-  name: 'Livia Rosser',
-  change: 1.41,
-  sold: 411,
-  volume: 0,
-  followers: 3000,
-  bio: 'Blanditiis laudantium repudiandae quo nemo explicabo.'
-};
-var lydia = {
-  number: 0,
-  avatar: 'lydia',
-  name: 'Lydia Culhane',
-  change: 1.41,
-  sold: 702,
-  volume: 0,
-  followers: 6000,
-  bio: 'The internet`s friendliest designer kid.'
-};
-var maria = {
-  number: 0,
-  avatar: 'maria',
-  name: 'Maria Rosser',
-  change: 1.41,
-  sold: 99,
-  volume: 0,
-  followers: 9000,
-  bio: 'Lorem ipsum dolor sit...'
-};
-var marylin = {
-  number: 0,
-  avatar: 'marylin',
-  name: 'Marilyn Torff',
-  change: 1.41,
-  sold: 248,
-  volume: 0,
-  followers: 3000,
-  bio: 'Amet consectetur adipisicing elit....'
-};
-var philip = {
-  number: 0,
-  avatar: 'philip',
-  name: 'Phillip Lipshutz',
-  change: 1.41,
-  sold: 110,
-  volume: 0,
-  followers: 4500,
-  bio: 'Culpa suscipit dolores qui nisi...'
-};
-var randy = {
-  number: 0,
-  avatar: 'randy',
-  name: 'randy',
-  change: 1.41,
-  sold: 439,
-  volume: 0,
-  followers: 7300,
-  bio: 'Sint odio veritatis ullam debitis molestias...'
-};
-var rayna = {
-  number: 0,
-  avatar: 'rayna',
-  name: 'Rayna Bator',
-  change: 1.41,
-  sold: 129,
-  volume: 0,
-  followers: 3400,
-  bio: 'Veniam voluptatem ea omnis optio!...'
-};
-var ruben = {
-  number: 0,
-  avatar: 'ruben',
-  name: 'Ruben Carder',
-  change: 1.41,
-  sold: 371,
-  volume: 0,
-  followers: 4900,
-  bio: 'Blanditiis laudantium repudiandae quo nemo explicabo.'
-};
-var skylar = {
-  number: 0,
-  avatar: 'skylar',
-  name: 'Skylar Levin',
-  change: 1.41,
-  sold: 200,
-  volume: 0,
-  followers: 7200,
-  bio: 'The internet`s friendliest designer kid.'
-};
-var terry = {
-  number: 0,
-  avatar: 'terry',
-  name: 'Terry Dorwart',
-  change: 1.41,
-  sold: 502,
-  volume: 0,
-  followers: 8000,
-  bio: 'Molestias, veniam voluptatem ea omnis optio!'
-};
-var artists = new Array(jaydon, alfredo, allison, angel, davis, davisWork, jocelyn, kianaST, kianna, lindsey, livia, lydia, maria, marylin, philip, randy, rayna, ruben, skylar, terry).sort(sortRait);
+var artists = new Array(artistsDB.jaydon, artistsDB.alfredo, artistsDB.allison, artistsDB.angel, artistsDB.davis, artistsDB.davisWork, artistsDB.jocelyn, artistsDB.kianaST, artistsDB.kianna, artistsDB.lindsey, artistsDB.livia, artistsDB.lydia, artistsDB.maria, artistsDB.marylin, artistsDB.philip, artistsDB.randy, artistsDB.rayna, artistsDB.ruben, artistsDB.skylar, artistsDB.terry).sort(sortRait);
 function sortRait(a, b) {
   return a.sold < b.sold ? 1 : b.sold < a.sold ? -1 : 0;
 }
@@ -238,6 +241,7 @@ function getVolume(obj, sold, volume, cours) {
 artists.forEach(function (item) {
   return getVolume(item, 'sold', 'volume', 0.006);
 });
+
 
 
 /***/ }),
@@ -316,7 +320,7 @@ function createArtistPage(objectFromTopList) {
         value: function render() {
           var welcome = document.createElement('div');
           welcome.classList.add('artist__welcome');
-          welcome.innerHTML = "\n            <div class=\"artist__topwall\">\n                <div class=\"artist__gradient\"></div>\n                <div class=\"artist__avatar\">\n                    <div class=\"artist__avawrap\">\n                        <img src=\"../src/icons/artists/".concat(this.avatar, ".svg\" alt=\"").concat(this.avatar, "\">\n                    </div>\n                </div>\n            </div>\n            <style>\n                .artist__topwall{\n                    background-image: url(../src/img/artistPages/topwall/").concat(this.avatar, ".jpg);\n                } \n            </style>\n\n            <div id=\"welcomeArtist\" class=\"artist__container\">\n                <div class=\"artist__header\">\n                    <h2 class=\"artist__title\">").concat(this.name, "</h2>\n                    <div class=\"artist__btns\">\n                        <button class=\"artist__copykey\">\n                            <img src=\"../src/icons/Copy.svg\" alt=\"copy\" class=\"artist__copykey_img\">\n                            0xc0E3...B79C\n                        </button>\n                        <button class=\"artist__follow\">\n                            <img src=\"../src/icons/Plus.svg\" alt=\"plus\" class=\"artist__follow_img\">\n                            Follow\n                        </button>\n                    </div>\n                </div>\n                <div class=\"artist__info\">\n                    <div class=\"artist__info_counter\">\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.volume, " <span>ETH</span></h4>\n                            <h5 class=\"artist__info_subtitle\">Volume</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.sold, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">NFTs Sold</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.followers, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">Followers</h5>\n                        </div>\n                    </div>\n\n                    <div class=\"artist__bio\">\n                        <h5 class=\"artist__bio_title\">Bio</h5>\n                        <div class=\"artist__info_subtitle\">").concat(this.bio, "</div>\n                    </div>\n\n                    <div class=\"artist__links\">\n                        <h5 class=\"artist__bio_title\">Links</h5>\n                        <div class=\"artist__links_block\">\n                            <a href=\"#\"><img src=\"../src/icons/footer/Globe.svg\" alt=\"globe\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/DiscordLogo.svg\" alt=\"dscrd\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/YoutubeLogo.svg\" alt=\"YT\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/TwitterLogo.svg\" alt=\"twit\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/InstagramLogo.svg\" alt=\"inst\"\n                                    class=\"artist__links_img\"></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ");
+          welcome.innerHTML = "\n            <div class=\"artist__topwall\">\n                <div class=\"artist__gradient\"></div>\n                <div class=\"artist__avatar\">\n                    <div class=\"artist__avawrap\">\n                        <img src=\"../src/icons/artists/".concat(this.avatar, ".jpg\" alt=\"").concat(this.avatar, "\">\n                    </div>\n                </div>\n            </div>\n            <style>\n                .artist__topwall{\n                    background-image: url(../src/img/artistPages/topwall/").concat(this.avatar, ".jpg);\n                } \n            </style>\n\n            <div id=\"welcomeArtist\" class=\"artist__container\">\n                <div class=\"artist__header\">\n                    <h2 class=\"artist__title\">").concat(this.name, "</h2>\n                    <div class=\"artist__btns\">\n                        <button class=\"artist__copykey\">\n                            <img src=\"../src/icons/Copy.svg\" alt=\"copy\" class=\"artist__copykey_img\">\n                            0xc0E3...B79C\n                        </button>\n                        <button class=\"artist__follow\">\n                            <img src=\"../src/icons/Plus.svg\" alt=\"plus\" class=\"artist__follow_img\">\n                            Follow\n                        </button>\n                    </div>\n                </div>\n                <div class=\"artist__info\">\n                    <div class=\"artist__info_counter\">\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.volume, " <span>ETH</span></h4>\n                            <h5 class=\"artist__info_subtitle\">Volume</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.sold, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">NFTs Sold</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.followers, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">Followers</h5>\n                        </div>\n                    </div>\n\n                    <div class=\"artist__bio\">\n                        <h5 class=\"artist__bio_title\">Bio</h5>\n                        <div class=\"artist__info_subtitle\">").concat(this.bio, "</div>\n                    </div>\n\n                    <div class=\"artist__links\">\n                        <h5 class=\"artist__bio_title\">Links</h5>\n                        <div class=\"artist__links_block\">\n                            <a href=\"#\"><img src=\"../src/icons/footer/Globe.svg\" alt=\"globe\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/DiscordLogo.svg\" alt=\"dscrd\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/YoutubeLogo.svg\" alt=\"YT\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/TwitterLogo.svg\" alt=\"twit\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/InstagramLogo.svg\" alt=\"inst\"\n                                    class=\"artist__links_img\"></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ");
           topParent.append(welcome);
         }
       }]);
@@ -413,7 +417,7 @@ function creatorsList() {
           var item = document.createElement('div');
           item.href = './artist.html';
           item.classList.add('toplist__list_item');
-          item.innerHTML = "\n                    <a id=\"".concat(this.avatar, "\" href=\"./artist.html\" class=\"toplist__list_miror\"></a>\n                    <div class=\"toplist__list_number\">\n                        <p class=\"toplist__header_item\">").concat(this.number, "</p>\n                    </div>\n                    <div class=\"toplist__list_artist\">\n                        <img src=\"../src/icons/artists/").concat(this.avatar, ".svg\" alt=\"ava\" class=\"toplist__list_avatar\">\n                        <h5 class=\"toplist__list_name\">").concat(this.name, "</h5>\n                    </div>\n                    <p class=\"toplist__list_chance toplist_chance\">+").concat(this.change, "%</p>\n                    <p class=\"toplist__list_sold toplist_nft\">").concat(this.sold, "</p>\n                    <p class=\"toplist__list_volume\">").concat(this.volume, " ETH</p>\n            ");
+          item.innerHTML = "\n                    <a id=\"".concat(this.avatar, "\" href=\"./artist.html\" class=\"toplist__list_miror\"></a>\n                    <div class=\"toplist__list_number\">\n                        <p class=\"toplist__header_item\">").concat(this.number, "</p>\n                    </div>\n                    <div class=\"toplist__list_artist\">\n                        <img src=\"../src/icons/artists/").concat(this.avatar, ".jpg\" alt=\"ava\" class=\"toplist__list_avatar\">\n                        <h5 class=\"toplist__list_name\">").concat(this.name, "</h5>\n                    </div>\n                    <p class=\"toplist__list_chance toplist_chance\">+").concat(this.change, "%</p>\n                    <p class=\"toplist__list_sold toplist_nft\">").concat(this.sold, "</p>\n                    <p class=\"toplist__list_volume\">").concat(this.volume, " ETH</p>\n            ");
           parentElem.append(item);
         }
       }]);
@@ -2940,6 +2944,47 @@ module.exports = function (it) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/internals/schedulers-fix.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/internals/schedulers-fix.js ***!
+  \**********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var global = __webpack_require__(/*! ../internals/global */ "./node_modules/core-js/internals/global.js");
+var apply = __webpack_require__(/*! ../internals/function-apply */ "./node_modules/core-js/internals/function-apply.js");
+var isCallable = __webpack_require__(/*! ../internals/is-callable */ "./node_modules/core-js/internals/is-callable.js");
+var userAgent = __webpack_require__(/*! ../internals/engine-user-agent */ "./node_modules/core-js/internals/engine-user-agent.js");
+var arraySlice = __webpack_require__(/*! ../internals/array-slice */ "./node_modules/core-js/internals/array-slice.js");
+var validateArgumentsLength = __webpack_require__(/*! ../internals/validate-arguments-length */ "./node_modules/core-js/internals/validate-arguments-length.js");
+
+var MSIE = /MSIE .\./.test(userAgent); // <- dirty ie9- check
+var Function = global.Function;
+
+var wrap = function (scheduler) {
+  return MSIE ? function (handler, timeout /* , ...arguments */) {
+    var boundArgs = validateArgumentsLength(arguments.length, 1) > 2;
+    var fn = isCallable(handler) ? handler : Function(handler);
+    var args = boundArgs ? arraySlice(arguments, 2) : undefined;
+    return scheduler(boundArgs ? function () {
+      apply(fn, this, args);
+    } : fn, timeout);
+  } : scheduler;
+};
+
+// ie9- setTimeout & setInterval additional parameters fix
+// https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers
+module.exports = {
+  // `setTimeout` method
+  // https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout
+  setTimeout: wrap(global.setTimeout),
+  // `setInterval` method
+  // https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval
+  setInterval: wrap(global.setInterval)
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/internals/set-to-string-tag.js":
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/internals/set-to-string-tag.js ***!
@@ -3474,6 +3519,22 @@ module.exports = DESCRIPTORS && fails(function () {
     writable: false
   }).prototype != 42;
 });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/internals/validate-arguments-length.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/core-js/internals/validate-arguments-length.js ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+var $TypeError = TypeError;
+
+module.exports = function (passed, required) {
+  if (passed < required) throw $TypeError('Not enough arguments');
+  return passed;
+};
 
 
 /***/ }),
@@ -4870,6 +4931,57 @@ handlePrototype(DOMTokenListPrototype, 'DOMTokenList');
 
 /***/ }),
 
+/***/ "./node_modules/core-js/modules/web.set-interval.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/modules/web.set-interval.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var global = __webpack_require__(/*! ../internals/global */ "./node_modules/core-js/internals/global.js");
+var setInterval = (__webpack_require__(/*! ../internals/schedulers-fix */ "./node_modules/core-js/internals/schedulers-fix.js").setInterval);
+
+// ie9- setInterval additional parameters fix
+// https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval
+$({ global: true, bind: true, forced: global.setInterval !== setInterval }, {
+  setInterval: setInterval
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/web.set-timeout.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/modules/web.set-timeout.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var global = __webpack_require__(/*! ../internals/global */ "./node_modules/core-js/internals/global.js");
+var setTimeout = (__webpack_require__(/*! ../internals/schedulers-fix */ "./node_modules/core-js/internals/schedulers-fix.js").setTimeout);
+
+// ie9- setTimeout additional parameters fix
+// https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout
+$({ global: true, bind: true, forced: global.setTimeout !== setTimeout }, {
+  setTimeout: setTimeout
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/web.timers.js":
+/*!****************************************************!*\
+  !*** ./node_modules/core-js/modules/web.timers.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+// TODO: Remove this module from `core-js@4` since it's split to modules listed below
+__webpack_require__(/*! ../modules/web.set-interval */ "./node_modules/core-js/modules/web.set-interval.js");
+__webpack_require__(/*! ../modules/web.set-timeout */ "./node_modules/core-js/modules/web.set-timeout.js");
+
+
+/***/ }),
+
 /***/ "./node_modules/es6-promise/dist/es6-promise.js":
 /*!******************************************************!*\
   !*** ./node_modules/es6-promise/dist/es6-promise.js ***!
@@ -6147,9 +6259,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../js/modules/creatorsList */ "./js/modules/creatorsList.js");
-/* harmony import */ var _js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../js/modules/createArtistPage */ "./js/modules/createArtistPage.js");
-/* harmony import */ var _js_modules_artistDB__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/modules/artistDB */ "./js/modules/artistDB.js");
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/web.timers.js */ "./node_modules/core-js/modules/web.timers.js");
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../js/modules/creatorsList */ "./js/modules/creatorsList.js");
+/* harmony import */ var _js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/modules/createArtistPage */ "./js/modules/createArtistPage.js");
+/* harmony import */ var _js_modules_artistDB__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../js/modules/artistDB */ "./js/modules/artistDB.js");
+
 
 
 
@@ -6157,20 +6272,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 document.addEventListener('DOMContentLoaded', function () {
   var body = document.querySelector('body');
   if (body.classList.contains('toplist')) {
-    (0,_js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_4__["default"])();
     var goToartistPage = document.querySelectorAll('.toplist__list_item');
     goToartistPage.forEach(function (item) {
       item.addEventListener('click', function (e) {
         e.preventDefault();
-        console.log(e.target);
-        // window.location = 'artist.html';
+        goToArtist(e.target.id);
       });
     });
-  } else if (body.classList.contains('artistPage')) {
-    (0,_js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_4__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_5__.artists[7]);
+  }
+  function goToArtist(obj) {
+    window.location = 'artist.html';
+    setTimeout(function () {
+      (0,_js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_5__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_6__.artists[obj]);
+    }, 5000);
   }
 });
 })();

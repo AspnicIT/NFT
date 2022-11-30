@@ -20,7 +20,7 @@ function createArtistPage(objectFromTopList) {
                 <div class="artist__gradient"></div>
                 <div class="artist__avatar">
                     <div class="artist__avawrap">
-                        <img src="../src/icons/artists/${this.avatar}.svg" alt="${this.avatar}">
+                        <img src="../src/icons/artists/${this.avatar}.jpg" alt="${this.avatar}">
                     </div>
                 </div>
             </div>
