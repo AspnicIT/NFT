@@ -84,7 +84,7 @@ var artistsDB = {
     avatar: 'davisWork',
     name: 'Davis Workman',
     change: 1.41,
-    sold: 420,
+    sold: 515,
     volume: 0,
     followers: 4000,
     bio: 'Laudantium repudiandae quo nemo explicabo...'
@@ -124,7 +124,7 @@ var artistsDB = {
     avatar: 'lindsey',
     name: 'Lindsey Lipshutz',
     change: 1.41,
-    sold: 309,
+    sold: 703,
     volume: 0,
     followers: 3000,
     bio: 'Molestias, veniam voluptatem ea omnis optio!'
@@ -144,7 +144,7 @@ var artistsDB = {
     avatar: 'lydia',
     name: 'Lydia Culhane',
     change: 1.41,
-    sold: 702,
+    sold: 480,
     volume: 0,
     followers: 6000,
     bio: 'The internet`s friendliest designer kid.'
@@ -184,7 +184,7 @@ var artistsDB = {
     avatar: 'randy',
     name: 'randy',
     change: 1.41,
-    sold: 439,
+    sold: 156,
     volume: 0,
     followers: 7300,
     bio: 'Sint odio veritatis ullam debitis molestias...'
@@ -224,7 +224,7 @@ var artistsDB = {
     avatar: 'terry',
     name: 'Terry Dorwart',
     change: 1.41,
-    sold: 502,
+    sold: 102,
     volume: 0,
     followers: 8000,
     bio: 'Molestias, veniam voluptatem ea omnis optio!'
@@ -375,7 +375,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _artistDB__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./artistDB */ "./js/modules/artistDB.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 
@@ -397,8 +396,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-
-function creatorsList() {
+function creatorsList(arrDB) {
   var parentElem = document.querySelector('.toplist__list');
   function topList(obj) {
     var ListItem = /*#__PURE__*/function () {
@@ -428,15 +426,167 @@ function creatorsList() {
   function numeration(obj, number, i) {
     obj[number] = i + 1;
   }
-  function appendToPage() {
-    _artistDB__WEBPACK_IMPORTED_MODULE_15__.artists.forEach(function (item, i) {
+  function appendToPage(arr) {
+    arr.forEach(function (item, i) {
       numeration(item, 'number', i);
       topList(item);
     });
   }
-  appendToPage();
+  appendToPage(arrDB);
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (creatorsList);
+
+/***/ }),
+
+/***/ "./js/modules/nftCards.js":
+/*!********************************!*\
+  !*** ./js/modules/nftCards.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+
+
+
+
+
+
+
+
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function createNftCard(objectNFT, selectorForParent) {
+  var parentElement = document.querySelector(selectorForParent);
+  function nftCards(obj) {
+    var Nft = /*#__PURE__*/function () {
+      function Nft(img, title, artist, artistAvat, price, hBid) {
+        _classCallCheck(this, Nft);
+        this.img = img;
+        this.title = title;
+        this.artist = artist;
+        this.artistAvat = artistAvat;
+        this.price = price;
+        this.hBid = hBid;
+      }
+      _createClass(Nft, [{
+        key: "render",
+        value: function render() {
+          var card = document.createElement('div');
+          card.classList.add('discover__grid_item');
+          card.innerHTML = "                                    \n                <img src=\"../src/img/discover/".concat(this.img, ".jpg\" alt=\"nft\" class=\"discover__grid\">\n                <div class=\"discover__grid_descr\">\n                    <h5 class=\"nft__item_name discover__grid_name\">").concat(this.title, "</h5>\n                    <div class=\"discover__grid_autor\">\n                        <img src=\"./src/icons/artists/").concat(this.artistAvat, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                        <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.artist, "</div>\n                    </div>\n                    <div class=\"discover__grid_price\">\n                        <div class=\"discover__grid_ETH\">\n                            <span class=\"discover__grid_span\">Price</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.price, " ETH</div>\n                        </div>\n                        <div class=\"discover__grid_wETH\">\n                            <span class=\"discover__grid_span\">Highest Bid</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.hBid, " wETH</div>\n                        </div>\n                    </div>\n                    \n                </div>                    \n                ");
+          parentElement.append(card);
+        }
+      }]);
+      return Nft;
+    }();
+    new Nft(obj.img, obj.title, obj.artist, obj.artistAvat, obj.price, obj.hBid).render();
+  }
+  nftCards(objectNFT);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createNftCard);
+
+/***/ }),
+
+/***/ "./js/modules/timer.js":
+/*!*****************************!*\
+  !*** ./js/modules/timer.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_date_to_string_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.date.to-string.js */ "./node_modules/core-js/modules/es.date.to-string.js");
+/* harmony import */ var core_js_modules_es_date_to_string_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_string_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.timers.js */ "./node_modules/core-js/modules/web.timers.js");
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function timer() {
+  var deadLine = '2023-06-22';
+  function getTimeRemaining(endtime) {
+    var days, hours, minutes, seconds;
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    if (t <= 0) {
+      days = 0;
+      hours = 0;
+      minutes = 0;
+      seconds = 0;
+    } else {
+      days = Math.floor(t / (1000 * 60 * 60 * 24)), hours = Math.floor(t / (1000 * 60 * 60 * 24) * 24), minutes = Math.floor(t / 1000 / 60 % 60), seconds = Math.floor(t / 1000 % 60);
+    }
+    return {
+      'total': t,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+  function getZero(num) {
+    if (num >= 0 && num < 10) {
+      return "0".concat(num);
+    } else {
+      return num;
+    }
+  }
+  function setClock(selector, endtime) {
+    var timer = document.querySelector(selector),
+      hours = timer.querySelector('#hours'),
+      minutes = timer.querySelector('#minutes'),
+      seconds = timer.querySelector('#seconds'),
+      timeInterval = setInterval(updateClock, 1000);
+    updateClock();
+    function updateClock() {
+      var t = getTimeRemaining(endtime);
+      hours.innerHTML = getZero(t.hours);
+      minutes.innerHTML = getZero(t.minutes);
+      seconds.innerHTML = getZero(t.seconds);
+      if (t.total <= 0) {
+        clearInterval(timeInterval);
+      }
+    }
+  }
+  setClock('.timer__blocks', deadLine);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (timer);
 
 /***/ }),
 
@@ -3941,6 +4091,35 @@ if (!hasOwn(DatePrototype, TO_PRIMITIVE)) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/modules/es.date.to-string.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/core-js/modules/es.date.to-string.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+// TODO: Remove from `core-js@4`
+var uncurryThis = __webpack_require__(/*! ../internals/function-uncurry-this */ "./node_modules/core-js/internals/function-uncurry-this.js");
+var defineBuiltIn = __webpack_require__(/*! ../internals/define-built-in */ "./node_modules/core-js/internals/define-built-in.js");
+
+var DatePrototype = Date.prototype;
+var INVALID_DATE = 'Invalid Date';
+var TO_STRING = 'toString';
+var nativeDateToString = uncurryThis(DatePrototype[TO_STRING]);
+var thisTimeValue = uncurryThis(DatePrototype.getTime);
+
+// `Date.prototype.toString` method
+// https://tc39.es/ecma262/#sec-date.prototype.tostring
+if (String(new Date(NaN)) != INVALID_DATE) {
+  defineBuiltIn(DatePrototype, TO_STRING, function toString() {
+    var value = thisTimeValue(this);
+    // eslint-disable-next-line no-self-compare -- NaN check
+    return value === value ? nativeDateToString(this) : INVALID_DATE;
+  });
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/modules/es.function.name.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/modules/es.function.name.js ***!
@@ -6259,12 +6438,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/web.timers.js */ "./node_modules/core-js/modules/web.timers.js");
-/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../js/modules/creatorsList */ "./js/modules/creatorsList.js");
-/* harmony import */ var _js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/modules/createArtistPage */ "./js/modules/createArtistPage.js");
-/* harmony import */ var _js_modules_artistDB__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../js/modules/artistDB */ "./js/modules/artistDB.js");
-
+/* harmony import */ var _js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../js/modules/creatorsList */ "./js/modules/creatorsList.js");
+/* harmony import */ var _js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../js/modules/createArtistPage */ "./js/modules/createArtistPage.js");
+/* harmony import */ var _modules_nftCards__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/nftCards */ "./js/modules/nftCards.js");
+/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/timer */ "./js/modules/timer.js");
+/* harmony import */ var _js_modules_artistDB__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../js/modules/artistDB */ "./js/modules/artistDB.js");
 
 
 
@@ -6273,23 +6451,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
   var body = document.querySelector('body');
+
+  // timer();
+
   if (body.classList.contains('toplist')) {
-    (0,_js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_4__["default"])();
+    (0,_js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_3__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_7__.artists);
     var goToartistPage = document.querySelectorAll('.toplist__list_item');
     goToartistPage.forEach(function (item) {
       item.addEventListener('click', function (e) {
         e.preventDefault();
-        goToArtist(e.target.id);
+        var artistId = e.target.id;
+        localStorage.setItem("artist", artistId);
+        window.location = 'artist.html';
       });
     });
   }
-  function goToArtist(obj) {
-    window.location = 'artist.html';
-    setTimeout(function () {
-      (0,_js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_5__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_6__.artists[obj]);
-    }, 5000);
+  if (body.classList.contains('artistPage')) {
+    var artistId;
+    if (localStorage.getItem('artist')) {
+      artistId = localStorage.getItem('artist');
+    }
+    (0,_js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_4__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_7__.artistsDB[artistId]);
   }
 });
 })();

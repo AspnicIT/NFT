@@ -1,6 +1,4 @@
-import {artists} from "./artistDB";
-
-function creatorsList() {
+function creatorsList(arrDB) {
     const parentElem = document.querySelector('.toplist__list');
     
 
@@ -54,14 +52,14 @@ function creatorsList() {
         obj[number] = i + 1;
     }
 
-    function appendToPage() {
-        artists.forEach((item, i) => {
+    function appendToPage(arr) {
+        arr.forEach((item, i) => {
             numeration(item, 'number', i);
             topList(item);
         });
     }
 
-    appendToPage();
+    appendToPage(arrDB);
     
 }
 export default creatorsList;

@@ -1,6 +1,5 @@
-
-
-const deadLine = '2023-06-22';
+function timer(){
+    const deadLine = '2023-06-22';
 
 function getTimeRemaining(endtime) {
     let days, hours, minutes, seconds;
@@ -13,7 +12,7 @@ function getTimeRemaining(endtime) {
         seconds = 0;
     } else {
           days = Math.floor(t / (1000 * 60 * 60 * 24)),
-          hours = Math.floor((t / (1000 * 60 * 60 * 24)) * 25),
+          hours = Math.floor((t / (1000 * 60 * 60 * 24)) * 24),
           minutes = Math.floor((t / 1000 / 60) % 60),
           seconds = Math.floor((t / 1000) % 60);
     }
@@ -55,3 +54,7 @@ function setClock(selector, endtime) {
 }
 setClock('.timer__blocks', deadLine);
 
+
+}
+
+export default timer;

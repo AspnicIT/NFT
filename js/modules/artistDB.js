@@ -20,7 +20,7 @@ const artistsDB = {
         bio: 'Voluptatem ea omnis optio! Blanditiis...'
     },
     davisWork: {
-        number: 0, avatar: 'davisWork', name: 'Davis Workman', change: 1.41, sold: 420, volume: 0, followers: 4000,
+        number: 0, avatar: 'davisWork', name: 'Davis Workman', change: 1.41, sold: 515, volume: 0, followers: 4000,
         bio: 'Laudantium repudiandae quo nemo explicabo...'
     },
     jocelyn: {
@@ -36,7 +36,7 @@ const artistsDB = {
         bio: 'Qui nisi. Sint odio veritatis ullam debitis...'
     },
     lindsey: {
-        number: 0, avatar: 'lindsey', name: 'Lindsey Lipshutz', change: 1.41, sold: 309, volume: 0, followers: 3000,
+        number: 0, avatar: 'lindsey', name: 'Lindsey Lipshutz', change: 1.41, sold: 703, volume: 0, followers: 3000,
         bio: 'Molestias, veniam voluptatem ea omnis optio!'
     },
     livia: {
@@ -44,7 +44,7 @@ const artistsDB = {
         bio: 'Blanditiis laudantium repudiandae quo nemo explicabo.'
     },
     lydia: {
-        number: 0, avatar: 'lydia', name: 'Lydia Culhane', change: 1.41, sold: 702, volume: 0, followers: 6000,
+        number: 0, avatar: 'lydia', name: 'Lydia Culhane', change: 1.41, sold: 480, volume: 0, followers: 6000,
         bio: 'The internet`s friendliest designer kid.'
     },
     maria: {
@@ -60,7 +60,7 @@ const artistsDB = {
         bio: 'Culpa suscipit dolores qui nisi...'
     },
     randy: {
-        number: 0, avatar: 'randy', name: 'randy', change: 1.41, sold: 439, volume: 0, followers: 7300,
+        number: 0, avatar: 'randy', name: 'randy', change: 1.41, sold: 156, volume: 0, followers: 7300,
         bio: 'Sint odio veritatis ullam debitis molestias...'
     },
     rayna: {
@@ -76,7 +76,7 @@ const artistsDB = {
         bio: 'The internet`s friendliest designer kid.'
     },
     terry: {
-        number: 0, avatar: 'terry', name: 'Terry Dorwart', change: 1.41, sold: 502, volume: 0, followers: 8000,
+        number: 0, avatar: 'terry', name: 'Terry Dorwart', change: 1.41, sold: 102, volume: 0, followers: 8000,
         bio: 'Molestias, veniam voluptatem ea omnis optio!'
     }
 };
