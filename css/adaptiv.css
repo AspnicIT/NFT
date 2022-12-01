@@ -137,12 +137,12 @@
   .creats__grid_name {
     text-align: left;
   }
-  #Shroomie,
-#robotica,
-#RustyRobot,
-#animakid,
-#Dotgu,
-#Ghiblier {
+  #topHome_7,
+#topHome_8,
+#topHome_9,
+#topHome_10,
+#topHome_11,
+#topHome_12 {
     display: none;
   }
   .category {
@@ -511,6 +511,10 @@
     display: block;
     position: relative;
   }
+  .main__left_btn {
+    display: block;
+    text-align: center;
+  }
   .main__left_title {
     font-size: 28px;
     line-height: 39px;
@@ -560,7 +564,7 @@
     grid-template-columns: 1fr;
     row-gap: 20px;
   }
-  #mr_fox {
+  #topHome_6 {
     display: none;
   }
   .category {

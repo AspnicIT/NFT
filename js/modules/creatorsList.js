@@ -15,7 +15,6 @@ function creatorsList(arrDB) {
             }
             render() {
                 const item = document.createElement('div');
-                item.href = './artist.html';
                 item.classList.add('toplist__list_item');
                 item.innerHTML = `
                     <a id="${this.avatar}" href="./artist.html" class="toplist__list_miror"></a>

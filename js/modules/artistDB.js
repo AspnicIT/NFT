@@ -56,7 +56,7 @@ const artistsDB = {
         bio: 'Amet consectetur adipisicing elit....'
     },
     philip: {
-        number: 0, avatar: 'philip', name: 'Phillip Lipshutz', change: 1.41, sold: 110, volume: 0, followers: 4500,
+        number: 0, avatar: 'philip', name: 'Phillip Lipshutz', change: 1.41, sold: 706, volume: 0, followers: 4500,
         bio: 'Culpa suscipit dolores qui nisi...'
     },
     randy: {
@@ -91,6 +91,10 @@ let artists = Object.values(artistsDB).sort(sortRait);
         obj[volume] = k.toFixed(2);
     }
     artists.forEach(item => getVolume(item, 'sold', 'volume', 0.033));
+
+    let twelweArtistsForHomePageArr = artists.slice(0, 12);
+
     
 export {artistsDB};
 export {artists};
+export  {twelweArtistsForHomePageArr};

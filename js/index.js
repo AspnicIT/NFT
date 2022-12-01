@@ -1,13 +1,18 @@
 require('es6-promise').polyfill();
 
 import insertHeader from './modules/header';
+import burgerButton from './modules/burgerButton';
+import homePageWelcomeAdv from './modules/homePageWelcomeAdv';
 import insertFooter from './modules/footer';
+import topCreatorsOnHomePage from './modules/topCreatorsOnHomePage';
 import creatorsList from '../js/modules/creatorsList';
+import useLocalStorage from './modules/localStorage';
 import createArtistPage from '../js/modules/createArtistPage';
-import createNftCard from './modules/nftCards';
+import createNftCard from './modules/createNftCards';
 import timer from './modules/timer';
 import {artists} from "../js/modules/artistDB";
 import {artistsDB} from "../js/modules/artistDB";
+import {twelweArtistsForHomePageArr } from '../js/modules/artistDB';
 import {nft} from "../js/modules/nftDB";
 import {nftDBarr} from "../js/modules/nftDB";
 
@@ -31,23 +36,35 @@ nftDBarr.forEach((item) => {
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.querySelector('body');
 
+    if(body.classList.contains('home')){
 
-    // timer();
+
+
+        burgerButton();
+        homePageWelcomeAdv(nftDBarr);
+        
+        topCreatorsOnHomePage(twelweArtistsForHomePageArr);
+        useLocalStorage('./html/artist.html');
+        createNftCard(nft.happyRobot032, '.discover__grid');
+        createNftCard(nft.dancingRobot56, '.discover__grid');
+        createNftCard(nft.iceCreamApe, '.discover__grid');
+        timer();
+    }
+
+    if(body.classList.contains('marketplace')){
+        insertHeader();
+        insertFooter();
+        nftDBarr.forEach(item => createNftCard(item, '.artist__grid'));
+    }
+
+
           
 
     if(body.classList.contains('toplist')){
         insertHeader();
         insertFooter();
         creatorsList(artists);
-        const goToartistPage = document.querySelectorAll('.toplist__list_item');
-        goToartistPage.forEach((item) => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                let artistId = e.target.id;
-                localStorage.setItem("artist", artistId);
-                window.location = 'artist.html';
-            });
-        });
+        useLocalStorage('artist.html');
     }
 
     
@@ -67,13 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
         artistId === 'allison' ||
         artistId === 'davisWorkman' ||
         artistId === 'angel' ||
-        artistId === 'lydia'
+        artistId === 'lydia' ||
+        artistId === 'philip'
         ){
             topAutors(artistId);
         } else {
             otherAutors();
-        }
-            
+        }      
     }
     
 

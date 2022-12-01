@@ -173,7 +173,7 @@ input:focus {
   position: absolute;
 }
 .signUP__img-1 {
-  top: 22px;
+  top: 18px;
   left: 34px;
 }
 .signUP__img-2 {
@@ -215,6 +215,7 @@ input:focus {
   display: flex;
   justify-content: space-between;
   max-width: 450px;
+  margin-top: 30px;
 }
 .main__left_item {
   width: -webkit-fit-content;
@@ -228,6 +229,7 @@ input:focus {
 }
 .main__right {
   max-width: 510px;
+  width: 100%;
 }
 
 .nft__item {
@@ -236,6 +238,7 @@ input:focus {
 .nft__item_img {
   display: block;
   width: 100%;
+  border-radius: 40px 40px 0px 0px;
 }
 .nft__item_descr {
   width: 100%;
@@ -280,7 +283,7 @@ input:focus {
 .trend__card_topImg {
   width: 100%;
   margin-bottom: 15px;
-  border-radius: 20px;
+  border-radius: 23px;
 }
 .trend__card_inner {
   display: flex;
@@ -379,6 +382,7 @@ input:focus {
 }
 .creats__grid_price span {
   color: #858584;
+  margin-right: 8px;
 }
 
 .category {

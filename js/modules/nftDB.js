@@ -367,7 +367,206 @@ const nft = {
         price: 1.63,
         hBid: 0.33,
         collection: 'other'
+    },
+    magicMashroom26: {
+        img: 'MagicMashroom26',
+        title: 'MagicMashroom 26',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom28: {
+        img: 'MagicMashroom28',
+        title: 'MagicMashroom 28',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom25: {
+        img: 'MagicMashroom25',
+        title: 'MagicMashroom 25',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom41: {
+        img: 'MagicMashroom41',
+        title: 'MagicMashroom 41',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom43: {
+        img: 'MagicMashroom43',
+        title: 'MagicMashroom 43',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom46: {
+        img: 'MagicMashroom46',
+        title: 'MagicMashroom 46',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom62: {
+        img: 'MagicMashroom62',
+        title: 'MagicMashroom 62',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom63: {
+        img: 'MagicMashroom63',
+        title: 'MagicMashroom 63',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom64: {
+        img: 'MagicMashroom64',
+        title: 'MagicMashroom 64',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom65: {
+        img: 'MagicMashroom65',
+        title: 'MagicMashroom 65',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom66: {
+        img: 'MagicMashroom66',
+        title: 'MagicMashroom 66',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom67: {
+        img: 'MagicMashroom67',
+        title: 'MagicMashroom 67',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom68: {
+        img: 'MagicMashroom68',
+        title: 'MagicMashroom 68',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom69: {
+        img: 'MagicMashroom69',
+        title: 'MagicMashroom 69',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom70: {
+        img: 'MagicMashroom70',
+        title: 'MagicMashroom 70',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom71: {
+        img: 'MagicMashroom71',
+        title: 'MagicMashroom 71',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom72: {
+        img: 'MagicMashroom72',
+        title: 'MagicMashroom 72',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom73: {
+        img: 'MagicMashroom73',
+        title: 'MagicMashroom 73',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom74: {
+        img: 'MagicMashroom74',
+        title: 'MagicMashroom 74',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom75: {
+        img: 'MagicMashroom75',
+        title: 'MagicMashroom 75',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom76: {
+        img: 'MagicMashroom76',
+        title: 'MagicMashroom 76',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
+    },
+    magicMashroom80: {
+        img: 'MagicMashroom80',
+        title: 'MagicMashroom 80',
+        artist: 'philip',
+        artistAvat: 'philip',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'magicMushrooms'
     }
+    
 };
 
 const nftDBarr = Object.values(nft);
