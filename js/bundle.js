@@ -691,7 +691,7 @@ function homePageWelcomeAdv(arr) {
           var advBlock = document.createElement('div');
           advBlock.classList.add('nft__item');
           advBlock.style.width = '100%';
-          advBlock.innerHTML = "\n                <img src=\"./src/img/NFT_IMG/".concat(this.img, ".jpg\" alt=\"\" class=\"nft__item_img\">\n\n                <div class=\"nft__item_descr\">\n                    <h5 class=\"nft__item_name\">").concat(this.title, "</h5>\n                    <div class=\"nft__item_autor\">\n                        <img src=\"./src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                        <a href=\"./html/artist.html\"><div class=\"nft__item_nickname\">Animakid</div></a>\n                    </div>\n                </div>\n                ");
+          advBlock.innerHTML = "\n                <img src=\"./src/img/NFT_IMG/".concat(this.img, ".jpg\" alt=\"\" class=\"nft__item_img jsPicture\">\n\n                <div class=\"nft__item_descr\">\n                    <h5 class=\"nft__item_name jsTitle\">").concat(this.title, "</h5>\n                    <div class=\"nft__item_autor\">\n                        <img src=\"./src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                        <div><div class=\"nft__item_nickname jsNameArtist\">").concat(this.artist, "</div></div>\n                    </div>\n                </div>\n                ");
           parentEllement.append(advBlock);
         }
       }]);
@@ -700,11 +700,26 @@ function homePageWelcomeAdv(arr) {
     new WelcomeAdv(obj.img, obj.title, obj.artist).render();
   }
   welcom(arr[0]);
+  var title = document.querySelector('.jsTitle'),
+    picture = document.querySelector('.jsPicture'),
+    nameArtist = document.querySelector('.jsNameArtist');
+  parentEllement.style.transition = '1s';
+  var curent = 1;
   setInterval(function () {
-    var curent = 1;
-    welcom(arr[curent]);
-    curent >= arr.length ? curent = 0 : curent++;
-  }, 1000);
+    if (curent < arr.length) {
+      console.log(curent);
+      parentEllement.style.opacity = '0';
+      setTimeout(function () {
+        title.innerHTML = "".concat(arr[curent].title);
+        nameArtist.innerHTML = "".concat(arr[curent].artist);
+        picture.src = "./src/img/NFT_IMG/".concat(arr[curent].img, ".jpg");
+        parentEllement.style.opacity = '100%';
+      }, 1500);
+      curent++;
+    } else {
+      curent = 0;
+    }
+  }, 7000);
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homePageWelcomeAdv);
 

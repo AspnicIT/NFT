@@ -67,7 +67,7 @@
     content: "";
     height: 100vh;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.662745098);
+    background: rgba(0, 0, 0, 0.7960784314);
   }
   .header__ul {
     position: relative;
@@ -476,7 +476,7 @@
     content: "";
     height: 100vh;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.662745098);
+    background: rgba(0, 0, 0, 0.8431372549);
   }
   .header__ul {
     width: 310px;
@@ -493,8 +493,9 @@
   }
   .signUP {
     position: relative;
-    z-index: 3;
+    z-index: 2;
     width: 100%;
+    text-align: center;
     grid-column: 1/4;
   }
   .signUP__img-1 {

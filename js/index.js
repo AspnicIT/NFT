@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         burgerButton();
         homePageWelcomeAdv(nftDBarr);
+
         
         topCreatorsOnHomePage(twelweArtistsForHomePageArr);
         useLocalStorage('./html/artist.html');

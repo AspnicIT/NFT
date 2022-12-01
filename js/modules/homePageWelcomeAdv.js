@@ -13,18 +13,18 @@ function homePageWelcomeAdv(arr){
                 advBlock.classList.add('nft__item');
                 advBlock.style.width = '100%';
                 advBlock.innerHTML = `
-                <img src="./src/img/NFT_IMG/${this.img}.jpg" alt="" class="nft__item_img">
+                <img src="./src/img/NFT_IMG/${this.img}.jpg" alt="" class="nft__item_img jsPicture">
 
                 <div class="nft__item_descr">
-                    <h5 class="nft__item_name">${this.title}</h5>
+                    <h5 class="nft__item_name jsTitle">${this.title}</h5>
                     <div class="nft__item_autor">
                         <img src="./src/icons/artists/${this.artist}.jpg" alt="ava" class="nft__item_avatar">
-                        <a href="./html/artist.html"><div class="nft__item_nickname">Animakid</div></a>
+                        <div><div class="nft__item_nickname jsNameArtist">${this.artist}</div></div>
                     </div>
                 </div>
                 `;
                 parentEllement.append(advBlock);
-
+                
             }
         }
 
@@ -37,13 +37,37 @@ function homePageWelcomeAdv(arr){
 
     welcom(arr[0]);
 
-    setInterval(() => {
-        let curent = 1;
-        welcom(arr[curent]);
-        curent >= arr.length ? curent = 0 : curent++;
-    }, 1000);
-    
-    
+    const title = document.querySelector('.jsTitle'),
+          picture = document.querySelector('.jsPicture'),
+          nameArtist = document.querySelector('.jsNameArtist');
+
+          parentEllement.style.transition = '1s';
+          
+
+    let curent = 1;
+
+   setInterval(() => {
+        
+         if(curent < arr.length){
+            console.log(curent);
+            parentEllement.style.opacity = '0';
+
+            setTimeout(() => {
+                title.innerHTML = `${arr[curent].title}`;
+                nameArtist.innerHTML = `${arr[curent].artist}`;
+                picture.src = `./src/img/NFT_IMG/${arr[curent].img}.jpg`;
+
+                parentEllement.style.opacity = '100%';
+                
+            }, 1500); 
+            curent++;
+         } else{
+            curent = 0;
+         }
+         
+     }, 7000);
+ 
+
 }
 
 export default homePageWelcomeAdv;
