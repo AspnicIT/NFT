@@ -296,6 +296,117 @@ function burgerButton() {
 
 /***/ }),
 
+/***/ "./js/modules/collectDb.js":
+/*!*********************************!*\
+  !*** ./js/modules/collectDb.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "collectDbArr": () => (/* binding */ collectDbArr),
+/* harmony export */   "collectDbObj": () => (/* binding */ collectDbObj)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.object.values.js */ "./node_modules/core-js/modules/es.object.values.js");
+/* harmony import */ var core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_0__);
+
+var collectDbObj = {
+  animakid: {
+    name: 'animakid',
+    title: 'The Animakid',
+    date: 'Jan 07, 2022',
+    artist: 'lindsey',
+    tag1: 'animals',
+    tag2: 'bright',
+    tag3: 'humanoid',
+    tag4: 'pets',
+    descr: "The Animakid <br>\n        is a collection of 3,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">Images of animals have been present in the art of \n            people since the time of rock art.<br class=\"collect__info_br\">\n            Many modern artists have a weakness for our smaller brothers, making them the central \n            figures of their works. Today you can buy a painting in an animalistic style at almost any art exhibition.\n            It can be a soothing image of a pet in a beautiful interior, \n            which will add comfort to the atmosphere of the house. \n            A completely different mood conveys the image of the deadly fight of wild animals. \n            Such a picture will certainly add energy and dynamics."
+  },
+  orbitians: {
+    name: 'orbitians',
+    title: 'The Orbitians',
+    date: 'Jun 21, 2022',
+    artist: 'kianaST',
+    tag1: 'cosmos',
+    tag2: 'space',
+    tag3: 'future',
+    tag4: 'planets',
+    descr: "The Orbitians <br>\n        is a collection of 10,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">There are all sorts of beings in the NFT Universe. The most\n        advanced and friendly of the bunch are Orbitians.<br class=\"collect__info_br\"> They live in\n        a metal space machines, high up in the sky and only have one foot on Earth.\n        These Orbitians are a peaceful race, but they have been at war with a group of invaders for\n        many generations. The invaders are called Upside-Downs, because of their inverted bodies\n        that live on the ground, yet do not know any other way to be. Upside-Downs believe that they\n        will be able to win this war if they could only get an eye into Orbitian territory, so\n        they've taken to make human beings their target."
+  },
+  nebulaKid: {
+    name: 'nebulaKid',
+    title: 'The NebulaKid',
+    date: 'Feb 02, 2022',
+    artist: 'lydia',
+    tag1: 'life',
+    tag2: 'world',
+    tag3: 'man',
+    tag4: 'human',
+    descr: "The NebulaKid <br>\n        is a collection of 5,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">For a modern person, the search for the meaning of life is becoming more and more urgent: after all, every year the world becomes more complicated, and it becomes more and more difficult to hear one is own desires, goals and meanings.<br class=\"collect__info_br\"> The fact is that every day we are faced with a huge information flow. Don't believe? Look at the number of your social media subscriptions: dozens of communities post hundreds of news every day, and this is just one channel for getting information.<br>\n            How to learn to hear yourself in the current realities?"
+  },
+  happyRoboto: {
+    name: 'happyRoboto',
+    title: 'The HappyRoboto',
+    date: 'Mar 14, 2022',
+    artist: 'allison',
+    tag1: 'robots',
+    tag2: 'tehnology',
+    tag3: 'humanoid',
+    tag4: 'happy',
+    descr: "The HappyRoboto <br>\n        is a collection of 2,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">The appearance of a robot capable of experiencing (or is it still imitating?) emotions can be considered a qualitatively new step in the life of a person with robots.<br class=\"collect__info_br\">It will already be possible to make friends with such robots, seek (and, apparently, receive) support from them. It is expected that they will be able to brighten up the loneliness of a wide variety of people, including the disabled, lonely old people, help in caring for the sick and at the same time entertain them with communicatio."
+  },
+  beKind2Robots: {
+    name: 'beKind2Robots',
+    title: 'The BeKind2Robots',
+    date: 'Nov 19, 2022',
+    artist: 'davisWorkman',
+    tag1: 'robots',
+    tag2: 'tehnology',
+    tag3: 'dance',
+    tag4: 'colorfull',
+    descr: "The BeKind2Robots <br>\n        is a collection of 7,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">Spectacle has long been synonymous with Robot dance.<br class=\"collect__info_br\">A living futuristic robot, whose every movement is a perfectly coordinated mechanism, appears to be one of the most difficult areas for learning. It requires complete control of every muscle in the body, dozens of workouts to fix and slow down the most basic movements, and good physical condition to perform signature movements in the style of the \"Matrix\"."
+  },
+  criptoCity: {
+    name: 'criptoCity',
+    title: 'The CriptoCity',
+    date: 'Oct 03, 2023',
+    artist: 'angel',
+    tag1: 'cyberpank',
+    tag2: 'future',
+    tag3: 'city',
+    tag4: 'cripto',
+    descr: "The CriptoCity <br>\n        is a collection of 1,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">I am aware of how hackneyed such an introduction is, but still you experience special emotions when you see the city of the future.<br class=\"collect__info_br\">Surely, many of you are anxiously waiting for the first walk through the crypto city.\n            These incredible expectations can play a cruel joke on anyone. After all, in the imagination of many people, fueled by an active advertising campaign, there is a certain idealistic image that runs the risk of not meeting reality."
+  },
+  other: {
+    name: 'other',
+    title: 'The Other',
+    date: 'NOW',
+    artist: 'alfredo',
+    tag1: 'all',
+    tag2: 'picture',
+    tag3: 'rest',
+    tag4: 'NFT',
+    descr: "The Other <br>\n        is a collection of 10,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">All those who are too unique fall here."
+  },
+  shroomie: {
+    name: 'shroomie',
+    title: 'The Shroomie',
+    date: 'May 01, 2023',
+    artist: 'philip',
+    tag1: 'mushrooms',
+    tag2: 'collorfull',
+    tag3: 'acid',
+    tag4: 'plant',
+    descr: "The Shroomie <br>\n        is a collection of 11,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">\"The Shroomie\" can rightfully be at the top of our list.\n            <br class=\"collect__info_br\">\n            You thought that neon mushrooms could only grow on the planet Pandora from the Avatar movie. Fortunately, their extraordinary radiance can be enjoyed on Earth as well. True, for this you will have to go to Japan or Brazil. It is there that in the rainy season these amazing green mushrooms are born from flaming spores. Whether these mushrooms are edible or not is unknown. This is understandable, few people dare to serve such a luminous dish to the table."
+  }
+};
+var collectDbArr = Object.values(collectDbObj);
+
+
+
+/***/ }),
+
 /***/ "./js/modules/createArtistPage.js":
 /*!****************************************!*\
   !*** ./js/modules/createArtistPage.js ***!
@@ -441,7 +552,7 @@ function createNftCard(objectNFT, selectorForParent) {
   var parentElement = document.querySelector(selectorForParent);
   function nftCards(obj) {
     var Nft = /*#__PURE__*/function () {
-      function Nft(img, title, artist, artistAvat, price, hBid) {
+      function Nft(img, title, artist, artistAvat, price, hBid, collection) {
         _classCallCheck(this, Nft);
         this.img = img;
         this.title = title;
@@ -449,23 +560,117 @@ function createNftCard(objectNFT, selectorForParent) {
         this.artistAvat = artistAvat;
         this.price = price;
         this.hBid = hBid;
+        this.collection = collection;
       }
       _createClass(Nft, [{
         key: "render",
         value: function render() {
           var card = document.createElement('div');
           card.classList.add('discover__grid_item');
-          card.innerHTML = "                                    \n                <img src=\"../src/img/NFT_IMG/".concat(this.img, ".jpg\" alt=\"nft\" class=\"discover__grid\">\n                <div class=\"discover__grid_descr\">\n                    <h5 class=\"nft__item_name discover__grid_name\">").concat(this.title, "</h5>\n                    <div class=\"discover__grid_autor\">\n                        <img src=\"../src/icons/artists/").concat(this.artistAvat, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                        <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.artist, "</div>\n                    </div>\n                    <div class=\"discover__grid_price\">\n                        <div class=\"discover__grid_ETH\">\n                            <span class=\"discover__grid_span\">Price</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.price, " ETH</div>\n                        </div>\n                        <div class=\"discover__grid_wETH\">\n                            <span class=\"discover__grid_span\">Highest Bid</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.hBid, " wETH</div>\n                        </div>\n                    </div>\n                    \n                </div>                    \n                ");
+          card.innerHTML = "                                    \n                <img src=\"../src/img/NFT_IMG/".concat(this.img, ".jpg\" alt=\"nft\" class=\"discover__grid\">\n                <div class=\"discover__grid_descr\">\n                    <h5 class=\"nft__item_name discover__grid_name\">").concat(this.title, "</h5>\n                    <div class=\"discover__grid_autor\">\n                    <a id=\"").concat(this.artist, "\" class=\"mirrorFromAutor\" href=\"./html/artist.html\"></a>\n                    <a id=\"").concat(this.collection, "\" class=\"mirrorFromCollection\" href=\"./html/artist.html\"></a>\n                        <img src=\"../src/icons/artists/").concat(this.artistAvat, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                        <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.collection, "</div>\n                    </div>\n                    <div class=\"discover__grid_price\">\n                        <div class=\"discover__grid_ETH\">\n                            <span class=\"discover__grid_span\">Price</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.price, " ETH</div>\n                        </div>\n                        <div class=\"discover__grid_wETH\">\n                            <span class=\"discover__grid_span\">Highest Bid</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.hBid, " wETH</div>\n                        </div>\n                    </div>\n                    \n                </div>                    \n                ");
           parentElement.append(card);
         }
       }]);
       return Nft;
     }();
-    new Nft(obj.img, obj.title, obj.artist, obj.artistAvat, obj.price, obj.hBid).render();
+    new Nft(obj.img, obj.title, obj.artist, obj.artistAvat, obj.price, obj.hBid, obj.collection).render();
   }
   nftCards(objectNFT);
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createNftCard);
+
+/***/ }),
+
+/***/ "./js/modules/createWelcomeCollectionPage.js":
+/*!***************************************************!*\
+  !*** ./js/modules/createWelcomeCollectionPage.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function welcomeCollectionPage(objectCollection) {
+  var sectionParent = document.querySelector('.collect');
+  function createWelcomeColecctionPage(obj) {
+    var WelcomeCollection = /*#__PURE__*/function () {
+      function WelcomeCollection(name, title, date, artist, tag1, tag2, tag3, tag4, descr) {
+        _classCallCheck(this, WelcomeCollection);
+        this.name = name;
+        this.title = title;
+        this.date = date;
+        this.artist = artist;
+        this.tag1 = tag1;
+        this.tag2 = tag2;
+        this.tag3 = tag3;
+        this.tag4 = tag4;
+        this.descr = descr;
+      }
+      _createClass(WelcomeCollection, [{
+        key: "render",
+        value: function render() {
+          var welcome = document.createElement('div');
+          welcome.classList.add('collect__inner');
+          welcome.innerHTML = "\n                <div class=\"collect__topwall\"></div>\n            <div class=\"collect__container\">\n                <div class=\"collect__timer\">\n                    <div class=\"collect__timer_inner\">\n                        <a href=\"#\" class=\"collect__timer_link\">Place Bid</a>\n                    </div>\n                    <div class=\"timer\">\n                        <div class=\"timer__body\">\n                            <span class=\"discover__grid_span timer__title\">Auction ends in:</span>\n\n                            <div class=\"timer__blocks\">\n                                <div class=\"timer__block\">\n                                    <h3 id=\"hours\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Hours</span>\n                                </div>\n                                <h4>:</h4>\n                                <div class=\"timer__block\">\n                                    <h3 id=\"minutes\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Minutes</span>\n                                </div>\n                                <h4>:</h4>\n                                <div class=\"timer__block\">\n                                    <h3 id=\"seconds\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Seconds</span>\n                                </div>\n                            </div>\n\n\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"collect__info\">\n\n                    <div class=\"collect__info_block1\">\n                        <h2 class=\"collect__info_title\">".concat(this.title, "</h2>\n                        <p class=\"collect__info_date\">Minted on ").concat(this.date, "</p>\n                    </div>\n\n                    <div class=\"collect__info_block2\">\n                        <h5 class=\"collect__info_subtitle\">Created By</h5>\n                        <div class=\"nft__item_autor\">\n                            <img src=\"../src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                            <a href=\"../html/artist.html\" class=\"toplist__miror\">\n                                <div class=\"nft__item_nickname\">").concat(this.artist, "</div>\n                            </a>\n                        </div>\n                    </div>\n\n                    <div class=\"collect__info_block3\">\n                        <h5 class=\"collect__info_subtitle\">Description</h5>\n                        <article>\n                            <p class=\"collect__info_text\">\n                                ").concat(this.descr, "\n                            </p>\n                        </article>\n                    </div>\n\n                    <div class=\"collect__info_block4\">\n                        <h5 class=\"collect__info_subtitle\">Detales</h5>\n                        <div class=\"collect__info_detales\">\n                            <a href=\"#\" class=\"collect__info_linkToDetales\">\n                                <img class=\"collect__info_globe\" src=\"../src/icons/footer/Globe.svg\" alt=\"\">\n                                <p class=\"collect__info_text\">View on Etherscan</p>\n                            </a>\n                            <a href=\"#\" class=\"collect__info_linkToDetales\">\n                                <img class=\"collect__info_globe\" src=\"../src/icons/footer/Globe.svg\" alt=\"\">\n                                <p class=\"collect__info_text\">View Original</p>\n                            </a>\n                        </div>\n                    </div>\n\n                    <div class=\"collect__info_block5\">\n                        <h5 class=\"collect__info_subtitle\">Tags</h5>\n                        <div class=\"collect__info_tags\">\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag1, "</a>\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag2, "</a>\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag3, "</a>\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag4, "</a>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"collect__wrapTitle\">\n                    <h3 class=\"title\">More from this artist</h3>\n                    <div class=\"creats__wrapBtn content__btn\">\n                        <a id=\"").concat(this.artist, "\" href=\"../html/artist.html\">\n                            <button class=\"creats__btn\">\n                                <img src=\"../src/icons/ArrowRight.svg\" alt=\"\" class=\"creats__img-1 content__arrow\">\n                                Go To Artist Page\n                            </button>\n                        </a>\n                    </div>\n                </div>\n            </div>\n                ");
+          sectionParent.append(welcome);
+          var topwall = document.querySelector('.collect__topwall');
+          topwall.style.backgroundImage = "url(../src/img/topwallCollection/".concat(this.name, ".jpg)");
+        }
+      }]);
+      return WelcomeCollection;
+    }();
+    new WelcomeCollection(obj.name, obj.title, obj.date, obj.artist, obj.tag1, obj.tag2, obj.tag3, obj.tag4, obj.descr).render();
+  }
+  createWelcomeColecctionPage(objectCollection);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (welcomeCollectionPage);
 
 /***/ }),
 
@@ -691,7 +896,7 @@ function homePageWelcomeAdv(arr) {
           var advBlock = document.createElement('div');
           advBlock.classList.add('nft__item');
           advBlock.style.width = '100%';
-          advBlock.innerHTML = "\n                <img src=\"./src/img/NFT_IMG/".concat(this.img, ".jpg\" alt=\"\" class=\"nft__item_img jsPicture\">\n\n                <div class=\"nft__item_descr\">\n                    <h5 class=\"nft__item_name jsTitle\">").concat(this.title, "</h5>\n                    <div class=\"nft__item_autor\">\n                        <img src=\"./src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                        <div><div class=\"nft__item_nickname jsNameArtist\">").concat(this.artist, "</div></div>\n                    </div>\n                </div>\n                ");
+          advBlock.innerHTML = "\n                <img src=\"./src/img/NFT_IMG/".concat(this.img, ".jpg\" alt=\"\" class=\"nft__item_img jsPicture\">\n\n                <div class=\"nft__item_descr\">\n                    <h5 class=\"nft__item_name jsTitle\">").concat(this.title, "</h5>\n                    <div class=\"nft__item_autor\">\n                        <img src=\"./src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar jsAvatar\">\n                        <div><div class=\"nft__item_nickname jsNameArtist\">").concat(this.artist, "</div></div>\n                    </div>\n                </div>\n                ");
           parentEllement.append(advBlock);
         }
       }]);
@@ -702,16 +907,17 @@ function homePageWelcomeAdv(arr) {
   welcom(arr[0]);
   var title = document.querySelector('.jsTitle'),
     picture = document.querySelector('.jsPicture'),
+    avatar = document.querySelector('.jsAvatar'),
     nameArtist = document.querySelector('.jsNameArtist');
   parentEllement.style.transition = '1s';
   var curent = 1;
   setInterval(function () {
     if (curent < arr.length) {
-      console.log(curent);
       parentEllement.style.opacity = '0';
       setTimeout(function () {
         title.innerHTML = "".concat(arr[curent].title);
         nameArtist.innerHTML = "".concat(arr[curent].artist);
+        avatar.src = "./src/icons/artists/".concat(arr[curent].artist, ".jpg");
         picture.src = "./src/img/NFT_IMG/".concat(arr[curent].img, ".jpg");
         parentEllement.style.opacity = '100%';
       }, 1500);
@@ -745,13 +951,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function useLocalStorage(location) {
-  var goToartistPage = document.querySelectorAll('.toplist__list_miror');
+function useLocalStorage(location, selector, key) {
+  var goToartistPage = document.querySelectorAll(selector);
   goToartistPage.forEach(function (item) {
     item.addEventListener('click', function (e) {
       e.preventDefault();
-      var artistId = e.target.id;
-      localStorage.setItem("artist", artistId);
+      var storageId = e.target.id;
+      localStorage.setItem(key, storageId);
       window.location = location;
     });
   });
@@ -846,7 +1052,7 @@ var nft = {
     artistAvat: 'kianaST',
     price: 1.63,
     hBid: 0.33,
-    collection: 'moonDancer'
+    collection: 'orbitians'
   },
   spaceMeet: {
     img: 'SpaceMeet',
@@ -855,7 +1061,7 @@ var nft = {
     artistAvat: 'kianaST',
     price: 1.63,
     hBid: 0.33,
-    collection: 'moonDancer'
+    collection: 'orbitians'
   },
   spaceTales: {
     img: 'SpaceTales',
@@ -864,7 +1070,7 @@ var nft = {
     artistAvat: 'kianaST',
     price: 1.63,
     hBid: 0.33,
-    collection: 'moonDancer'
+    collection: 'orbitians'
   },
   spaceTravel: {
     img: 'SpaceTravel',
@@ -873,7 +1079,7 @@ var nft = {
     artistAvat: 'kianaST',
     price: 1.63,
     hBid: 0.33,
-    collection: 'moonDancer'
+    collection: 'orbitians'
   },
   spaceWalking: {
     img: 'SpaceWalking',
@@ -882,7 +1088,7 @@ var nft = {
     artistAvat: 'kianaST',
     price: 1.63,
     hBid: 0.33,
-    collection: 'moonDancer'
+    collection: 'orbitians'
   },
   spaceWhale: {
     img: 'SpaceWhale',
@@ -891,7 +1097,7 @@ var nft = {
     artistAvat: 'kianaST',
     price: 1.63,
     hBid: 0.33,
-    collection: 'moonDancer'
+    collection: 'orbitians'
   },
   sunsetDimension: {
     img: 'SunsetDimension',
@@ -900,7 +1106,7 @@ var nft = {
     artistAvat: 'kianaST',
     price: 1.63,
     hBid: 0.33,
-    collection: 'moonDancer'
+    collection: 'orbitians'
   },
   lifeOnEdena: {
     img: 'LifeOnEdena',
@@ -932,6 +1138,15 @@ var nft = {
   lifeOnMusic: {
     img: 'LifeOnMusic',
     title: 'LifeOnMusic',
+    artist: 'lydia',
+    artistAvat: 'lydia',
+    price: 1.63,
+    hBid: 0.33,
+    collection: 'nebulaKid'
+  },
+  lifeOnKey: {
+    img: 'LifeOnKey',
+    title: 'LifeOnKey',
     artist: 'lydia',
     artistAvat: 'lydia',
     price: 1.63,
@@ -999,7 +1214,7 @@ var nft = {
     artistAvat: 'davisWorkman',
     price: 1.63,
     hBid: 0.33,
-    collection: 'dancingRobots'
+    collection: 'beKind2Robots'
   },
   dancingRobot21: {
     img: 'DancingRobot21',
@@ -1008,7 +1223,7 @@ var nft = {
     artistAvat: 'davisWorkman',
     price: 1.63,
     hBid: 0.33,
-    collection: 'dancingRobots'
+    collection: 'beKind2Robots'
   },
   dancingRobot23: {
     img: 'DancingRobot23',
@@ -1017,7 +1232,7 @@ var nft = {
     artistAvat: 'davisWorkman',
     price: 1.63,
     hBid: 0.33,
-    collection: 'dancingRobots'
+    collection: 'beKind2Robots'
   },
   dancingRobot24: {
     img: 'DancingRobot24',
@@ -1026,7 +1241,7 @@ var nft = {
     artistAvat: 'davisWorkman',
     price: 1.63,
     hBid: 0.33,
-    collection: 'dancingRobots'
+    collection: 'beKind2Robots'
   },
   dancingRobot56: {
     img: 'DancingRobot56',
@@ -1035,7 +1250,7 @@ var nft = {
     artistAvat: 'davisWorkman',
     price: 1.63,
     hBid: 0.33,
-    collection: 'dancingRobots'
+    collection: 'beKind2Robots'
   },
   dancingRobot75: {
     img: 'DancingRobot75',
@@ -1044,7 +1259,7 @@ var nft = {
     artistAvat: 'davisWorkman',
     price: 1.63,
     hBid: 0.33,
-    collection: 'dancingRobots'
+    collection: 'beKind2Robots'
   },
   dancingRobot76: {
     img: 'DancingRobot76',
@@ -1053,7 +1268,7 @@ var nft = {
     artistAvat: 'davisWorkman',
     price: 1.63,
     hBid: 0.33,
-    collection: 'dancingRobots'
+    collection: 'beKind2Robots'
   },
   dancingRobot87: {
     img: 'DancingRobot87',
@@ -1062,7 +1277,7 @@ var nft = {
     artistAvat: 'davisWorkman',
     price: 1.63,
     hBid: 0.33,
-    collection: 'dancingRobots'
+    collection: 'beKind2Robots'
   },
   cryptoCity: {
     img: 'CryptoCity',
@@ -1152,7 +1367,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom28: {
     img: 'MagicMashroom28',
@@ -1161,7 +1376,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom25: {
     img: 'MagicMashroom25',
@@ -1170,7 +1385,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom41: {
     img: 'MagicMashroom41',
@@ -1179,7 +1394,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom43: {
     img: 'MagicMashroom43',
@@ -1188,7 +1403,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom46: {
     img: 'MagicMashroom46',
@@ -1197,7 +1412,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom62: {
     img: 'MagicMashroom62',
@@ -1206,7 +1421,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom63: {
     img: 'MagicMashroom63',
@@ -1215,7 +1430,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom64: {
     img: 'MagicMashroom64',
@@ -1224,7 +1439,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom65: {
     img: 'MagicMashroom65',
@@ -1233,7 +1448,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom66: {
     img: 'MagicMashroom66',
@@ -1242,7 +1457,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom67: {
     img: 'MagicMashroom67',
@@ -1251,7 +1466,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom68: {
     img: 'MagicMashroom68',
@@ -1260,7 +1475,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom69: {
     img: 'MagicMashroom69',
@@ -1269,7 +1484,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom70: {
     img: 'MagicMashroom70',
@@ -1278,7 +1493,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom71: {
     img: 'MagicMashroom71',
@@ -1287,7 +1502,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom72: {
     img: 'MagicMashroom72',
@@ -1296,7 +1511,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom73: {
     img: 'MagicMashroom73',
@@ -1305,7 +1520,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom74: {
     img: 'MagicMashroom74',
@@ -1314,7 +1529,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom75: {
     img: 'MagicMashroom75',
@@ -1323,7 +1538,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom76: {
     img: 'MagicMashroom76',
@@ -1332,7 +1547,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   },
   magicMashroom80: {
     img: 'MagicMashroom80',
@@ -1341,7 +1556,7 @@ var nft = {
     artistAvat: 'philip',
     price: 1.63,
     hBid: 0.33,
-    collection: 'magicMushrooms'
+    collection: 'shroomie'
   }
 };
 var nftDBarr = Object.values(nft);
@@ -7501,10 +7716,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../js/modules/creatorsList */ "./js/modules/creatorsList.js");
 /* harmony import */ var _modules_localStorage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/localStorage */ "./js/modules/localStorage.js");
 /* harmony import */ var _js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../js/modules/createArtistPage */ "./js/modules/createArtistPage.js");
-/* harmony import */ var _modules_createNftCards__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/createNftCards */ "./js/modules/createNftCards.js");
-/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./modules/timer */ "./js/modules/timer.js");
-/* harmony import */ var _js_modules_artistDB__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../js/modules/artistDB */ "./js/modules/artistDB.js");
-/* harmony import */ var _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../js/modules/nftDB */ "./js/modules/nftDB.js");
+/* harmony import */ var _modules_createWelcomeCollectionPage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/createWelcomeCollectionPage */ "./js/modules/createWelcomeCollectionPage.js");
+/* harmony import */ var _modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./modules/createNftCards */ "./js/modules/createNftCards.js");
+/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./modules/timer */ "./js/modules/timer.js");
+/* harmony import */ var _js_modules_artistDB__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../js/modules/artistDB */ "./js/modules/artistDB.js");
+/* harmony import */ var _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../js/modules/nftDB */ "./js/modules/nftDB.js");
+/* harmony import */ var _modules_collectDb__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./modules/collectDb */ "./js/modules/collectDb.js");
 
 
 
@@ -7524,17 +7741,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function topAutors(ids) {
-  _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_14__.nftDBarr.forEach(function (item) {
-    if (item.artist == ids) {
-      (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_11__["default"])(item, '.artist__grid');
+
+
+
+function topAutors(artistId) {
+  _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.forEach(function (item) {
+    if (item.artist == artistId) {
+      (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(item, '.artist__grid');
     }
   });
 }
 function otherAutors() {
-  _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_14__.nftDBarr.forEach(function (item) {
+  _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.forEach(function (item) {
     if (item.collection == 'other') {
-      (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_11__["default"])(item, '.artist__grid');
+      (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(item, '.artist__grid');
     }
   });
 }
@@ -7542,26 +7762,30 @@ document.addEventListener('DOMContentLoaded', function () {
   var body = document.querySelector('body');
   if (body.classList.contains('home')) {
     (0,_modules_burgerButton__WEBPACK_IMPORTED_MODULE_4__["default"])();
-    (0,_modules_homePageWelcomeAdv__WEBPACK_IMPORTED_MODULE_5__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_14__.nftDBarr);
-    (0,_modules_topCreatorsOnHomePage__WEBPACK_IMPORTED_MODULE_7__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_13__.twelweArtistsForHomePageArr);
-    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./html/artist.html');
-    (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_11__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_14__.nft.happyRobot032, '.discover__grid');
-    (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_11__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_14__.nft.dancingRobot56, '.discover__grid');
-    (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_11__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_14__.nft.iceCreamApe, '.discover__grid');
-    (0,_modules_timer__WEBPACK_IMPORTED_MODULE_12__["default"])();
+    (0,_modules_homePageWelcomeAdv__WEBPACK_IMPORTED_MODULE_5__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr);
+    (0,_modules_topCreatorsOnHomePage__WEBPACK_IMPORTED_MODULE_7__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_14__.twelweArtistsForHomePageArr);
+    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./html/artist.html', '.toplist__list_miror', "artist");
+    (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nft.happyRobot032, '.discover__grid');
+    (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nft.dancingRobot56, '.discover__grid');
+    (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nft.iceCreamApe, '.discover__grid');
+    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./html/artist.html', '.mirrorFromAutor', "artist");
+    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./html/collection.html', '.mirrorFromCollection', "collection");
+    (0,_modules_timer__WEBPACK_IMPORTED_MODULE_13__["default"])();
   }
   if (body.classList.contains('marketplace')) {
     (0,_modules_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
     (0,_modules_footer__WEBPACK_IMPORTED_MODULE_6__["default"])();
-    _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_14__.nftDBarr.forEach(function (item) {
-      return (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_11__["default"])(item, '.artist__grid');
+    _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.forEach(function (item) {
+      return (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(item, '.artist__grid');
     });
+    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./artist.html', '.mirrorFromAutor', "artist");
+    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./collection.html', '.mirrorFromCollection', "collection");
   }
   if (body.classList.contains('toplist')) {
     (0,_modules_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
     (0,_modules_footer__WEBPACK_IMPORTED_MODULE_6__["default"])();
-    (0,_js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_8__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_13__.artists);
-    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('artist.html');
+    (0,_js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_8__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_14__.artists);
+    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('artist.html', '.toplist__list_miror', "artist");
   }
   if (body.classList.contains('artistPage')) {
     (0,_modules_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
@@ -7570,7 +7794,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (localStorage.getItem('artist')) {
       artistId = localStorage.getItem('artist');
     }
-    (0,_js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_10__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_13__.artistsDB[artistId]);
+    (0,_js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_10__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_14__.artistsDB[artistId]);
 
     //chek for development stage. Not enough pictures. for production only 'topAutors' function.
     if (artistId === 'lindsey' || artistId === 'kianaST' || artistId === 'allison' || artistId === 'davisWorkman' || artistId === 'angel' || artistId === 'lydia' || artistId === 'philip') {
@@ -7578,6 +7802,22 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       otherAutors();
     }
+    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('#', '.mirrorFromAutor');
+    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./collection.html', '.mirrorFromCollection', "collection");
+  }
+  if (body.classList.contains('collection')) {
+    (0,_modules_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_modules_footer__WEBPACK_IMPORTED_MODULE_6__["default"])();
+    var collectionId;
+    if (localStorage.getItem('collection')) {
+      collectionId = localStorage.getItem('collection');
+    }
+    (0,_modules_createWelcomeCollectionPage__WEBPACK_IMPORTED_MODULE_11__["default"])(_modules_collectDb__WEBPACK_IMPORTED_MODULE_16__.collectDbObj[collectionId]);
+    _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.forEach(function (item) {
+      if (item.collection == collectionId) {
+        (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(item, '.content__grid');
+      }
+    });
   }
 });
 })();

@@ -69,7 +69,7 @@ const nft = {
         artistAvat: 'kianaST',
         price: 1.63,
         hBid: 0.33,
-        collection: 'moonDancer'
+        collection: 'orbitians'
     },
     spaceMeet: {
         img: 'SpaceMeet',
@@ -78,7 +78,7 @@ const nft = {
         artistAvat: 'kianaST',
         price: 1.63,
         hBid: 0.33,
-        collection: 'moonDancer'
+        collection: 'orbitians'
     },
     spaceTales: {
         img: 'SpaceTales',
@@ -87,7 +87,7 @@ const nft = {
         artistAvat: 'kianaST',
         price: 1.63,
         hBid: 0.33,
-        collection: 'moonDancer'
+        collection: 'orbitians'
     },
     spaceTravel: {
         img: 'SpaceTravel',
@@ -96,7 +96,7 @@ const nft = {
         artistAvat: 'kianaST',
         price: 1.63,
         hBid: 0.33,
-        collection: 'moonDancer'
+        collection: 'orbitians'
     },
     spaceWalking: {
         img: 'SpaceWalking',
@@ -105,7 +105,7 @@ const nft = {
         artistAvat: 'kianaST',
         price: 1.63,
         hBid: 0.33,
-        collection: 'moonDancer'
+        collection: 'orbitians'
     },
     spaceWhale: {
         img: 'SpaceWhale',
@@ -114,7 +114,7 @@ const nft = {
         artistAvat: 'kianaST',
         price: 1.63,
         hBid: 0.33,
-        collection: 'moonDancer'
+        collection: 'orbitians'
     },
     sunsetDimension: {
         img: 'SunsetDimension',
@@ -123,7 +123,7 @@ const nft = {
         artistAvat: 'kianaST',
         price: 1.63,
         hBid: 0.33,
-        collection: 'moonDancer'
+        collection: 'orbitians'
     },
     lifeOnEdena: {
         img: 'LifeOnEdena',
@@ -155,6 +155,15 @@ const nft = {
     lifeOnMusic: {
         img: 'LifeOnMusic',
         title: 'LifeOnMusic',
+        artist: 'lydia',
+        artistAvat: 'lydia',
+        price: 1.63,
+        hBid: 0.33,
+        collection: 'nebulaKid'
+    },
+    lifeOnKey: {
+        img: 'LifeOnKey',
+        title: 'LifeOnKey',
         artist: 'lydia',
         artistAvat: 'lydia',
         price: 1.63,
@@ -222,7 +231,7 @@ const nft = {
         artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
-        collection: 'dancingRobots'
+        collection: 'beKind2Robots'
     },
     dancingRobot21: {
         img: 'DancingRobot21',
@@ -231,7 +240,7 @@ const nft = {
         artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
-        collection: 'dancingRobots'
+        collection: 'beKind2Robots'
     },
     dancingRobot23: {
         img: 'DancingRobot23',
@@ -240,7 +249,7 @@ const nft = {
         artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
-        collection: 'dancingRobots'
+        collection: 'beKind2Robots'
     },
     dancingRobot24: {
         img: 'DancingRobot24',
@@ -249,7 +258,7 @@ const nft = {
         artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
-        collection: 'dancingRobots'
+        collection: 'beKind2Robots'
     },
     dancingRobot56: {
         img: 'DancingRobot56',
@@ -258,7 +267,7 @@ const nft = {
         artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
-        collection: 'dancingRobots'
+        collection: 'beKind2Robots'
     },
     dancingRobot75: {
         img: 'DancingRobot75',
@@ -267,7 +276,7 @@ const nft = {
         artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
-        collection: 'dancingRobots'
+        collection: 'beKind2Robots'
     },
     dancingRobot76: {
         img: 'DancingRobot76',
@@ -276,7 +285,7 @@ const nft = {
         artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
-        collection: 'dancingRobots'
+        collection: 'beKind2Robots'
     },
     dancingRobot87: {
         img: 'DancingRobot87',
@@ -285,7 +294,7 @@ const nft = {
         artistAvat: 'davisWorkman',
         price: 1.63,
         hBid: 0.33,
-        collection: 'dancingRobots'
+        collection: 'beKind2Robots'
     },
     cryptoCity: {
         img: 'CryptoCity',
@@ -375,7 +384,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom28: {
         img: 'MagicMashroom28',
@@ -384,7 +393,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom25: {
         img: 'MagicMashroom25',
@@ -393,7 +402,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom41: {
         img: 'MagicMashroom41',
@@ -402,7 +411,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom43: {
         img: 'MagicMashroom43',
@@ -411,7 +420,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom46: {
         img: 'MagicMashroom46',
@@ -420,7 +429,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom62: {
         img: 'MagicMashroom62',
@@ -429,7 +438,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom63: {
         img: 'MagicMashroom63',
@@ -438,7 +447,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom64: {
         img: 'MagicMashroom64',
@@ -447,7 +456,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom65: {
         img: 'MagicMashroom65',
@@ -456,7 +465,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom66: {
         img: 'MagicMashroom66',
@@ -465,7 +474,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom67: {
         img: 'MagicMashroom67',
@@ -474,7 +483,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom68: {
         img: 'MagicMashroom68',
@@ -483,7 +492,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom69: {
         img: 'MagicMashroom69',
@@ -492,7 +501,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom70: {
         img: 'MagicMashroom70',
@@ -501,7 +510,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom71: {
         img: 'MagicMashroom71',
@@ -510,7 +519,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom72: {
         img: 'MagicMashroom72',
@@ -519,7 +528,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom73: {
         img: 'MagicMashroom73',
@@ -528,7 +537,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom74: {
         img: 'MagicMashroom74',
@@ -537,7 +546,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom75: {
         img: 'MagicMashroom75',
@@ -546,7 +555,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom76: {
         img: 'MagicMashroom76',
@@ -555,7 +564,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     },
     magicMashroom80: {
         img: 'MagicMashroom80',
@@ -564,7 +573,7 @@ const nft = {
         artistAvat: 'philip',
         price: 1.63,
         hBid: 0.33,
-        collection: 'magicMushrooms'
+        collection: 'shroomie'
     }
     
 };

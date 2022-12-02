@@ -18,7 +18,7 @@ function homePageWelcomeAdv(arr){
                 <div class="nft__item_descr">
                     <h5 class="nft__item_name jsTitle">${this.title}</h5>
                     <div class="nft__item_autor">
-                        <img src="./src/icons/artists/${this.artist}.jpg" alt="ava" class="nft__item_avatar">
+                        <img src="./src/icons/artists/${this.artist}.jpg" alt="ava" class="nft__item_avatar jsAvatar">
                         <div><div class="nft__item_nickname jsNameArtist">${this.artist}</div></div>
                     </div>
                 </div>
@@ -39,6 +39,7 @@ function homePageWelcomeAdv(arr){
 
     const title = document.querySelector('.jsTitle'),
           picture = document.querySelector('.jsPicture'),
+          avatar = document.querySelector('.jsAvatar'),
           nameArtist = document.querySelector('.jsNameArtist');
 
           parentEllement.style.transition = '1s';
@@ -49,12 +50,12 @@ function homePageWelcomeAdv(arr){
    setInterval(() => {
         
          if(curent < arr.length){
-            console.log(curent);
             parentEllement.style.opacity = '0';
 
             setTimeout(() => {
                 title.innerHTML = `${arr[curent].title}`;
                 nameArtist.innerHTML = `${arr[curent].artist}`;
+                avatar.src = `./src/icons/artists/${arr[curent].artist}.jpg`;
                 picture.src = `./src/img/NFT_IMG/${arr[curent].img}.jpg`;
 
                 parentEllement.style.opacity = '100%';

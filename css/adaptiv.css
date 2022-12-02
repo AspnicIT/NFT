@@ -170,6 +170,9 @@
     max-width: 690px;
     margin: 0 auto 80px auto;
   }
+  .discover__grid_item:last-child {
+    display: none;
+  }
   #astroFiction {
     display: none;
   }
@@ -595,6 +598,9 @@
     bottom: 0;
     width: 100%;
   }
+  .discover__grid_item:last-child {
+    display: block;
+  }
   #astroFiction {
     display: block;
   }
@@ -755,7 +761,20 @@
     max-width: 315px;
   }
   .content__grid {
-    padding-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  .content__wrapTitle {
+    margin-top: 40px;
+  }
+  .content__btn {
+    top: 60px;
+  }
+  .content__wrapTitle {
+    margin-top: 20px;
+  }
+  .content__arrow {
+    left: 40%;
   }
   .search,
 .search__line {

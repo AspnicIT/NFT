@@ -5,13 +5,14 @@ function createNftCard(objectNFT, selectorForParent) {
 
     function nftCards(obj) {
         class Nft {
-            constructor(img, title, artist, artistAvat, price, hBid) {
+            constructor(img, title, artist, artistAvat, price, hBid, collection) {
                 this.img = img;
                 this.title = title;
                 this.artist = artist;
                 this.artistAvat = artistAvat;
                 this.price = price;
                 this.hBid = hBid;
+                this.collection = collection;
             }
             render() {
                 let card = document.createElement('div');
@@ -22,8 +23,10 @@ function createNftCard(objectNFT, selectorForParent) {
                 <div class="discover__grid_descr">
                     <h5 class="nft__item_name discover__grid_name">${this.title}</h5>
                     <div class="discover__grid_autor">
+                    <a id="${this.artist}" class="mirrorFromAutor" href="./html/artist.html"></a>
+                    <a id="${this.collection}" class="mirrorFromCollection" href="./html/artist.html"></a>
                         <img src="../src/icons/artists/${this.artistAvat}.jpg" alt="ava" class="nft__item_avatar">
-                        <div class="nft__item_nickname discover__grid_nickname">${this.artist}</div>
+                        <div class="nft__item_nickname discover__grid_nickname">${this.collection}</div>
                     </div>
                     <div class="discover__grid_price">
                         <div class="discover__grid_ETH">
@@ -48,7 +51,8 @@ function createNftCard(objectNFT, selectorForParent) {
             obj.artist,
             obj.artistAvat,
             obj.price,
-            obj.hBid
+            obj.hBid,
+            obj.collection
         ).render();
     }
 

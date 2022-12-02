@@ -1,10 +1,10 @@
-function useLocalStorage(location) {
-    let goToartistPage = document.querySelectorAll('.toplist__list_miror');
+function useLocalStorage(location, selector, key) {
+    let goToartistPage = document.querySelectorAll(selector);
         goToartistPage.forEach((item) => {
             item.addEventListener('click', (e) => {
                 e.preventDefault();
-                let artistId = e.target.id;
-                localStorage.setItem("artist", artistId);
+                let storageId = e.target.id;
+                localStorage.setItem(key, storageId);
                 window.location = location;
             });
         });

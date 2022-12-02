@@ -8,6 +8,7 @@ import topCreatorsOnHomePage from './modules/topCreatorsOnHomePage';
 import creatorsList from '../js/modules/creatorsList';
 import useLocalStorage from './modules/localStorage';
 import createArtistPage from '../js/modules/createArtistPage';
+import welcomeCollectionPage from './modules/createWelcomeCollectionPage';
 import createNftCard from './modules/createNftCards';
 import timer from './modules/timer';
 import {artists} from "../js/modules/artistDB";
@@ -15,11 +16,13 @@ import {artistsDB} from "../js/modules/artistDB";
 import {twelweArtistsForHomePageArr } from '../js/modules/artistDB';
 import {nft} from "../js/modules/nftDB";
 import {nftDBarr} from "../js/modules/nftDB";
+import {collectDbObj} from "./modules/collectDb";
+import {collectDbArr} from "./modules/collectDb";
 
 
-function topAutors(ids){
+function topAutors(artistId){
     nftDBarr.forEach((item) => {
-       if(item.artist == ids){
+       if(item.artist == artistId){
            createNftCard(item, '.artist__grid');
        }
    });   
@@ -38,17 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(body.classList.contains('home')){
 
-
-
         burgerButton();
         homePageWelcomeAdv(nftDBarr);
-
-        
         topCreatorsOnHomePage(twelweArtistsForHomePageArr);
-        useLocalStorage('./html/artist.html');
+        useLocalStorage('./html/artist.html', '.toplist__list_miror', "artist");
         createNftCard(nft.happyRobot032, '.discover__grid');
         createNftCard(nft.dancingRobot56, '.discover__grid');
         createNftCard(nft.iceCreamApe, '.discover__grid');
+        useLocalStorage('./html/artist.html', '.mirrorFromAutor', "artist");
+        useLocalStorage('./html/collection.html', '.mirrorFromCollection', "collection");
         timer();
     }
 
@@ -56,6 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
         insertHeader();
         insertFooter();
         nftDBarr.forEach(item => createNftCard(item, '.artist__grid'));
+        useLocalStorage('./artist.html', '.mirrorFromAutor', "artist");
+        useLocalStorage('./collection.html', '.mirrorFromCollection', "collection");
     }
 
 
@@ -65,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         insertHeader();
         insertFooter();
         creatorsList(artists);
-        useLocalStorage('artist.html');
+        useLocalStorage('artist.html', '.toplist__list_miror', "artist");
     }
 
     
@@ -91,7 +94,24 @@ document.addEventListener('DOMContentLoaded', () => {
             topAutors(artistId);
         } else {
             otherAutors();
-        }      
+        }     
+        useLocalStorage('#', '.mirrorFromAutor');
+        useLocalStorage('./collection.html', '.mirrorFromCollection', "collection");
+    }
+
+    if(body.classList.contains('collection')){
+        insertHeader();
+        insertFooter();
+        let collectionId;
+        if(localStorage.getItem('collection')){
+            collectionId = localStorage.getItem('collection');
+        }
+        welcomeCollectionPage(collectDbObj[collectionId]);
+        nftDBarr.forEach((item) => {
+            if(item.collection == collectionId){
+                createNftCard(item, '.content__grid');
+            }
+        });
     }
     
 

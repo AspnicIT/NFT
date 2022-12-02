@@ -263,6 +263,8 @@ input:focus {
        column-gap: 12px;
 }
 .nft__item_avatar {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 24px;
   border-radius: 8px;
@@ -279,6 +281,7 @@ input:focus {
   justify-content: space-between;
 }
 .trend__card {
+  position: relative;
   max-width: 330px;
 }
 .trend__card_topImg {
@@ -299,6 +302,7 @@ input:focus {
 }
 .trend__card_bottomImg img {
   border-radius: 22px;
+  width: 100px;
 }
 .trend__card_counter {
   background: #A259FF;
@@ -458,6 +462,7 @@ input:focus {
   -moz-column-gap: 12px;
        column-gap: 12px;
   margin-bottom: 25px;
+  position: relative;
 }
 .discover__grid_name {
   margin-bottom: 5px;
@@ -478,6 +483,33 @@ input:focus {
   line-height: 13px;
   color: #858584;
   font-family: "Space Mono", monospace;
+}
+
+.mirrorFromAutor {
+  position: absolute;
+  width: 34px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.mirrorFromCollection {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 36px;
+  z-index: 2;
+}
+
+.opherMirrorAutor {
+  left: 15px;
+}
+
+.opherMirrorCollect {
+  left: 51px;
+  width: 150px;
 }
 
 .opher {
@@ -506,6 +538,7 @@ input:focus {
   padding-bottom: 60px;
 }
 .opher__left_link {
+  position: relative;
   width: 200px;
   background: #3B3B3B;
   padding: 10px 20px;
@@ -1013,7 +1046,7 @@ input:focus {
   position: relative;
   width: 100%;
   height: 560px;
-  background-image: url(../src/img/collection.jpg);
+  background-image: url(../src/img/topwallCollection/animakid.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1114,6 +1147,10 @@ input:focus {
 .collect__info_br {
   display: block;
 }
+.collect__wrapTitle {
+  position: relative;
+  margin-top: 40px;
+}
 
 .content {
   width: 100%;
@@ -1124,9 +1161,6 @@ input:focus {
 }
 .content__btn {
   top: 0;
-}
-.content__arrow {
-  display: none;
 }
 
 .search {
@@ -1260,4 +1294,12 @@ input:focus {
 .toplist__list_sold, .toplist__list_volume {
   font-family: "Space Mono", monospace;
   color: #fff;
+}
+
+.miror {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
