@@ -1,9 +1,12 @@
-function timer(){
-    const deadLine = '2023-06-22';
+function timer(date){
+    const deadLine = date;
+
 
 function getTimeRemaining(endtime) {
     let days, hours, minutes, seconds;
     const t = Date.parse(endtime) - Date.parse(new Date());
+
+
 
     if (t <= 0) {
         days = 0;

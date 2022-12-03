@@ -1,10 +1,828 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./js/modules/artistDB.js":
-/*!********************************!*\
-  !*** ./js/modules/artistDB.js ***!
-  \********************************/
+/***/ "./js/modules/constructors/creatObjectOfCollections.js":
+/*!*************************************************************!*\
+  !*** ./js/modules/constructors/creatObjectOfCollections.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "collectItemsArr": () => (/* binding */ collectItemsArr)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.filter.js */ "./node_modules/core-js/modules/es.array.filter.js");
+/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_object_create_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.object.create.js */ "./node_modules/core-js/modules/es.object.create.js");
+/* harmony import */ var core_js_modules_es_object_create_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_create_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _dataBase_nftDB__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../dataBase/nftDB */ "./js/modules/dataBase/nftDB.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var animakid = _dataBase_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.filter(function (item) {
+    return item.collection == 'animakid';
+  }),
+  orbitians = _dataBase_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.filter(function (item) {
+    return item.collection == 'orbitians';
+  }),
+  nebulaKid = _dataBase_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.filter(function (item) {
+    return item.collection == 'nebulaKid';
+  }),
+  happyRoboto = _dataBase_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.filter(function (item) {
+    return item.collection == 'happyRoboto';
+  }),
+  beKind2Robots = _dataBase_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.filter(function (item) {
+    return item.collection == 'beKind2Robots';
+  }),
+  criptoCity = _dataBase_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.filter(function (item) {
+    return item.collection == 'criptoCity';
+  }),
+  other = _dataBase_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.filter(function (item) {
+    return item.collection == 'other';
+  }),
+  shroomie = _dataBase_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.filter(function (item) {
+    return item.collection == 'shroomie';
+  });
+var sortingArrsNft = [animakid, orbitians, nebulaKid, happyRoboto, beKind2Robots, criptoCity, other, shroomie];
+var collectItemsArr = [];
+function mixCollection(obj1, obj2, obj3, lengthColl) {
+  var CollectionItem = /*#__PURE__*/function () {
+    function CollectionItem(mainImg, img1, img2, nameColl, artist, amount) {
+      _classCallCheck(this, CollectionItem);
+      this.mainImg = mainImg;
+      this.img1 = img1;
+      this.img2 = img2;
+      this.nameColl = nameColl;
+      this.artist = artist;
+      this.amount = amount;
+    }
+    _createClass(CollectionItem, [{
+      key: "render",
+      value: function render() {
+        var mixObj = Object.create({}, {
+          mainImg: {
+            value: this.mainImg
+          },
+          img1: {
+            value: this.img1
+          },
+          img2: {
+            value: this.img2
+          },
+          name: {
+            value: this.nameColl
+          },
+          artist: {
+            value: this.artist
+          },
+          amount: {
+            value: this.amount
+          }
+        });
+        collectItemsArr.push(mixObj);
+      }
+    }]);
+    return CollectionItem;
+  }();
+  new CollectionItem(obj1.img, obj2.img, obj3.img, obj1.collection, obj1.artist, lengthColl).render();
+}
+sortingArrsNft.forEach(function (arr) {
+  mixCollection(arr[0], arr[1], arr[2], arr.length);
+});
+
+
+/***/ }),
+
+/***/ "./js/modules/constructors/createArtistPage.js":
+/*!*****************************************************!*\
+  !*** ./js/modules/constructors/createArtistPage.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function createArtistPage(objectFromTopList) {
+  var topParent = document.querySelector('.welcome');
+  function createPage(obj) {
+    var NewPage = /*#__PURE__*/function () {
+      function NewPage(avatar, name, sold, volume, followers, bio) {
+        _classCallCheck(this, NewPage);
+        this.avatar = avatar;
+        this.name = name;
+        this.sold = sold;
+        this.volume = volume;
+        this.followers = followers;
+        this.bio = bio;
+      }
+      _createClass(NewPage, [{
+        key: "render",
+        value: function render() {
+          var welcome = document.createElement('div');
+          welcome.classList.add('artist__welcome');
+          welcome.innerHTML = "\n            <div class=\"artist__topwall\">\n                <div class=\"artist__gradient\"></div>\n                <div class=\"artist__avatar\">\n                    <div class=\"artist__avawrap\">\n                        <img src=\"../src/icons/artists/".concat(this.avatar, ".jpg\" alt=\"").concat(this.avatar, "\">\n                    </div>\n                </div>\n            </div>\n            <style>\n                .artist__topwall{\n                    background-image: url(../src/img/artistPages/topwall/").concat(this.avatar, ".jpg);\n                } \n            </style>\n\n            <div id=\"welcomeArtist\" class=\"artist__container\">\n                <div class=\"artist__header\">\n                    <h2 class=\"artist__title\">").concat(this.name, "</h2>\n                    <div class=\"artist__btns\">\n                        <button class=\"artist__copykey\">\n                            <img src=\"../src/icons/Copy.svg\" alt=\"copy\" class=\"artist__copykey_img\">\n                            0xc0E3...B79C\n                        </button>\n                        <button class=\"artist__follow\">\n                            <img src=\"../src/icons/Plus.svg\" alt=\"plus\" class=\"artist__follow_img\">\n                            Follow\n                        </button>\n                    </div>\n                </div>\n                <div class=\"artist__info\">\n                    <div class=\"artist__info_counter\">\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.volume, " <span>ETH</span></h4>\n                            <h5 class=\"artist__info_subtitle\">Volume</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.sold, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">NFTs Sold</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.followers, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">Followers</h5>\n                        </div>\n                    </div>\n\n                    <div class=\"artist__bio\">\n                        <h5 class=\"artist__bio_title\">Bio</h5>\n                        <div class=\"artist__info_subtitle\">").concat(this.bio, "</div>\n                    </div>\n\n                    <div class=\"artist__links\">\n                        <h5 class=\"artist__bio_title\">Links</h5>\n                        <div class=\"artist__links_block\">\n                            <a href=\"#\"><img src=\"../src/icons/footer/Globe.svg\" alt=\"globe\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/DiscordLogo.svg\" alt=\"dscrd\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/YoutubeLogo.svg\" alt=\"YT\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/TwitterLogo.svg\" alt=\"twit\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/InstagramLogo.svg\" alt=\"inst\"\n                                    class=\"artist__links_img\"></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ");
+          topParent.append(welcome);
+        }
+      }]);
+      return NewPage;
+    }();
+    new NewPage(obj.avatar, obj.name, obj.sold, obj.volume, obj.followers, obj.bio).render();
+  }
+  createPage(objectFromTopList);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createArtistPage);
+
+/***/ }),
+
+/***/ "./js/modules/constructors/createNftCards.js":
+/*!***************************************************!*\
+  !*** ./js/modules/constructors/createNftCards.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+
+
+
+
+
+
+
+
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function createNftCard(objectNFT, selectorForParent, dotsSrc) {
+  var parentElement = document.querySelector(selectorForParent);
+  function nftCards(obj) {
+    var Nft = /*#__PURE__*/function () {
+      function Nft(img, title, artist, artistAvat, price, hBid, collection) {
+        _classCallCheck(this, Nft);
+        this.img = img;
+        this.title = title;
+        this.artist = artist;
+        this.artistAvat = artistAvat;
+        this.price = price;
+        this.hBid = hBid;
+        this.collection = collection;
+      }
+      _createClass(Nft, [{
+        key: "render",
+        value: function render() {
+          var card = document.createElement('div');
+          card.classList.add('discover__grid_item');
+          card.innerHTML = "                                    \n                <img src=\"".concat(dotsSrc, "/src/img/NFT_IMG/").concat(this.img, ".jpg\" alt=\"nft\" class=\"discover__grid\">\n                <div class=\"discover__grid_descr\">\n                    <h5 class=\"nft__item_name discover__grid_name\">").concat(this.title, "</h5>\n                    <div class=\"discover__grid_autor\">\n                    <a id=\"").concat(this.artist, "\" class=\"mirrorFromAutor\" href=\"./html/artist.html\"></a>\n                    <a id=\"").concat(this.collection, "\" class=\"mirrorFromCollection\" href=\"./html/artist.html\"></a>\n                        <img src=\"").concat(dotsSrc, "/src/icons/artists/").concat(this.artistAvat, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                        <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.collection, "</div>\n                    </div>\n                    <div class=\"discover__grid_price\">\n                        <div class=\"discover__grid_ETH\">\n                            <span class=\"discover__grid_span\">Price</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.price, " ETH</div>\n                        </div>\n                        <div class=\"discover__grid_wETH\">\n                            <span class=\"discover__grid_span\">Highest Bid</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.hBid, " wETH</div>\n                        </div>\n                    </div>\n                    \n                </div>                    \n                ");
+          parentElement.append(card);
+        }
+      }]);
+      return Nft;
+    }();
+    new Nft(obj.img, obj.title, obj.artist, obj.artistAvat, obj.price, obj.hBid, obj.collection).render();
+  }
+  nftCards(objectNFT);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createNftCard);
+
+/***/ }),
+
+/***/ "./js/modules/constructors/createWelcomeCollectionPage.js":
+/*!****************************************************************!*\
+  !*** ./js/modules/constructors/createWelcomeCollectionPage.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _functional_timer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../functional/timer */ "./js/modules/functional/timer.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
+function welcomeCollectionPage(objectCollection) {
+  var sectionParent = document.querySelector('.collect');
+  function createWelcomeColecctionPage(obj) {
+    var WelcomeCollection = /*#__PURE__*/function () {
+      function WelcomeCollection(name, title, date, artist, tag1, tag2, tag3, tag4, descr) {
+        _classCallCheck(this, WelcomeCollection);
+        this.name = name;
+        this.title = title;
+        this.date = date;
+        this.artist = artist;
+        this.tag1 = tag1;
+        this.tag2 = tag2;
+        this.tag3 = tag3;
+        this.tag4 = tag4;
+        this.descr = descr;
+      }
+      _createClass(WelcomeCollection, [{
+        key: "render",
+        value: function render() {
+          var welcome = document.createElement('div');
+          welcome.classList.add('collect__inner');
+          welcome.innerHTML = "\n                <div class=\"collect__topwall\"></div>\n            <div class=\"collect__container\">\n                <div class=\"collect__timer\">\n                    <div class=\"collect__timer_inner\">\n                        <a href=\"#\" class=\"collect__timer_link\">Place Bid</a>\n                    </div>\n                    <div class=\"timer\">\n                        <div class=\"timer__body\">\n                            <span class=\"discover__grid_span timer__title\">Auction ends in:</span>\n\n                            <div class=\"timer__blocks\">\n                                <div class=\"timer__block\">\n                                    <h3 id=\"hours\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Hours</span>\n                                </div>\n                                <h4>:</h4>\n                                <div class=\"timer__block\">\n                                    <h3 id=\"minutes\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Minutes</span>\n                                </div>\n                                <h4>:</h4>\n                                <div class=\"timer__block\">\n                                    <h3 id=\"seconds\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Seconds</span>\n                                </div>\n                            </div>\n\n\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"collect__info\">\n\n                    <div class=\"collect__info_block1\">\n                        <h2 class=\"collect__info_title\">".concat(this.title, "</h2>\n                        <p class=\"collect__info_date\">Minted on ").concat(this.date, "</p>\n                    </div>\n\n                    <div class=\"collect__info_block2\">\n                        <h5 class=\"collect__info_subtitle\">Created By</h5>\n                        <div class=\"nft__item_autor\">\n                            <img src=\"../src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                            <a href=\"../html/artist.html\" class=\"toplist__miror\">\n                                <div class=\"nft__item_nickname\">").concat(this.artist, "</div>\n                            </a>\n                        </div>\n                    </div>\n\n                    <div class=\"collect__info_block3\">\n                        <h5 class=\"collect__info_subtitle\">Description</h5>\n                        <article>\n                            <p class=\"collect__info_text\">\n                                ").concat(this.descr, "\n                            </p>\n                        </article>\n                    </div>\n\n                    <div class=\"collect__info_block4\">\n                        <h5 class=\"collect__info_subtitle\">Detales</h5>\n                        <div class=\"collect__info_detales\">\n                            <a href=\"#\" class=\"collect__info_linkToDetales\">\n                                <img class=\"collect__info_globe\" src=\"../src/icons/footer/Globe.svg\" alt=\"\">\n                                <p class=\"collect__info_text\">View on Etherscan</p>\n                            </a>\n                            <a href=\"#\" class=\"collect__info_linkToDetales\">\n                                <img class=\"collect__info_globe\" src=\"../src/icons/footer/Globe.svg\" alt=\"\">\n                                <p class=\"collect__info_text\">View Original</p>\n                            </a>\n                        </div>\n                    </div>\n\n                    <div class=\"collect__info_block5\">\n                        <h5 class=\"collect__info_subtitle\">Tags</h5>\n                        <div class=\"collect__info_tags\">\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag1, "</a>\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag2, "</a>\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag3, "</a>\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag4, "</a>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"collect__wrapTitle\">\n                    <h3 class=\"title\">More from this artist</h3>\n                    <div class=\"creats__wrapBtn content__btn\">\n                        <a id=\"").concat(this.artist, "\" href=\"../html/artist.html\">\n                            <button class=\"creats__btn\">\n                                <img src=\"../src/icons/ArrowRight.svg\" alt=\"\" class=\"creats__img-1 content__arrow\">\n                                Go To Artist Page\n                            </button>\n                        </a>\n                    </div>\n                </div>\n            </div>\n                ");
+          sectionParent.append(welcome);
+          var topwall = document.querySelector('.collect__topwall');
+          topwall.style.backgroundImage = "url(../src/img/topwallCollection/".concat(this.name, ".jpg)");
+          (0,_functional_timer__WEBPACK_IMPORTED_MODULE_13__["default"])(obj.endSale);
+        }
+      }]);
+      return WelcomeCollection;
+    }();
+    new WelcomeCollection(obj.name, obj.title, obj.date, obj.artist, obj.tag1, obj.tag2, obj.tag3, obj.tag4, obj.descr).render();
+  }
+  createWelcomeColecctionPage(objectCollection);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (welcomeCollectionPage);
+
+/***/ }),
+
+/***/ "./js/modules/constructors/creatorsList.js":
+/*!*************************************************!*\
+  !*** ./js/modules/constructors/creatorsList.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function creatorsList(arrDB) {
+  var parentElem = document.querySelector('.toplist__list');
+  function topList(obj) {
+    var ListItem = /*#__PURE__*/function () {
+      function ListItem(number, avatar, name, change, sold, volume) {
+        _classCallCheck(this, ListItem);
+        this.number = number;
+        this.avatar = avatar;
+        this.name = name;
+        this.change = change;
+        this.sold = sold;
+        this.volume = volume;
+      }
+      _createClass(ListItem, [{
+        key: "render",
+        value: function render() {
+          var item = document.createElement('div');
+          item.classList.add('toplist__list_item');
+          item.innerHTML = "\n                    <a id=\"".concat(this.avatar, "\" href=\"./artist.html\" class=\"toplist__list_miror\"></a>\n                    <div class=\"toplist__list_number\">\n                        <p class=\"toplist__header_item\">").concat(this.number, "</p>\n                    </div>\n                    <div class=\"toplist__list_artist\">\n                        <img src=\"../src/icons/artists/").concat(this.avatar, ".jpg\" alt=\"ava\" class=\"toplist__list_avatar\">\n                        <h5 class=\"toplist__list_name\">").concat(this.name, "</h5>\n                    </div>\n                    <p class=\"toplist__list_chance toplist_chance\">+").concat(this.change, "%</p>\n                    <p class=\"toplist__list_sold toplist_nft\">").concat(this.sold, "</p>\n                    <p class=\"toplist__list_volume\">").concat(this.volume, " ETH</p>\n            ");
+          parentElem.append(item);
+        }
+      }]);
+      return ListItem;
+    }();
+    new ListItem(obj.number, obj.avatar, obj.name, obj.change, obj.sold, obj.volume).render();
+  }
+  function numeration(obj, number, i) {
+    obj[number] = i + 1;
+  }
+  function appendToPage(arr) {
+    arr.forEach(function (item, i) {
+      numeration(item, 'number', i);
+      topList(item);
+    });
+  }
+  appendToPage(arrDB);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (creatorsList);
+
+/***/ }),
+
+/***/ "./js/modules/constructors/homePageWelcomeAdv.js":
+/*!*******************************************************!*\
+  !*** ./js/modules/constructors/homePageWelcomeAdv.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.timers.js */ "./node_modules/core-js/modules/web.timers.js");
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function homePageWelcomeAdv(arr) {
+  var parentEllement = document.querySelector('.main__right');
+  function welcom(obj) {
+    var WelcomeAdv = /*#__PURE__*/function () {
+      function WelcomeAdv(img, title, artist) {
+        _classCallCheck(this, WelcomeAdv);
+        this.img = img;
+        this.title = title;
+        this.artist = artist;
+      }
+      _createClass(WelcomeAdv, [{
+        key: "render",
+        value: function render() {
+          var advBlock = document.createElement('div');
+          advBlock.classList.add('nft__item');
+          advBlock.style.width = '100%';
+          advBlock.innerHTML = "\n                <img src=\"./src/img/NFT_IMG/".concat(this.img, ".jpg\" alt=\"\" class=\"nft__item_img jsPicture\">\n\n                <div class=\"nft__item_descr\">\n                    <h5 class=\"nft__item_name jsTitle\">").concat(this.title, "</h5>\n                    <div class=\"nft__item_autor\">\n                        <img src=\"./src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar jsAvatar\">\n                        <div><div class=\"nft__item_nickname jsNameArtist\">").concat(this.artist, "</div></div>\n                    </div>\n                </div>\n                ");
+          parentEllement.append(advBlock);
+        }
+      }]);
+      return WelcomeAdv;
+    }();
+    new WelcomeAdv(obj.img, obj.title, obj.artist).render();
+  }
+  welcom(arr[0]);
+  var title = document.querySelector('.jsTitle'),
+    picture = document.querySelector('.jsPicture'),
+    avatar = document.querySelector('.jsAvatar'),
+    nameArtist = document.querySelector('.jsNameArtist');
+  parentEllement.style.transition = '1s';
+  var curent = 1;
+  setInterval(function () {
+    if (curent < arr.length) {
+      parentEllement.style.opacity = '0';
+      setTimeout(function () {
+        title.innerHTML = "".concat(arr[curent].title);
+        nameArtist.innerHTML = "".concat(arr[curent].artist);
+        avatar.src = "./src/icons/artists/".concat(arr[curent].artist, ".jpg");
+        picture.src = "./src/img/NFT_IMG/".concat(arr[curent].img, ".jpg");
+        setTimeout(function () {
+          parentEllement.style.opacity = '100%';
+        }, 1000);
+      }, 1500);
+      curent++;
+    } else {
+      curent = 0;
+    }
+  }, 7000);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homePageWelcomeAdv);
+
+/***/ }),
+
+/***/ "./js/modules/constructors/topCreatorsOnHomePage.js":
+/*!**********************************************************!*\
+  !*** ./js/modules/constructors/topCreatorsOnHomePage.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function topCreatorsOnHomePage(arrWithObj) {
+  var parentElement = document.querySelector('.creats__grid');
+  function topTwelveCreators(obj) {
+    var TopCreatsOnHome = /*#__PURE__*/function () {
+      function TopCreatsOnHome(number, avatar, name, volume) {
+        _classCallCheck(this, TopCreatsOnHome);
+        this.number = number;
+        this.avatar = avatar;
+        this.name = name;
+        this.volume = volume;
+      }
+      _createClass(TopCreatsOnHome, [{
+        key: "render",
+        value: function render() {
+          var twelveItem = document.createElement('div');
+          twelveItem.classList.add('creats__grid_item');
+          twelveItem.id = "topHome_".concat(this.number);
+          twelveItem.innerHTML = "\n            \n                <a id=\"".concat(this.avatar, "\" href=\"./html/artist.html\" class=\"toplist__list_miror\"></a>\n                <div class=\"creats__grid_number\">").concat(this.number, "</div>\n                <img src=\"./src/icons/artists/").concat(this.avatar, ".jpg\" alt=\"ava\" class=\"creats__grid_avatar\">\n                <div class=\"trend__card_descr\">\n                    <h5 class=\"nft__item_name creats__grid_name\">").concat(this.name, "</h5>\n                    <div class=\"nft__item_nickname creats__grid_price\"><span>Total Sales:</span>").concat(this.volume, " ETH</div>\n                </div>\n            \n            ");
+          parentElement.append(twelveItem);
+        }
+      }]);
+      return TopCreatsOnHome;
+    }();
+    new TopCreatsOnHome(obj.number, obj.avatar, obj.name, obj.volume).render();
+  }
+  function numeration(obj, number, i) {
+    obj[number] = i + 1;
+  }
+  function appendToPage(arr) {
+    arr.forEach(function (item, i) {
+      numeration(item, 'number', i);
+      topTwelveCreators(item);
+    });
+  }
+  appendToPage(arrWithObj);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (topCreatorsOnHomePage);
+
+/***/ }),
+
+/***/ "./js/modules/constructors/trendingCollections.js":
+/*!********************************************************!*\
+  !*** ./js/modules/constructors/trendingCollections.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
+/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function trendingCollections(arr, selector, dotsSrc) {
+  var trendingParent = document.querySelector(selector);
+  function createTrendCollection(obj) {
+    var NewTrendCollection = /*#__PURE__*/function () {
+      function NewTrendCollection(mainImg, img1, img2, name, artist, amount) {
+        _classCallCheck(this, NewTrendCollection);
+        this.mainImg = mainImg;
+        this.img1 = img1;
+        this.img2 = img2;
+        this.name = name;
+        this.artist = artist;
+        this.amount = amount;
+      }
+      _createClass(NewTrendCollection, [{
+        key: "render",
+        value: function render() {
+          var trendCard = document.createElement('div');
+          trendCard.classList.add('trend__card');
+          trendCard.innerHTML = "\n                <a id=\"".concat(this.name, "\" class=\"miror\" href=\"./html/collection.html\"></a>\n                <img src=\"").concat(dotsSrc, "/src/img/NFT_IMG/").concat(this.mainImg, ".jpg\" alt=\"img\" class=\"trend__card_topImg\">\n\n                <div class=\"trend__card_inner\">\n                    <div class=\"trend__card_bottomImg\"><img src=\"").concat(dotsSrc, "/src/img/NFT_IMG/").concat(this.img1, ".jpg\" alt=\"cat\"></div>\n                    <div class=\"trend__card_bottomImg\"><img src=\"").concat(dotsSrc, "/src/img/NFT_IMG/").concat(this.img2, ".jpg\" alt=\"bear\"></div>\n                    <div class=\"trend__card_bottomImg trend__card_counter\"><h5>").concat(this.amount, "+</h5></div>\n                </div>\n\n                <div class=\"trend__card_descr\">\n                    <h5 class=\"nft__item_name\">").concat(this.name, "</h5>\n                    <div class=\"nft__item_autor\">\n                        <img src=\"").concat(dotsSrc, "/src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                        <div class=\"nft__item_nickname\">").concat(this.artist, "</div>\n                    </div>\n                </div>\n                ");
+          trendingParent.append(trendCard);
+        }
+      }]);
+      return NewTrendCollection;
+    }();
+    new NewTrendCollection(obj.mainImg, obj.img1, obj.img2, obj.name, obj.artist, obj.amount).render();
+  }
+  arr.forEach(function (item) {
+    return createTrendCollection(item);
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (trendingCollections);
+
+/***/ }),
+
+/***/ "./js/modules/dataBase/artistDB.js":
+/*!*****************************************!*\
+  !*** ./js/modules/dataBase/artistDB.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -255,51 +1073,10 @@ var twelweArtistsForHomePageArr = artists.slice(0, 12);
 
 /***/ }),
 
-/***/ "./js/modules/burgerButton.js":
-/*!************************************!*\
-  !*** ./js/modules/burgerButton.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.timers.js */ "./node_modules/core-js/modules/web.timers.js");
-/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0__);
-
-function burgerButton() {
-  var burgerBtn = document.querySelector('.header__burgerMenu'),
-    burgerNav = document.querySelector('.header__burgerNav');
-  burgerBtn.addEventListener('click', function () {
-    if (burgerNav.classList.contains('thin')) {
-      headerOff();
-    } else {
-      headerOn();
-    }
-  });
-  function headerOff() {
-    burgerNav.classList.remove('thin');
-    setTimeout(function () {
-      burgerNav.style.display = 'none';
-    }, 700);
-  }
-  function headerOn() {
-    burgerNav.style.display = 'block';
-    setTimeout(function () {
-      burgerNav.classList.add('thin');
-    }, 0);
-  }
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (burgerButton);
-
-/***/ }),
-
-/***/ "./js/modules/collectDb.js":
-/*!*********************************!*\
-  !*** ./js/modules/collectDb.js ***!
-  \*********************************/
+/***/ "./js/modules/dataBase/collectDb.js":
+/*!******************************************!*\
+  !*** ./js/modules/dataBase/collectDb.js ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -321,7 +1098,8 @@ var collectDbObj = {
     tag2: 'bright',
     tag3: 'humanoid',
     tag4: 'pets',
-    descr: "The Animakid <br>\n        is a collection of 3,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">Images of animals have been present in the art of \n            people since the time of rock art.<br class=\"collect__info_br\">\n            Many modern artists have a weakness for our smaller brothers, making them the central \n            figures of their works. Today you can buy a painting in an animalistic style at almost any art exhibition.\n            It can be a soothing image of a pet in a beautiful interior, \n            which will add comfort to the atmosphere of the house. \n            A completely different mood conveys the image of the deadly fight of wild animals. \n            Such a picture will certainly add energy and dynamics."
+    descr: "The Animakid <br>\n        is a collection of 3,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">Images of animals have been present in the art of \n            people since the time of rock art.<br class=\"collect__info_br\">\n            Many modern artists have a weakness for our smaller brothers, making them the central \n            figures of their works. Today you can buy a painting in an animalistic style at almost any art exhibition.\n            It can be a soothing image of a pet in a beautiful interior, \n            which will add comfort to the atmosphere of the house. \n            A completely different mood conveys the image of the deadly fight of wild animals. \n            Such a picture will certainly add energy and dynamics.",
+    endSale: '2023-04-20'
   },
   orbitians: {
     name: 'orbitians',
@@ -332,7 +1110,8 @@ var collectDbObj = {
     tag2: 'space',
     tag3: 'future',
     tag4: 'planets',
-    descr: "The Orbitians <br>\n        is a collection of 10,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">There are all sorts of beings in the NFT Universe. The most\n        advanced and friendly of the bunch are Orbitians.<br class=\"collect__info_br\"> They live in\n        a metal space machines, high up in the sky and only have one foot on Earth.\n        These Orbitians are a peaceful race, but they have been at war with a group of invaders for\n        many generations. The invaders are called Upside-Downs, because of their inverted bodies\n        that live on the ground, yet do not know any other way to be. Upside-Downs believe that they\n        will be able to win this war if they could only get an eye into Orbitian territory, so\n        they've taken to make human beings their target."
+    descr: "The Orbitians <br>\n        is a collection of 10,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">There are all sorts of beings in the NFT Universe. The most\n        advanced and friendly of the bunch are Orbitians.<br class=\"collect__info_br\"> They live in\n        a metal space machines, high up in the sky and only have one foot on Earth.\n        These Orbitians are a peaceful race, but they have been at war with a group of invaders for\n        many generations. The invaders are called Upside-Downs, because of their inverted bodies\n        that live on the ground, yet do not know any other way to be. Upside-Downs believe that they\n        will be able to win this war if they could only get an eye into Orbitian territory, so\n        they've taken to make human beings their target.",
+    endSale: '2023-09-1'
   },
   nebulaKid: {
     name: 'nebulaKid',
@@ -343,7 +1122,8 @@ var collectDbObj = {
     tag2: 'world',
     tag3: 'man',
     tag4: 'human',
-    descr: "The NebulaKid <br>\n        is a collection of 5,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">For a modern person, the search for the meaning of life is becoming more and more urgent: after all, every year the world becomes more complicated, and it becomes more and more difficult to hear one is own desires, goals and meanings.<br class=\"collect__info_br\"> The fact is that every day we are faced with a huge information flow. Don't believe? Look at the number of your social media subscriptions: dozens of communities post hundreds of news every day, and this is just one channel for getting information.<br>\n            How to learn to hear yourself in the current realities?"
+    descr: "The NebulaKid <br>\n        is a collection of 5,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">For a modern person, the search for the meaning of life is becoming more and more urgent: after all, every year the world becomes more complicated, and it becomes more and more difficult to hear one is own desires, goals and meanings.<br class=\"collect__info_br\"> The fact is that every day we are faced with a huge information flow. Don't believe? Look at the number of your social media subscriptions: dozens of communities post hundreds of news every day, and this is just one channel for getting information.<br>\n            How to learn to hear yourself in the current realities?",
+    endSale: '2023-08-15'
   },
   happyRoboto: {
     name: 'happyRoboto',
@@ -354,7 +1134,8 @@ var collectDbObj = {
     tag2: 'tehnology',
     tag3: 'humanoid',
     tag4: 'happy',
-    descr: "The HappyRoboto <br>\n        is a collection of 2,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">The appearance of a robot capable of experiencing (or is it still imitating?) emotions can be considered a qualitatively new step in the life of a person with robots.<br class=\"collect__info_br\">It will already be possible to make friends with such robots, seek (and, apparently, receive) support from them. It is expected that they will be able to brighten up the loneliness of a wide variety of people, including the disabled, lonely old people, help in caring for the sick and at the same time entertain them with communicatio."
+    descr: "The HappyRoboto <br>\n        is a collection of 2,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">The appearance of a robot capable of experiencing (or is it still imitating?) emotions can be considered a qualitatively new step in the life of a person with robots.<br class=\"collect__info_br\">It will already be possible to make friends with such robots, seek (and, apparently, receive) support from them. It is expected that they will be able to brighten up the loneliness of a wide variety of people, including the disabled, lonely old people, help in caring for the sick and at the same time entertain them with communicatio.",
+    endSale: '2023-05-30'
   },
   beKind2Robots: {
     name: 'beKind2Robots',
@@ -365,7 +1146,8 @@ var collectDbObj = {
     tag2: 'tehnology',
     tag3: 'dance',
     tag4: 'colorfull',
-    descr: "The BeKind2Robots <br>\n        is a collection of 7,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">Spectacle has long been synonymous with Robot dance.<br class=\"collect__info_br\">A living futuristic robot, whose every movement is a perfectly coordinated mechanism, appears to be one of the most difficult areas for learning. It requires complete control of every muscle in the body, dozens of workouts to fix and slow down the most basic movements, and good physical condition to perform signature movements in the style of the \"Matrix\"."
+    descr: "The BeKind2Robots <br>\n        is a collection of 7,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">Spectacle has long been synonymous with Robot dance.<br class=\"collect__info_br\">A living futuristic robot, whose every movement is a perfectly coordinated mechanism, appears to be one of the most difficult areas for learning. It requires complete control of every muscle in the body, dozens of workouts to fix and slow down the most basic movements, and good physical condition to perform signature movements in the style of the \"Matrix\".",
+    endSale: '2023-10-2'
   },
   criptoCity: {
     name: 'criptoCity',
@@ -376,7 +1158,8 @@ var collectDbObj = {
     tag2: 'future',
     tag3: 'city',
     tag4: 'cripto',
-    descr: "The CriptoCity <br>\n        is a collection of 1,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">I am aware of how hackneyed such an introduction is, but still you experience special emotions when you see the city of the future.<br class=\"collect__info_br\">Surely, many of you are anxiously waiting for the first walk through the crypto city.\n            These incredible expectations can play a cruel joke on anyone. After all, in the imagination of many people, fueled by an active advertising campaign, there is a certain idealistic image that runs the risk of not meeting reality."
+    descr: "The CriptoCity <br>\n        is a collection of 1,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">I am aware of how hackneyed such an introduction is, but still you experience special emotions when you see the city of the future.<br class=\"collect__info_br\">Surely, many of you are anxiously waiting for the first walk through the crypto city.\n            These incredible expectations can play a cruel joke on anyone. After all, in the imagination of many people, fueled by an active advertising campaign, there is a certain idealistic image that runs the risk of not meeting reality.",
+    endSale: '2023-05-22'
   },
   other: {
     name: 'other',
@@ -387,7 +1170,8 @@ var collectDbObj = {
     tag2: 'picture',
     tag3: 'rest',
     tag4: 'NFT',
-    descr: "The Other <br>\n        is a collection of 10,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">All those who are too unique fall here."
+    descr: "The Other <br>\n        is a collection of 10,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">All those who are too unique fall here.",
+    endSale: '2023-08-12'
   },
   shroomie: {
     name: 'shroomie',
@@ -398,7 +1182,8 @@ var collectDbObj = {
     tag2: 'collorfull',
     tag3: 'acid',
     tag4: 'plant',
-    descr: "The Shroomie <br>\n        is a collection of 11,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">\"The Shroomie\" can rightfully be at the top of our list.\n            <br class=\"collect__info_br\">\n            You thought that neon mushrooms could only grow on the planet Pandora from the Avatar movie. Fortunately, their extraordinary radiance can be enjoyed on Earth as well. True, for this you will have to go to Japan or Brazil. It is there that in the rainy season these amazing green mushrooms are born from flaming spores. Whether these mushrooms are edible or not is unknown. This is understandable, few people dare to serve such a luminous dish to the table."
+    descr: "The Shroomie <br>\n        is a collection of 11,000 unique NFTs on the Ethereum blockchain, <br\n            class=\"collect__info_br\">\"The Shroomie\" can rightfully be at the top of our list.\n            <br class=\"collect__info_br\">\n            You thought that neon mushrooms could only grow on the planet Pandora from the Avatar movie. Fortunately, their extraordinary radiance can be enjoyed on Earth as well. True, for this you will have to go to Japan or Brazil. It is there that in the rainy season these amazing green mushrooms are born from flaming spores. Whether these mushrooms are edible or not is unknown. This is understandable, few people dare to serve such a luminous dish to the table.",
+    endSale: '2023-11-1'
   }
 };
 var collectDbArr = Object.values(collectDbObj);
@@ -407,579 +1192,27 @@ var collectDbArr = Object.values(collectDbObj);
 
 /***/ }),
 
-/***/ "./js/modules/createArtistPage.js":
-/*!****************************************!*\
-  !*** ./js/modules/createArtistPage.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-
-
-
-
-
-
-
-
-
-
-
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function createArtistPage(objectFromTopList) {
-  var topParent = document.querySelector('.welcome');
-  function createPage(obj) {
-    var NewPage = /*#__PURE__*/function () {
-      function NewPage(avatar, name, sold, volume, followers, bio) {
-        _classCallCheck(this, NewPage);
-        this.avatar = avatar;
-        this.name = name;
-        this.sold = sold;
-        this.volume = volume;
-        this.followers = followers;
-        this.bio = bio;
-      }
-      _createClass(NewPage, [{
-        key: "render",
-        value: function render() {
-          var welcome = document.createElement('div');
-          welcome.classList.add('artist__welcome');
-          welcome.innerHTML = "\n            <div class=\"artist__topwall\">\n                <div class=\"artist__gradient\"></div>\n                <div class=\"artist__avatar\">\n                    <div class=\"artist__avawrap\">\n                        <img src=\"../src/icons/artists/".concat(this.avatar, ".jpg\" alt=\"").concat(this.avatar, "\">\n                    </div>\n                </div>\n            </div>\n            <style>\n                .artist__topwall{\n                    background-image: url(../src/img/artistPages/topwall/").concat(this.avatar, ".jpg);\n                } \n            </style>\n\n            <div id=\"welcomeArtist\" class=\"artist__container\">\n                <div class=\"artist__header\">\n                    <h2 class=\"artist__title\">").concat(this.name, "</h2>\n                    <div class=\"artist__btns\">\n                        <button class=\"artist__copykey\">\n                            <img src=\"../src/icons/Copy.svg\" alt=\"copy\" class=\"artist__copykey_img\">\n                            0xc0E3...B79C\n                        </button>\n                        <button class=\"artist__follow\">\n                            <img src=\"../src/icons/Plus.svg\" alt=\"plus\" class=\"artist__follow_img\">\n                            Follow\n                        </button>\n                    </div>\n                </div>\n                <div class=\"artist__info\">\n                    <div class=\"artist__info_counter\">\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.volume, " <span>ETH</span></h4>\n                            <h5 class=\"artist__info_subtitle\">Volume</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.sold, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">NFTs Sold</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.followers, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">Followers</h5>\n                        </div>\n                    </div>\n\n                    <div class=\"artist__bio\">\n                        <h5 class=\"artist__bio_title\">Bio</h5>\n                        <div class=\"artist__info_subtitle\">").concat(this.bio, "</div>\n                    </div>\n\n                    <div class=\"artist__links\">\n                        <h5 class=\"artist__bio_title\">Links</h5>\n                        <div class=\"artist__links_block\">\n                            <a href=\"#\"><img src=\"../src/icons/footer/Globe.svg\" alt=\"globe\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/DiscordLogo.svg\" alt=\"dscrd\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/YoutubeLogo.svg\" alt=\"YT\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/TwitterLogo.svg\" alt=\"twit\"\n                                    class=\"artist__links_img\"></a>\n                            <a href=\"#\"><img src=\"../src/icons/footer/InstagramLogo.svg\" alt=\"inst\"\n                                    class=\"artist__links_img\"></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ");
-          topParent.append(welcome);
-        }
-      }]);
-      return NewPage;
-    }();
-    new NewPage(obj.avatar, obj.name, obj.sold, obj.volume, obj.followers, obj.bio).render();
-  }
-  createPage(objectFromTopList);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createArtistPage);
-
-/***/ }),
-
-/***/ "./js/modules/createNftCards.js":
+/***/ "./js/modules/dataBase/nftDB.js":
 /*!**************************************!*\
-  !*** ./js/modules/createNftCards.js ***!
+  !*** ./js/modules/dataBase/nftDB.js ***!
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-
-
-
-
-
-
-
-
-
-
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function createNftCard(objectNFT, selectorForParent) {
-  var parentElement = document.querySelector(selectorForParent);
-  function nftCards(obj) {
-    var Nft = /*#__PURE__*/function () {
-      function Nft(img, title, artist, artistAvat, price, hBid, collection) {
-        _classCallCheck(this, Nft);
-        this.img = img;
-        this.title = title;
-        this.artist = artist;
-        this.artistAvat = artistAvat;
-        this.price = price;
-        this.hBid = hBid;
-        this.collection = collection;
-      }
-      _createClass(Nft, [{
-        key: "render",
-        value: function render() {
-          var card = document.createElement('div');
-          card.classList.add('discover__grid_item');
-          card.innerHTML = "                                    \n                <img src=\"../src/img/NFT_IMG/".concat(this.img, ".jpg\" alt=\"nft\" class=\"discover__grid\">\n                <div class=\"discover__grid_descr\">\n                    <h5 class=\"nft__item_name discover__grid_name\">").concat(this.title, "</h5>\n                    <div class=\"discover__grid_autor\">\n                    <a id=\"").concat(this.artist, "\" class=\"mirrorFromAutor\" href=\"./html/artist.html\"></a>\n                    <a id=\"").concat(this.collection, "\" class=\"mirrorFromCollection\" href=\"./html/artist.html\"></a>\n                        <img src=\"../src/icons/artists/").concat(this.artistAvat, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                        <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.collection, "</div>\n                    </div>\n                    <div class=\"discover__grid_price\">\n                        <div class=\"discover__grid_ETH\">\n                            <span class=\"discover__grid_span\">Price</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.price, " ETH</div>\n                        </div>\n                        <div class=\"discover__grid_wETH\">\n                            <span class=\"discover__grid_span\">Highest Bid</span>\n                            <div class=\"nft__item_nickname discover__grid_nickname\">").concat(this.hBid, " wETH</div>\n                        </div>\n                    </div>\n                    \n                </div>                    \n                ");
-          parentElement.append(card);
-        }
-      }]);
-      return Nft;
-    }();
-    new Nft(obj.img, obj.title, obj.artist, obj.artistAvat, obj.price, obj.hBid, obj.collection).render();
-  }
-  nftCards(objectNFT);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createNftCard);
-
-/***/ }),
-
-/***/ "./js/modules/createWelcomeCollectionPage.js":
-/*!***************************************************!*\
-  !*** ./js/modules/createWelcomeCollectionPage.js ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-
-
-
-
-
-
-
-
-
-
-
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function welcomeCollectionPage(objectCollection) {
-  var sectionParent = document.querySelector('.collect');
-  function createWelcomeColecctionPage(obj) {
-    var WelcomeCollection = /*#__PURE__*/function () {
-      function WelcomeCollection(name, title, date, artist, tag1, tag2, tag3, tag4, descr) {
-        _classCallCheck(this, WelcomeCollection);
-        this.name = name;
-        this.title = title;
-        this.date = date;
-        this.artist = artist;
-        this.tag1 = tag1;
-        this.tag2 = tag2;
-        this.tag3 = tag3;
-        this.tag4 = tag4;
-        this.descr = descr;
-      }
-      _createClass(WelcomeCollection, [{
-        key: "render",
-        value: function render() {
-          var welcome = document.createElement('div');
-          welcome.classList.add('collect__inner');
-          welcome.innerHTML = "\n                <div class=\"collect__topwall\"></div>\n            <div class=\"collect__container\">\n                <div class=\"collect__timer\">\n                    <div class=\"collect__timer_inner\">\n                        <a href=\"#\" class=\"collect__timer_link\">Place Bid</a>\n                    </div>\n                    <div class=\"timer\">\n                        <div class=\"timer__body\">\n                            <span class=\"discover__grid_span timer__title\">Auction ends in:</span>\n\n                            <div class=\"timer__blocks\">\n                                <div class=\"timer__block\">\n                                    <h3 id=\"hours\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Hours</span>\n                                </div>\n                                <h4>:</h4>\n                                <div class=\"timer__block\">\n                                    <h3 id=\"minutes\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Minutes</span>\n                                </div>\n                                <h4>:</h4>\n                                <div class=\"timer__block\">\n                                    <h3 id=\"seconds\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Seconds</span>\n                                </div>\n                            </div>\n\n\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"collect__info\">\n\n                    <div class=\"collect__info_block1\">\n                        <h2 class=\"collect__info_title\">".concat(this.title, "</h2>\n                        <p class=\"collect__info_date\">Minted on ").concat(this.date, "</p>\n                    </div>\n\n                    <div class=\"collect__info_block2\">\n                        <h5 class=\"collect__info_subtitle\">Created By</h5>\n                        <div class=\"nft__item_autor\">\n                            <img src=\"../src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                            <a href=\"../html/artist.html\" class=\"toplist__miror\">\n                                <div class=\"nft__item_nickname\">").concat(this.artist, "</div>\n                            </a>\n                        </div>\n                    </div>\n\n                    <div class=\"collect__info_block3\">\n                        <h5 class=\"collect__info_subtitle\">Description</h5>\n                        <article>\n                            <p class=\"collect__info_text\">\n                                ").concat(this.descr, "\n                            </p>\n                        </article>\n                    </div>\n\n                    <div class=\"collect__info_block4\">\n                        <h5 class=\"collect__info_subtitle\">Detales</h5>\n                        <div class=\"collect__info_detales\">\n                            <a href=\"#\" class=\"collect__info_linkToDetales\">\n                                <img class=\"collect__info_globe\" src=\"../src/icons/footer/Globe.svg\" alt=\"\">\n                                <p class=\"collect__info_text\">View on Etherscan</p>\n                            </a>\n                            <a href=\"#\" class=\"collect__info_linkToDetales\">\n                                <img class=\"collect__info_globe\" src=\"../src/icons/footer/Globe.svg\" alt=\"\">\n                                <p class=\"collect__info_text\">View Original</p>\n                            </a>\n                        </div>\n                    </div>\n\n                    <div class=\"collect__info_block5\">\n                        <h5 class=\"collect__info_subtitle\">Tags</h5>\n                        <div class=\"collect__info_tags\">\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag1, "</a>\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag2, "</a>\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag3, "</a>\n                            <a href=\"#\" class=\"collect__info_tag\">").concat(this.tag4, "</a>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"collect__wrapTitle\">\n                    <h3 class=\"title\">More from this artist</h3>\n                    <div class=\"creats__wrapBtn content__btn\">\n                        <a id=\"").concat(this.artist, "\" href=\"../html/artist.html\">\n                            <button class=\"creats__btn\">\n                                <img src=\"../src/icons/ArrowRight.svg\" alt=\"\" class=\"creats__img-1 content__arrow\">\n                                Go To Artist Page\n                            </button>\n                        </a>\n                    </div>\n                </div>\n            </div>\n                ");
-          sectionParent.append(welcome);
-          var topwall = document.querySelector('.collect__topwall');
-          topwall.style.backgroundImage = "url(../src/img/topwallCollection/".concat(this.name, ".jpg)");
-        }
-      }]);
-      return WelcomeCollection;
-    }();
-    new WelcomeCollection(obj.name, obj.title, obj.date, obj.artist, obj.tag1, obj.tag2, obj.tag3, obj.tag4, obj.descr).render();
-  }
-  createWelcomeColecctionPage(objectCollection);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (welcomeCollectionPage);
-
-/***/ }),
-
-/***/ "./js/modules/creatorsList.js":
-/*!************************************!*\
-  !*** ./js/modules/creatorsList.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
-/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__);
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function creatorsList(arrDB) {
-  var parentElem = document.querySelector('.toplist__list');
-  function topList(obj) {
-    var ListItem = /*#__PURE__*/function () {
-      function ListItem(number, avatar, name, change, sold, volume) {
-        _classCallCheck(this, ListItem);
-        this.number = number;
-        this.avatar = avatar;
-        this.name = name;
-        this.change = change;
-        this.sold = sold;
-        this.volume = volume;
-      }
-      _createClass(ListItem, [{
-        key: "render",
-        value: function render() {
-          var item = document.createElement('div');
-          item.classList.add('toplist__list_item');
-          item.innerHTML = "\n                    <a id=\"".concat(this.avatar, "\" href=\"./artist.html\" class=\"toplist__list_miror\"></a>\n                    <div class=\"toplist__list_number\">\n                        <p class=\"toplist__header_item\">").concat(this.number, "</p>\n                    </div>\n                    <div class=\"toplist__list_artist\">\n                        <img src=\"../src/icons/artists/").concat(this.avatar, ".jpg\" alt=\"ava\" class=\"toplist__list_avatar\">\n                        <h5 class=\"toplist__list_name\">").concat(this.name, "</h5>\n                    </div>\n                    <p class=\"toplist__list_chance toplist_chance\">+").concat(this.change, "%</p>\n                    <p class=\"toplist__list_sold toplist_nft\">").concat(this.sold, "</p>\n                    <p class=\"toplist__list_volume\">").concat(this.volume, " ETH</p>\n            ");
-          parentElem.append(item);
-        }
-      }]);
-      return ListItem;
-    }();
-    new ListItem(obj.number, obj.avatar, obj.name, obj.change, obj.sold, obj.volume).render();
-  }
-  function numeration(obj, number, i) {
-    obj[number] = i + 1;
-  }
-  function appendToPage(arr) {
-    arr.forEach(function (item, i) {
-      numeration(item, 'number', i);
-      topList(item);
-    });
-  }
-  appendToPage(arrDB);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (creatorsList);
-
-/***/ }),
-
-/***/ "./js/modules/footer.js":
-/*!******************************!*\
-  !*** ./js/modules/footer.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-function insertFooter() {
-  var parentElement = document.querySelector('footer');
-  var headerContent = document.createElement('div');
-  headerContent.classList.add('footer');
-  headerContent.innerHTML = "\n    <div class=\"footer__container\">\n    <div class=\"footer__left\">\n        <a href=\"./index.html\" class=\"header__logo footer__logo\">\n            <div class=\"header__imgs\">\n                <img src=\"../src/icons/header/logo_top.svg\" alt=\"logo\" class=\"header__img header__img_logo-1\">\n\n                <img src=\"../src/icons/NFT Marketplace.svg\" alt=\"\" class=\"header__title\">\n            </div>\n        </a>\n        <p class=\"footer__text\">NFT marketplace UI created with Anima for Figma.</p>\n        <p class=\"footer__text footer__join\">Join our community</p>\n\n        <div class=\"footer__contacts\">\n            <div class=\"footer__svg footer__discord\">\n                <div class=\"artist__links_block\">\n                    <a href=\"#\"><img src=\"../src/icons/footer/DiscordLogo.svg\" alt=\"dscrd\"\n                            class=\"artist__links_img\"></a>\n                    <a href=\"#\"><img src=\"../src/icons/footer/YoutubeLogo.svg\" alt=\"YT\"\n                            class=\"artist__links_img\"></a>\n                    <a href=\"#\"><img src=\"../src/icons/footer/TwitterLogo.svg\" alt=\"twit\"\n                            class=\"artist__links_img\"></a>\n                    <a href=\"#\"><img src=\"../src/icons/footer/InstagramLogo.svg\" alt=\"inst\"\n                            class=\"artist__links_img\"></a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"footer__center\">\n        <h5 class=\"footer__center_title\">Explore</h5>\n        <p class=\"footer__text\">Marketplace</p>\n        <p class=\"footer__text\">Rankings</p>\n        <p class=\"footer__text\">Connect a wallet</p>\n    </div>\n    <div class=\"footer__right\">\n        <h5 class=\"footer__center_title\">Join our weekly digest</h5>\n        <p class=\"footer__text footer__right_central\">Get exclusive promotions & updates straight to your inbox.\n        </p>\n        <div class=\"footer__form\">\n            <form class=\"join__right_form footer__right_form\">\n                <input type=\"text\" class=\"join__right_input footer__right_input\"\n                    placeholder=\"Enter your email here\">\n                <button type=\"submit\" class=\"join__right_btn footer__right_btn\">\n                    <img src=\"../src/icons/Envelope.svg\" alt=\"Envelope\">\n                    <span>Subscribe</span>\n                </button>\n            </form>\n        </div>\n    </div>\n    </div>\n    <p class=\"footer__bottom\">\n        \u24B8 NFT Market. Use this template freely.\n    </p>";
-  parentElement.append(headerContent);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (insertFooter);
-
-/***/ }),
-
-/***/ "./js/modules/header.js":
-/*!******************************!*\
-  !*** ./js/modules/header.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _burgerButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./burgerButton */ "./js/modules/burgerButton.js");
-
-function insertHeader() {
-  var parentElement = document.querySelector('header');
-  var headerContent = document.createElement('div');
-  headerContent.classList.add('header');
-  headerContent.innerHTML = "\n        <a href=\"../index.html\" class=\"header__logo\">\n\n            <img src=\"../src/icons/header/logo_top.svg\" alt=\"logo\" class=\"header__img\">\n\n            <img src=\"../src/icons/NFT Marketplace.svg\" alt=\"\" class=\"header__title\">\n        </a>\n\n        <nav class=\"header__nav header__burgerNav\">\n            <ul class=\"header__ul\">\n                <li class=\"header__link\"><a href=\"./marketplace.html\">Marketplace</a></li>\n                <li class=\"header__link\"><a href=\"./topCreators.html\">Rankings</a></li>\n                <li class=\"header__link\"><a href=\"./wallet.html\">Connect a wallet</a></li>\n                <a href=\"./create_acount.html\" class=\"signUP\">\n                    <img src=\"../src/icons/header/sign-1.svg\" alt=\"\" class=\"signUP__img-1\">\n                    <img src=\"../src/icons/header/sign-2.svg\" alt=\"\" class=\"signUP__img-2\">\n                    <span>Sign Up</span>\n                </a>\n            </ul>\n        </nav>\n\n        <button class=\"header__burgerMenu\">\n            <div class=\"header__burgerMenu_line\">\n                </d>\n        </button>";
-  parentElement.append(headerContent);
-  (0,_burgerButton__WEBPACK_IMPORTED_MODULE_0__["default"])();
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (insertHeader);
-
-/***/ }),
-
-/***/ "./js/modules/homePageWelcomeAdv.js":
-/*!******************************************!*\
-  !*** ./js/modules/homePageWelcomeAdv.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.timers.js */ "./node_modules/core-js/modules/web.timers.js");
-/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-
-
-
-
-
-
-
-
-
-
-
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function homePageWelcomeAdv(arr) {
-  var parentEllement = document.querySelector('.main__right');
-  function welcom(obj) {
-    var WelcomeAdv = /*#__PURE__*/function () {
-      function WelcomeAdv(img, title, artist) {
-        _classCallCheck(this, WelcomeAdv);
-        this.img = img;
-        this.title = title;
-        this.artist = artist;
-      }
-      _createClass(WelcomeAdv, [{
-        key: "render",
-        value: function render() {
-          var advBlock = document.createElement('div');
-          advBlock.classList.add('nft__item');
-          advBlock.style.width = '100%';
-          advBlock.innerHTML = "\n                <img src=\"./src/img/NFT_IMG/".concat(this.img, ".jpg\" alt=\"\" class=\"nft__item_img jsPicture\">\n\n                <div class=\"nft__item_descr\">\n                    <h5 class=\"nft__item_name jsTitle\">").concat(this.title, "</h5>\n                    <div class=\"nft__item_autor\">\n                        <img src=\"./src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar jsAvatar\">\n                        <div><div class=\"nft__item_nickname jsNameArtist\">").concat(this.artist, "</div></div>\n                    </div>\n                </div>\n                ");
-          parentEllement.append(advBlock);
-        }
-      }]);
-      return WelcomeAdv;
-    }();
-    new WelcomeAdv(obj.img, obj.title, obj.artist).render();
-  }
-  welcom(arr[0]);
-  var title = document.querySelector('.jsTitle'),
-    picture = document.querySelector('.jsPicture'),
-    avatar = document.querySelector('.jsAvatar'),
-    nameArtist = document.querySelector('.jsNameArtist');
-  parentEllement.style.transition = '1s';
-  var curent = 1;
-  setInterval(function () {
-    if (curent < arr.length) {
-      parentEllement.style.opacity = '0';
-      setTimeout(function () {
-        title.innerHTML = "".concat(arr[curent].title);
-        nameArtist.innerHTML = "".concat(arr[curent].artist);
-        avatar.src = "./src/icons/artists/".concat(arr[curent].artist, ".jpg");
-        picture.src = "./src/img/NFT_IMG/".concat(arr[curent].img, ".jpg");
-        parentEllement.style.opacity = '100%';
-      }, 1500);
-      curent++;
-    } else {
-      curent = 0;
-    }
-  }, 7000);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homePageWelcomeAdv);
-
-/***/ }),
-
-/***/ "./js/modules/localStorage.js":
-/*!************************************!*\
-  !*** ./js/modules/localStorage.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
-/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-function useLocalStorage(location, selector, key) {
-  var goToartistPage = document.querySelectorAll(selector);
-  goToartistPage.forEach(function (item) {
-    item.addEventListener('click', function (e) {
-      e.preventDefault();
-      var storageId = e.target.id;
-      localStorage.setItem(key, storageId);
-      window.location = location;
-    });
-  });
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useLocalStorage);
-
-/***/ }),
-
-/***/ "./js/modules/nftDB.js":
-/*!*****************************!*\
-  !*** ./js/modules/nftDB.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "nft": () => (/* binding */ nft),
-/* harmony export */   "nftDBarr": () => (/* binding */ nftDBarr)
+/* harmony export */   "nftDBarr": () => (/* binding */ nftDBarr),
+/* harmony export */   "trendCollectArr": () => (/* binding */ trendCollectArr)
 /* harmony export */ });
 /* harmony import */ var core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.object.values.js */ "./node_modules/core-js/modules/es.object.values.js");
 /* harmony import */ var core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_values_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.filter.js */ "./node_modules/core-js/modules/es.array.filter.js");
+/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_2__);
+
+
 
 var nft = {
   catFromFuture: {
@@ -1560,15 +1793,123 @@ var nft = {
   }
 };
 var nftDBarr = Object.values(nft);
+var firstItemArr = nftDBarr.filter(function (item) {
+    return item.collection == 'shroomie';
+  }),
+  secondItemArr = nftDBarr.filter(function (item) {
+    return item.collection == 'animakid';
+  }),
+  thirdItemArr = nftDBarr.filter(function (item) {
+    return item.collection == 'beKind2Robots';
+  });
+var trendCollectArr = [{
+  mainImg: firstItemArr[0].img,
+  img1: firstItemArr[1].img,
+  img2: firstItemArr[2].img,
+  name: firstItemArr[0].collection,
+  artist: firstItemArr[0].artist,
+  amount: firstItemArr.length
+}, {
+  mainImg: secondItemArr[0].img,
+  img1: secondItemArr[1].img,
+  img2: secondItemArr[2].img,
+  name: secondItemArr[0].collection,
+  artist: secondItemArr[0].artist,
+  amount: secondItemArr.length
+}, {
+  mainImg: thirdItemArr[0].img,
+  img1: thirdItemArr[1].img,
+  img2: thirdItemArr[2].img,
+  name: thirdItemArr[0].collection,
+  artist: thirdItemArr[0].artist,
+  amount: thirdItemArr.length
+}];
+
 
 
 
 /***/ }),
 
-/***/ "./js/modules/timer.js":
-/*!*****************************!*\
-  !*** ./js/modules/timer.js ***!
-  \*****************************/
+/***/ "./js/modules/functional/burgerButton.js":
+/*!***********************************************!*\
+  !*** ./js/modules/functional/burgerButton.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.timers.js */ "./node_modules/core-js/modules/web.timers.js");
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0__);
+
+function burgerButton() {
+  var burgerBtn = document.querySelector('.header__burgerMenu'),
+    burgerNav = document.querySelector('.header__burgerNav');
+  burgerBtn.addEventListener('click', function () {
+    if (burgerNav.classList.contains('thin')) {
+      headerOff();
+    } else {
+      headerOn();
+    }
+  });
+  function headerOff() {
+    burgerNav.classList.remove('thin');
+    setTimeout(function () {
+      burgerNav.style.display = 'none';
+    }, 700);
+  }
+  function headerOn() {
+    burgerNav.style.display = 'block';
+    setTimeout(function () {
+      burgerNav.classList.add('thin');
+    }, 0);
+  }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (burgerButton);
+
+/***/ }),
+
+/***/ "./js/modules/functional/localStorage.js":
+/*!***********************************************!*\
+  !*** ./js/modules/functional/localStorage.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function useLocalStorage(location, selector, key) {
+  var goToartistPage = document.querySelectorAll(selector);
+  goToartistPage.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      var storageId = e.target.id;
+      localStorage.setItem(key, storageId);
+      window.location = location;
+    });
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useLocalStorage);
+
+/***/ }),
+
+/***/ "./js/modules/functional/timer.js":
+/*!****************************************!*\
+  !*** ./js/modules/functional/timer.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1582,8 +1923,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
-function timer() {
-  var deadLine = '2023-06-22';
+function timer(date) {
+  var deadLine = date;
   function getTimeRemaining(endtime) {
     var days, hours, minutes, seconds;
     var t = Date.parse(endtime) - Date.parse(new Date());
@@ -1632,10 +1973,10 @@ function timer() {
 
 /***/ }),
 
-/***/ "./js/modules/topCreatorsOnHomePage.js":
-/*!*********************************************!*\
-  !*** ./js/modules/topCreatorsOnHomePage.js ***!
-  \*********************************************/
+/***/ "./js/modules/innerHtml/footer.js":
+/*!****************************************!*\
+  !*** ./js/modules/innerHtml/footer.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1643,94 +1984,99 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
-/* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
-/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_14__);
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function insertFooter() {
+  var parentElement = document.querySelector('footer');
+  var headerContent = document.createElement('div');
+  headerContent.classList.add('footer');
+  headerContent.innerHTML = "\n    <div class=\"footer__container\">\n    <div class=\"footer__left\">\n        <a href=\"./index.html\" class=\"header__logo footer__logo\">\n            <div class=\"header__imgs\">\n                <img src=\"../src/icons/header/logo_top.svg\" alt=\"logo\" class=\"header__img header__img_logo-1\">\n\n                <img src=\"../src/icons/NFT Marketplace.svg\" alt=\"\" class=\"header__title\">\n            </div>\n        </a>\n        <p class=\"footer__text\">NFT marketplace UI created with Anima for Figma.</p>\n        <p class=\"footer__text footer__join\">Join our community</p>\n\n        <div class=\"footer__contacts\">\n            <div class=\"footer__svg footer__discord\">\n                <div class=\"artist__links_block\">\n                    <a href=\"#\"><img src=\"../src/icons/footer/DiscordLogo.svg\" alt=\"dscrd\"\n                            class=\"artist__links_img\"></a>\n                    <a href=\"#\"><img src=\"../src/icons/footer/YoutubeLogo.svg\" alt=\"YT\"\n                            class=\"artist__links_img\"></a>\n                    <a href=\"#\"><img src=\"../src/icons/footer/TwitterLogo.svg\" alt=\"twit\"\n                            class=\"artist__links_img\"></a>\n                    <a href=\"#\"><img src=\"../src/icons/footer/InstagramLogo.svg\" alt=\"inst\"\n                            class=\"artist__links_img\"></a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"footer__center\">\n        <h5 class=\"footer__center_title\">Explore</h5>\n        <p class=\"footer__text\">Marketplace</p>\n        <p class=\"footer__text\">Rankings</p>\n        <p class=\"footer__text\">Connect a wallet</p>\n    </div>\n    <div class=\"footer__right\">\n        <h5 class=\"footer__center_title\">Join our weekly digest</h5>\n        <p class=\"footer__text footer__right_central\">Get exclusive promotions & updates straight to your inbox.\n        </p>\n        <div class=\"footer__form\">\n            <form class=\"join__right_form footer__right_form\">\n                <input type=\"text\" class=\"join__right_input footer__right_input\"\n                    placeholder=\"Enter your email here\">\n                <button type=\"submit\" class=\"join__right_btn footer__right_btn\">\n                    <img src=\"../src/icons/Envelope.svg\" alt=\"Envelope\">\n                    <span>Subscribe</span>\n                </button>\n            </form>\n        </div>\n    </div>\n    </div>\n    <p class=\"footer__bottom\">\n        \u24B8 NFT Market. Use this template freely.\n    </p>";
+  parentElement.append(headerContent);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (insertFooter);
+
+/***/ }),
+
+/***/ "./js/modules/innerHtml/header.js":
+/*!****************************************!*\
+  !*** ./js/modules/innerHtml/header.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _functional_burgerButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functional/burgerButton */ "./js/modules/functional/burgerButton.js");
+
+function insertHeader() {
+  var parentElement = document.querySelector('header');
+  var headerContent = document.createElement('div');
+  headerContent.classList.add('header');
+  headerContent.innerHTML = "\n        <a href=\"../index.html\" class=\"header__logo\">\n\n            <img src=\"../src/icons/header/logo_top.svg\" alt=\"logo\" class=\"header__img\">\n\n            <img src=\"../src/icons/NFT Marketplace.svg\" alt=\"\" class=\"header__title\">\n        </a>\n\n        <nav class=\"header__nav header__burgerNav\">\n            <ul class=\"header__ul\">\n                <li class=\"header__link\"><a href=\"./marketplace.html\">Marketplace</a></li>\n                <li class=\"header__link\"><a href=\"./topCreators.html\">Rankings</a></li>\n                <li class=\"header__link\"><a href=\"./wallet.html\">Connect a wallet</a></li>\n                <a href=\"./create_acount.html\" class=\"signUP\">\n                    <img src=\"../src/icons/header/sign-1.svg\" alt=\"\" class=\"signUP__img-1\">\n                    <img src=\"../src/icons/header/sign-2.svg\" alt=\"\" class=\"signUP__img-2\">\n                    <span>Sign Up</span>\n                </a>\n            </ul>\n        </nav>\n\n        <button class=\"header__burgerMenu\">\n            <div class=\"header__burgerMenu_line\">\n                </d>\n        </button>";
+  parentElement.append(headerContent);
+  (0,_functional_burgerButton__WEBPACK_IMPORTED_MODULE_0__["default"])();
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (insertHeader);
+
+/***/ }),
+
+/***/ "./js/modules/marketplaceTabs.js":
+/*!***************************************!*\
+  !*** ./js/modules/marketplaceTabs.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function topCreatorsOnHomePage(arrWithObj) {
-  var parentElement = document.querySelector('.creats__grid');
-  function topTwelveCreators(obj) {
-    var TopCreatsOnHome = /*#__PURE__*/function () {
-      function TopCreatsOnHome(number, avatar, name, volume) {
-        _classCallCheck(this, TopCreatsOnHome);
-        this.number = number;
-        this.avatar = avatar;
-        this.name = name;
-        this.volume = volume;
-      }
-      _createClass(TopCreatsOnHome, [{
-        key: "render",
-        value: function render() {
-          var twelveItem = document.createElement('div');
-          twelveItem.classList.add('creats__grid_item');
-          twelveItem.id = "topHome_".concat(this.number);
-          twelveItem.innerHTML = "\n            \n                <a id=\"".concat(this.avatar, "\" href=\"./html/artist.html\" class=\"toplist__list_miror\"></a>\n                <div class=\"creats__grid_number\">").concat(this.number, "</div>\n                <img src=\"./src/icons/artists/").concat(this.avatar, ".jpg\" alt=\"ava\" class=\"creats__grid_avatar\">\n                <div class=\"trend__card_descr\">\n                    <h5 class=\"nft__item_name creats__grid_name\">").concat(this.name, "</h5>\n                    <div class=\"nft__item_nickname creats__grid_price\"><span>Total Sales:</span>").concat(this.volume, " ETH</div>\n                </div>\n            \n            ");
-          parentElement.append(twelveItem);
-        }
-      }]);
-      return TopCreatsOnHome;
-    }();
-    new TopCreatsOnHome(obj.number, obj.avatar, obj.name, obj.volume).render();
-  }
-  function numeration(obj, number, i) {
-    obj[number] = i + 1;
-  }
-  function appendToPage(arr) {
-    arr.forEach(function (item, i) {
-      numeration(item, 'number', i);
-      topTwelveCreators(item);
+function marketplaceTabs(arrNft, arrCollect) {
+  var counterNft = document.querySelector('.counterNft'),
+    counterCollection = document.querySelector('.counterCollection');
+  counterNft.innerHTML = arrNft.length;
+  counterCollection.innerHTML = arrCollect.length;
+  var nftBtn = document.querySelector('.nftTab'),
+    collectBtn = document.querySelector('.collectTab'),
+    sectionNft = document.querySelector('.sectionNft'),
+    sectionCollection = document.querySelector('.sectionCollection'),
+    nftCards = document.querySelectorAll('.discover__grid_item'),
+    collectCards = document.querySelectorAll('.trend__card');
+  function active(btn, section, counter, arr) {
+    btn.classList.add('artist__btn_active');
+    section.classList.add('section_active');
+    counter.classList.add('counter_active');
+    arr.forEach(function (item) {
+      return item.classList.remove('hide');
     });
   }
-  appendToPage(arrWithObj);
+  function offActive(btn, section, counter, arr) {
+    btn.classList.remove('artist__btn_active');
+    section.classList.remove('section_active');
+    counter.classList.remove('counter_active');
+    arr.forEach(function (item) {
+      return item.classList.add('hide');
+    });
+  }
+  nftBtn.addEventListener('click', function (e) {
+    active(nftBtn, sectionNft, counterNft, nftCards);
+    offActive(collectBtn, sectionCollection, counterCollection, collectCards);
+  });
+  collectBtn.addEventListener('click', function (e) {
+    offActive(nftBtn, sectionNft, counterNft, nftCards);
+    active(collectBtn, sectionCollection, counterCollection, collectCards);
+  });
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (topCreatorsOnHomePage);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (marketplaceTabs);
 
 /***/ }),
 
@@ -5047,6 +5393,32 @@ $({ target: 'Array', proto: true, arity: 1, forced: FORCED }, {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/modules/es.array.filter.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/modules/es.array.filter.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var $filter = (__webpack_require__(/*! ../internals/array-iteration */ "./node_modules/core-js/internals/array-iteration.js").filter);
+var arrayMethodHasSpeciesSupport = __webpack_require__(/*! ../internals/array-method-has-species-support */ "./node_modules/core-js/internals/array-method-has-species-support.js");
+
+var HAS_SPECIES_SUPPORT = arrayMethodHasSpeciesSupport('filter');
+
+// `Array.prototype.filter` method
+// https://tc39.es/ecma262/#sec-array.prototype.filter
+// with adding support of @@species
+$({ target: 'Array', proto: true, forced: !HAS_SPECIES_SUPPORT }, {
+  filter: function filter(callbackfn /* , thisArg */) {
+    return $filter(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
+  }
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/modules/es.array.for-each.js":
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/modules/es.array.for-each.js ***!
@@ -5723,6 +6095,26 @@ $({ target: 'Number', proto: true, forced: FORCED }, {
       result = sign + result;
     } return result;
   }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/es.object.create.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/modules/es.object.create.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+// TODO: Remove from `core-js@4`
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ "./node_modules/core-js/internals/descriptors.js");
+var create = __webpack_require__(/*! ../internals/object-create */ "./node_modules/core-js/internals/object-create.js");
+
+// `Object.create` method
+// https://tc39.es/ecma262/#sec-object.create
+$({ target: 'Object', stat: true, sham: !DESCRIPTORS }, {
+  create: create
 });
 
 
@@ -7708,20 +8100,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/header */ "./js/modules/header.js");
-/* harmony import */ var _modules_burgerButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/burgerButton */ "./js/modules/burgerButton.js");
-/* harmony import */ var _modules_homePageWelcomeAdv__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/homePageWelcomeAdv */ "./js/modules/homePageWelcomeAdv.js");
-/* harmony import */ var _modules_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/footer */ "./js/modules/footer.js");
-/* harmony import */ var _modules_topCreatorsOnHomePage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/topCreatorsOnHomePage */ "./js/modules/topCreatorsOnHomePage.js");
-/* harmony import */ var _js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../js/modules/creatorsList */ "./js/modules/creatorsList.js");
-/* harmony import */ var _modules_localStorage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/localStorage */ "./js/modules/localStorage.js");
-/* harmony import */ var _js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../js/modules/createArtistPage */ "./js/modules/createArtistPage.js");
-/* harmony import */ var _modules_createWelcomeCollectionPage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/createWelcomeCollectionPage */ "./js/modules/createWelcomeCollectionPage.js");
-/* harmony import */ var _modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./modules/createNftCards */ "./js/modules/createNftCards.js");
-/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./modules/timer */ "./js/modules/timer.js");
-/* harmony import */ var _js_modules_artistDB__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../js/modules/artistDB */ "./js/modules/artistDB.js");
-/* harmony import */ var _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../js/modules/nftDB */ "./js/modules/nftDB.js");
-/* harmony import */ var _modules_collectDb__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./modules/collectDb */ "./js/modules/collectDb.js");
+/* harmony import */ var _modules_functional_burgerButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/functional/burgerButton */ "./js/modules/functional/burgerButton.js");
+/* harmony import */ var _modules_constructors_homePageWelcomeAdv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/constructors/homePageWelcomeAdv */ "./js/modules/constructors/homePageWelcomeAdv.js");
+/* harmony import */ var _modules_constructors_trendingCollections__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/constructors/trendingCollections */ "./js/modules/constructors/trendingCollections.js");
+/* harmony import */ var _modules_constructors_topCreatorsOnHomePage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/constructors/topCreatorsOnHomePage */ "./js/modules/constructors/topCreatorsOnHomePage.js");
+/* harmony import */ var _modules_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/constructors/creatorsList */ "./js/modules/constructors/creatorsList.js");
+/* harmony import */ var _modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/functional/localStorage */ "./js/modules/functional/localStorage.js");
+/* harmony import */ var _modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/innerHtml/header */ "./js/modules/innerHtml/header.js");
+/* harmony import */ var _modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/innerHtml/footer */ "./js/modules/innerHtml/footer.js");
+/* harmony import */ var _modules_constructors_createArtistPage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/constructors/createArtistPage */ "./js/modules/constructors/createArtistPage.js");
+/* harmony import */ var _modules_constructors_createWelcomeCollectionPage__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./modules/constructors/createWelcomeCollectionPage */ "./js/modules/constructors/createWelcomeCollectionPage.js");
+/* harmony import */ var _modules_constructors_createNftCards__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./modules/constructors/createNftCards */ "./js/modules/constructors/createNftCards.js");
+/* harmony import */ var _modules_marketplaceTabs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./modules/marketplaceTabs */ "./js/modules/marketplaceTabs.js");
+/* harmony import */ var _modules_functional_timer__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./modules/functional/timer */ "./js/modules/functional/timer.js");
+/* harmony import */ var _modules_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./modules/dataBase/artistDB */ "./js/modules/dataBase/artistDB.js");
+/* harmony import */ var _modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./modules/dataBase/nftDB */ "./js/modules/dataBase/nftDB.js");
+/* harmony import */ var _modules_dataBase_collectDb__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./modules/dataBase/collectDb */ "./js/modules/dataBase/collectDb.js");
+/* harmony import */ var _modules_constructors_creatObjectOfCollections__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./modules/constructors/creatObjectOfCollections */ "./js/modules/constructors/creatObjectOfCollections.js");
 
 
 
@@ -7744,57 +8139,66 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
 function topAutors(artistId) {
-  _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.forEach(function (item) {
+  _modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_17__.nftDBarr.forEach(function (item) {
     if (item.artist == artistId) {
-      (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(item, '.artist__grid');
+      (0,_modules_constructors_createNftCards__WEBPACK_IMPORTED_MODULE_13__["default"])(item, '.artist__grid', '..');
     }
   });
 }
 function otherAutors() {
-  _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.forEach(function (item) {
+  _modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_17__.nftDBarr.forEach(function (item) {
     if (item.collection == 'other') {
-      (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(item, '.artist__grid');
+      (0,_modules_constructors_createNftCards__WEBPACK_IMPORTED_MODULE_13__["default"])(item, '.artist__grid', '..');
     }
   });
 }
 document.addEventListener('DOMContentLoaded', function () {
   var body = document.querySelector('body');
   if (body.classList.contains('home')) {
-    (0,_modules_burgerButton__WEBPACK_IMPORTED_MODULE_4__["default"])();
-    (0,_modules_homePageWelcomeAdv__WEBPACK_IMPORTED_MODULE_5__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr);
-    (0,_modules_topCreatorsOnHomePage__WEBPACK_IMPORTED_MODULE_7__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_14__.twelweArtistsForHomePageArr);
-    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./html/artist.html', '.toplist__list_miror', "artist");
-    (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nft.happyRobot032, '.discover__grid');
-    (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nft.dancingRobot56, '.discover__grid');
-    (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(_js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nft.iceCreamApe, '.discover__grid');
-    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./html/artist.html', '.mirrorFromAutor', "artist");
-    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./html/collection.html', '.mirrorFromCollection', "collection");
-    (0,_modules_timer__WEBPACK_IMPORTED_MODULE_13__["default"])();
+    (0,_modules_functional_burgerButton__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_modules_constructors_homePageWelcomeAdv__WEBPACK_IMPORTED_MODULE_4__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_17__.nftDBarr);
+    (0,_modules_constructors_trendingCollections__WEBPACK_IMPORTED_MODULE_5__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_17__.trendCollectArr, '.trend__container', '.');
+    (0,_modules_constructors_topCreatorsOnHomePage__WEBPACK_IMPORTED_MODULE_6__["default"])(_modules_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_16__.twelweArtistsForHomePageArr);
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('./html/artist.html', '.toplist__list_miror', "artist");
+    (0,_modules_constructors_createNftCards__WEBPACK_IMPORTED_MODULE_13__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_17__.nft.happyRobot032, '.discover__grid', '.');
+    (0,_modules_constructors_createNftCards__WEBPACK_IMPORTED_MODULE_13__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_17__.nft.dancingRobot56, '.discover__grid', '.');
+    (0,_modules_constructors_createNftCards__WEBPACK_IMPORTED_MODULE_13__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_17__.nft.iceCreamApe, '.discover__grid', '.');
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('./html/artist.html', '.mirrorFromAutor', "artist");
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('./html/collection.html', '.mirrorFromCollection', "collection");
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('./html/collection.html', '.miror', "collection");
+    (0,_modules_functional_timer__WEBPACK_IMPORTED_MODULE_15__["default"])('2023-06-22');
   }
   if (body.classList.contains('marketplace')) {
-    (0,_modules_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
-    (0,_modules_footer__WEBPACK_IMPORTED_MODULE_6__["default"])();
-    _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.forEach(function (item) {
-      return (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(item, '.artist__grid');
+    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_9__["default"])();
+    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_10__["default"])();
+    _modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_17__.nftDBarr.forEach(function (item) {
+      return (0,_modules_constructors_createNftCards__WEBPACK_IMPORTED_MODULE_13__["default"])(item, '.artist__grid', '..');
     });
-    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./artist.html', '.mirrorFromAutor', "artist");
-    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./collection.html', '.mirrorFromCollection', "collection");
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('./artist.html', '.mirrorFromAutor', "artist");
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('./collection.html', '.mirrorFromCollection', "collection");
+    (0,_modules_constructors_trendingCollections__WEBPACK_IMPORTED_MODULE_5__["default"])(_modules_constructors_creatObjectOfCollections__WEBPACK_IMPORTED_MODULE_19__.collectItemsArr, '.content__grid', '..');
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('./collection.html', '.miror', "collection");
+    (0,_modules_marketplaceTabs__WEBPACK_IMPORTED_MODULE_14__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_17__.nftDBarr, _modules_dataBase_collectDb__WEBPACK_IMPORTED_MODULE_18__.collectDbArr);
   }
   if (body.classList.contains('toplist')) {
-    (0,_modules_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
-    (0,_modules_footer__WEBPACK_IMPORTED_MODULE_6__["default"])();
-    (0,_js_modules_creatorsList__WEBPACK_IMPORTED_MODULE_8__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_14__.artists);
-    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('artist.html', '.toplist__list_miror', "artist");
+    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_9__["default"])();
+    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_10__["default"])();
+    (0,_modules_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__["default"])(_modules_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_16__.artists);
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('artist.html', '.toplist__list_miror', "artist");
   }
   if (body.classList.contains('artistPage')) {
-    (0,_modules_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
-    (0,_modules_footer__WEBPACK_IMPORTED_MODULE_6__["default"])();
+    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_9__["default"])();
+    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_10__["default"])();
     var artistId;
     if (localStorage.getItem('artist')) {
       artistId = localStorage.getItem('artist');
     }
-    (0,_js_modules_createArtistPage__WEBPACK_IMPORTED_MODULE_10__["default"])(_js_modules_artistDB__WEBPACK_IMPORTED_MODULE_14__.artistsDB[artistId]);
+    (0,_modules_constructors_createArtistPage__WEBPACK_IMPORTED_MODULE_11__["default"])(_modules_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_16__.artistsDB[artistId]);
 
     //chek for development stage. Not enough pictures. for production only 'topAutors' function.
     if (artistId === 'lindsey' || artistId === 'kianaST' || artistId === 'allison' || artistId === 'davisWorkman' || artistId === 'angel' || artistId === 'lydia' || artistId === 'philip') {
@@ -7802,22 +8206,24 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       otherAutors();
     }
-    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('#', '.mirrorFromAutor');
-    (0,_modules_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./collection.html', '.mirrorFromCollection', "collection");
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('#', '.mirrorFromAutor');
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('./collection.html', '.mirrorFromCollection', "collection");
   }
   if (body.classList.contains('collection')) {
-    (0,_modules_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
-    (0,_modules_footer__WEBPACK_IMPORTED_MODULE_6__["default"])();
+    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_9__["default"])();
+    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_10__["default"])();
     var collectionId;
     if (localStorage.getItem('collection')) {
       collectionId = localStorage.getItem('collection');
     }
-    (0,_modules_createWelcomeCollectionPage__WEBPACK_IMPORTED_MODULE_11__["default"])(_modules_collectDb__WEBPACK_IMPORTED_MODULE_16__.collectDbObj[collectionId]);
-    _js_modules_nftDB__WEBPACK_IMPORTED_MODULE_15__.nftDBarr.forEach(function (item) {
+    (0,_modules_constructors_createWelcomeCollectionPage__WEBPACK_IMPORTED_MODULE_12__["default"])(_modules_dataBase_collectDb__WEBPACK_IMPORTED_MODULE_18__.collectDbObj[collectionId]);
+    _modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_17__.nftDBarr.forEach(function (item) {
       if (item.collection == collectionId) {
-        (0,_modules_createNftCards__WEBPACK_IMPORTED_MODULE_12__["default"])(item, '.content__grid');
+        (0,_modules_constructors_createNftCards__WEBPACK_IMPORTED_MODULE_13__["default"])(item, '.content__grid', '..');
       }
     });
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('artist.html', '.mirrorFromAutor', "artist");
+    (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('#', '.mirrorFromCollection', "collection");
   }
 });
 })();

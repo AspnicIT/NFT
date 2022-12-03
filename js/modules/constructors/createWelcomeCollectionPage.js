@@ -1,3 +1,5 @@
+import timer from "../functional/timer";
+
 function welcomeCollectionPage(objectCollection){
     let sectionParent = document.querySelector('.collect');
     function createWelcomeColecctionPage(obj){
@@ -116,7 +118,7 @@ function welcomeCollectionPage(objectCollection){
                 sectionParent.append(welcome);
                 const topwall = document.querySelector('.collect__topwall');
                 topwall.style.backgroundImage = `url(../src/img/topwallCollection/${this.name}.jpg)`;
-
+                timer(obj.endSale);
             }
         }
         new WelcomeCollection(
@@ -132,6 +134,7 @@ function welcomeCollectionPage(objectCollection){
         ).render();
     }
     createWelcomeColecctionPage(objectCollection);
+    
 }
 
 export default welcomeCollectionPage;

@@ -1,4 +1,4 @@
-import burgerButton from './burgerButton';
+import burgerButton from '../functional/burgerButton';
 
 
 function insertHeader() {

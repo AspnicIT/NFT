@@ -173,8 +173,8 @@ input:focus {
   position: absolute;
 }
 .signUP__img-1 {
-  top: 18px;
-  left: 34px;
+  top: 20px;
+  left: 35px;
 }
 .signUP__img-2 {
   top: 32px;
@@ -298,7 +298,7 @@ input:focus {
 }
 .trend__card_bottomImg {
   width: 100px;
-  height: 100px;
+  height: 90px;
 }
 .trend__card_bottomImg img {
   border-radius: 22px;
@@ -983,12 +983,13 @@ input:focus {
   justify-content: space-around;
 }
 .artist__btn {
-  padding: 24px 0 14px 0;
   background: none;
+  transition: 0.3s;
 }
 .artist__section {
   display: inline-block;
   color: #858584;
+  padding: 24px 14px;
 }
 .artist__counter {
   display: inline-block;
@@ -1007,20 +1008,16 @@ input:focus {
   position: relative;
 }
 
-.section_active::after {
-  display: block;
-  content: "";
-  width: 300px;
-  height: 2px;
-  background: #fff;
-  position: absolute;
-  bottom: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .counter_active {
   background: #858584;
+}
+
+.artist__btn_active:after {
+  display: block;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  border-bottom: 2px solid #fff;
 }
 
 .artist__wrap {
@@ -1219,6 +1216,10 @@ input:focus {
 }
 .search__sections {
   border-bottom: 1px solid #3b3b3b;
+}
+
+.tabsBtn {
+  width: 100%;
 }
 
 .toplist__subtitle {

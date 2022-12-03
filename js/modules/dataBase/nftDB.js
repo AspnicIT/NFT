@@ -580,5 +580,35 @@ const nft = {
 
 const nftDBarr = Object.values(nft);
 
-export {nftDBarr};
+    const firstItemArr = nftDBarr.filter(item => item.collection == 'shroomie'),
+    secondItemArr = nftDBarr.filter(item => item.collection == 'animakid'),
+    thirdItemArr = nftDBarr.filter(item => item.collection == 'beKind2Robots');
+
+    let trendCollectArr = [{
+        mainImg: firstItemArr[0].img,
+        img1: firstItemArr[1].img,
+        img2: firstItemArr[2].img,
+        name: firstItemArr[0].collection,
+        artist: firstItemArr[0].artist,
+        amount: firstItemArr.length
+        },
+        {
+        mainImg: secondItemArr[0].img,
+        img1: secondItemArr[1].img,
+        img2: secondItemArr[2].img,
+        name: secondItemArr[0].collection,
+        artist: secondItemArr[0].artist,
+        amount: secondItemArr.length
+        },
+        {
+        mainImg: thirdItemArr[0].img,
+        img1: thirdItemArr[1].img,
+        img2: thirdItemArr[2].img,
+        name: thirdItemArr[0].collection,
+        artist: thirdItemArr[0].artist,
+        amount: thirdItemArr.length
+        }];
+
 export {nft};
+export {nftDBarr};
+export {trendCollectArr};

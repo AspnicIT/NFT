@@ -53,12 +53,15 @@ function homePageWelcomeAdv(arr){
             parentEllement.style.opacity = '0';
 
             setTimeout(() => {
+
                 title.innerHTML = `${arr[curent].title}`;
                 nameArtist.innerHTML = `${arr[curent].artist}`;
                 avatar.src = `./src/icons/artists/${arr[curent].artist}.jpg`;
                 picture.src = `./src/img/NFT_IMG/${arr[curent].img}.jpg`;
 
-                parentEllement.style.opacity = '100%';
+                setTimeout(() => {
+                    parentEllement.style.opacity = '100%';
+                }, 1000); 
                 
             }, 1500); 
             curent++;

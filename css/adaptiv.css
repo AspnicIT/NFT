@@ -102,7 +102,7 @@
     margin: 0 auto 80px auto;
     padding-top: 40px;
   }
-  #machines {
+  .trend__card:last-child {
     display: none;
   }
   .creats {
@@ -366,9 +366,6 @@
   .artist__links_img {
     width: 24px;
   }
-  .artist__btn {
-    padding: 19px 0;
-  }
   .artist__counter {
     font-size: 12px;
     line-height: 13px;
@@ -542,7 +539,7 @@
     margin-bottom: 40px;
     padding-top: 40px;
   }
-  #mushrooms {
+  .trend__card:nth-child(2) {
     display: none;
   }
   .creats {
