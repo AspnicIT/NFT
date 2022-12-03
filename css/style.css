@@ -55,6 +55,10 @@ h2 {
   font-family: "Work Sans", sans-serif;
 }
 
+a:hover path {
+  fill: #A259FF;
+}
+
 button {
   color: #fff;
   font-size: 16px;
@@ -341,6 +345,7 @@ input:focus {
   padding: 19px 50px 19px 82px;
   border-radius: 20px;
   position: relative;
+  top: 10px;
 }
 .creats__img-1 {
   position: absolute;
@@ -699,6 +704,7 @@ input:focus {
 .footer__text {
   margin: 20px 0;
   color: #ccc;
+  display: block;
 }
 .footer__join {
   margin-bottom: 15px;
@@ -991,8 +997,10 @@ input:focus {
   display: inline-block;
   color: #858584;
   padding: 24px 0px;
+  transition: 0.3s;
 }
 .artist__counter {
+  transition: 0.3s;
   display: inline-block;
   font-family: "Space mono", monospace;
   font-size: 16px;

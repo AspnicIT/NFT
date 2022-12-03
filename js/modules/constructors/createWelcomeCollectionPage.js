@@ -104,12 +104,12 @@ function welcomeCollectionPage(objectCollection){
                 <div class="collect__wrapTitle">
                     <h3 class="title">More from this artist</h3>
                     <div class="creats__wrapBtn content__btn">
-                        <a id="${this.artist}" href="../html/artist.html">
-                            <button class="creats__btn">
+                        
+                            <a id="${this.artist}" href="../html/artist.html" class="creats__btn">
                                 <img src="../src/icons/ArrowRight.svg" alt="" class="creats__img-1 content__arrow">
                                 Go To Artist Page
-                            </button>
-                        </a>
+                            </a>
+                     
                     </div>
                 </div>
             </div>

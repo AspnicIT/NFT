@@ -4,11 +4,12 @@ import burgerButton from './modules/functional/burgerButton';
 import homePageWelcomeAdv from './modules/constructors/homePageWelcomeAdv';
 import trendingCollections from './modules/constructors/trendingCollections';
 import topCreatorsOnHomePage from './modules/constructors/topCreatorsOnHomePage';
-import creatorsList from './modules/constructors/creatorsList';
+import homePageBrowsersSection from './modules/functional/homePageBrowsersSection';
 import useLocalStorage from './modules/functional/localStorage';
 import insertHeader from './modules/innerHtml/header';
 import insertFooter from './modules/innerHtml/footer';
 import createArtistPage from './modules/constructors/createArtistPage';
+import tabsOnArtistPage from './modules/functional/tabsOnArtistPage';
 import welcomeCollectionPage from './modules/constructors/createWelcomeCollectionPage';
 import createNftCard from './modules/constructors/createNftCards';
 import searchigMarketplace from './modules/functional/searchMarketplace';
@@ -17,7 +18,6 @@ import topCreatorsTabs from './modules/functional/topCreatorsTabs';
 import timer from './modules/functional/timer';
 import {artistsArr} from "./modules/dataBase/artistDB";
 import {artistsDB} from "./modules/dataBase/artistDB";
-import { artistsArrSortByTabs } from './modules/functional/topCreatorsTabs';
 import {nft} from "./modules/dataBase/nftDB";
 import {nftDBarr} from "./modules/dataBase/nftDB";
 import { trendCollectArr } from './modules/dataBase/nftDB';
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         homePageWelcomeAdv(nftDBarr);
         trendingCollections(trendCollectArr, '.trend__container', '.');
         topCreatorsOnHomePage(artistsArr.slice(0, 12));
-
+        homePageBrowsersSection();
         useLocalStorage('./html/artist.html', '.toplist__list_miror', "artist");
         createNftCard(nft.happyRobot032, '.discover__grid', '.');
         createNftCard(nft.dancingRobot56, '.discover__grid', '.');
@@ -76,13 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-          
-
     if(body.classList.contains('toplist')){
         insertHeader();
         insertFooter();
         topCreatorsTabs();
-        
     }
 
     
@@ -111,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }     
         useLocalStorage('#', '.mirrorFromAutor');
         useLocalStorage('./collection.html', '.mirrorFromCollection', "collection");
+        tabsOnArtistPage();
     }
 
     if(body.classList.contains('collection')){
@@ -127,7 +125,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         useLocalStorage('artist.html', '.mirrorFromAutor', "artist");
+        useLocalStorage('artist.html', '.creats__btn', "artist");
         useLocalStorage('#', '.mirrorFromCollection', "collection");
+    }
+
+    if(body.classList.contains('acountPage')){
+        insertHeader();
+        insertFooter();
+    }
+    if(body.classList.contains('walletPage')){
+        insertHeader();
+        insertFooter();
     }
     
 
