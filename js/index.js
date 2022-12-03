@@ -11,6 +11,7 @@ import insertFooter from './modules/innerHtml/footer';
 import createArtistPage from './modules/constructors/createArtistPage';
 import welcomeCollectionPage from './modules/constructors/createWelcomeCollectionPage';
 import createNftCard from './modules/constructors/createNftCards';
+import searchigMarketplace from './modules/functional/searchMarketplace';
 import marketplaceTabs from './modules/functional/marketplaceTabs';
 import topCreatorsTabs from './modules/functional/topCreatorsTabs';
 import timer from './modules/functional/timer';
@@ -71,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         trendingCollections(collectItemsArr, '.content__grid', '..');
         useLocalStorage('./collection.html', '.miror', "collection");
         marketplaceTabs(nftDBarr, collectDbArr);
+        searchigMarketplace();
     }
 
 
@@ -79,9 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(body.classList.contains('toplist')){
         insertHeader();
         insertFooter();
-        // creatorsList(artistsArr);
         topCreatorsTabs();
-        // useLocalStorage('artist.html', '.toplist__list_miror', "artist");
         
     }
 

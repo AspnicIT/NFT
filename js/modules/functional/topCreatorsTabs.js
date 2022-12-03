@@ -63,7 +63,7 @@ function topCreatorsTabs(){
             clear(toplist, artistsArr.length);
             recovery();
             let dayArtist = artistsArr.slice();
-            tabArreys(dayArtist, 0.9); 
+            tabArreys(dayArtist, 0.99); 
             creatorsList(dayArtist);
             useLocalStorage('artist.html', '.toplist__list_miror', "artist");
 
@@ -76,7 +76,7 @@ function topCreatorsTabs(){
             clear(toplist, artistsArr.length);
             recovery();
             let weekArtist = artistsArr.slice();
-            tabArreys(weekArtist, 0.7);
+            tabArreys(weekArtist, 0.95);
             creatorsList(weekArtist);
             useLocalStorage('artist.html', '.toplist__list_miror', "artist");
         });
@@ -88,7 +88,7 @@ function topCreatorsTabs(){
             clear(toplist, artistsArr.length);
             recovery();
             let monthArtit = artistsArr.slice();
-            tabArreys(monthArtit, 0.6);
+            tabArreys(monthArtit, 0.85);
             creatorsList(monthArtit);
             useLocalStorage('artist.html', '.toplist__list_miror', "artist");
             
