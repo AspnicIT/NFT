@@ -412,6 +412,9 @@
 .search__line {
     max-width: 690px;
   }
+  .topCreat__btn:last-child {
+    min-width: 110px;
+  }
   .toplist__header {
     grid-template-columns: 42px 380px 0px 100px auto;
   }
@@ -809,6 +812,9 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+  }
+  .toplist__list_volume {
+    font-size: 14px;
   }
   #today:before {
     content: "1d";

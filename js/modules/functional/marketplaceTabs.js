@@ -11,6 +11,9 @@ function marketplaceTabs(arrNft, arrCollect){
               sectionCollection = document.querySelector('.sectionCollection'),
               nftCards = document.querySelectorAll('.discover__grid_item'),
               collectCards = document.querySelectorAll('.trend__card');
+
+              collectCards.forEach(item => item.classList.add('hide'));
+              
               
 
     function  active(btn, section, counter, arr){

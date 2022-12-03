@@ -40,7 +40,7 @@ const collectDbObj = {
         that live on the ground, yet do not know any other way to be. Upside-Downs believe that they
         will be able to win this war if they could only get an eye into Orbitian territory, so
         they've taken to make human beings their target.`,
-        endSale: '2023-09-1'
+        endSale: '2023-09-01'
     },
     nebulaKid: {
         name: 'nebulaKid',
@@ -83,7 +83,7 @@ const collectDbObj = {
         descr: `The BeKind2Robots <br>
         is a collection of 7,000 unique NFTs on the Ethereum blockchain, <br
             class="collect__info_br">Spectacle has long been synonymous with Robot dance.<br class="collect__info_br">A living futuristic robot, whose every movement is a perfectly coordinated mechanism, appears to be one of the most difficult areas for learning. It requires complete control of every muscle in the body, dozens of workouts to fix and slow down the most basic movements, and good physical condition to perform signature movements in the style of the "Matrix".`,
-        endSale: '2023-10-2'
+        endSale: '2023-10-02'
     },
     criptoCity: {
         name: 'criptoCity',
@@ -128,7 +128,7 @@ const collectDbObj = {
             class="collect__info_br">"The Shroomie" can rightfully be at the top of our list.
             <br class="collect__info_br">
             You thought that neon mushrooms could only grow on the planet Pandora from the Avatar movie. Fortunately, their extraordinary radiance can be enjoyed on Earth as well. True, for this you will have to go to Japan or Brazil. It is there that in the rainy season these amazing green mushrooms are born from flaming spores. Whether these mushrooms are edible or not is unknown. This is understandable, few people dare to serve such a luminous dish to the table.`,
-        endSale: '2023-11-1'
+        endSale: '2023-11-01'
             
     }
 };

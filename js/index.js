@@ -11,17 +11,19 @@ import insertFooter from './modules/innerHtml/footer';
 import createArtistPage from './modules/constructors/createArtistPage';
 import welcomeCollectionPage from './modules/constructors/createWelcomeCollectionPage';
 import createNftCard from './modules/constructors/createNftCards';
-import marketplaceTabs from './modules/marketplaceTabs';
+import marketplaceTabs from './modules/functional/marketplaceTabs';
+import topCreatorsTabs from './modules/functional/topCreatorsTabs';
 import timer from './modules/functional/timer';
-import {artists} from "./modules/dataBase/artistDB";
+import {artistsArr} from "./modules/dataBase/artistDB";
 import {artistsDB} from "./modules/dataBase/artistDB";
-import {twelweArtistsForHomePageArr } from './modules/dataBase/artistDB';
+import { artistsArrSortByTabs } from './modules/functional/topCreatorsTabs';
 import {nft} from "./modules/dataBase/nftDB";
 import {nftDBarr} from "./modules/dataBase/nftDB";
 import { trendCollectArr } from './modules/dataBase/nftDB';
 import {collectDbObj} from "./modules/dataBase/collectDb";
 import {collectDbArr} from "./modules/dataBase/collectDb";
 import {collectItemsArr} from './modules/constructors/creatObjectOfCollections';
+
 
 
 function topAutors(artistId){
@@ -48,7 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
         burgerButton();
         homePageWelcomeAdv(nftDBarr);
         trendingCollections(trendCollectArr, '.trend__container', '.');
-        topCreatorsOnHomePage(twelweArtistsForHomePageArr);
+        topCreatorsOnHomePage(artistsArr.slice(0, 12));
+
         useLocalStorage('./html/artist.html', '.toplist__list_miror', "artist");
         createNftCard(nft.happyRobot032, '.discover__grid', '.');
         createNftCard(nft.dancingRobot56, '.discover__grid', '.');
@@ -76,8 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if(body.classList.contains('toplist')){
         insertHeader();
         insertFooter();
-        creatorsList(artists);
-        useLocalStorage('artist.html', '.toplist__list_miror', "artist");
+        // creatorsList(artistsArr);
+        topCreatorsTabs();
+        // useLocalStorage('artist.html', '.toplist__list_miror', "artist");
+        
     }
 
     

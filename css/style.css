@@ -985,11 +985,12 @@ input:focus {
 .artist__btn {
   background: none;
   transition: 0.3s;
+  width: 100%;
 }
 .artist__section {
   display: inline-block;
   color: #858584;
-  padding: 24px 14px;
+  padding: 24px 0px;
 }
 .artist__counter {
   display: inline-block;

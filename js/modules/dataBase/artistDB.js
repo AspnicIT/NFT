@@ -81,7 +81,7 @@ const artistsDB = {
     }
 };
 
-let artists = Object.values(artistsDB).sort(sortRait);
+let artistsArr = Object.values(artistsDB).sort(sortRait);
 
     function sortRait(a, b) {
         return a.sold < b.sold ? 1 : b.sold < a.sold ? -1 : 0;
@@ -90,11 +90,9 @@ let artists = Object.values(artistsDB).sort(sortRait);
         let k = obj[sold] * cours;
         obj[volume] = k.toFixed(2);
     }
-    artists.forEach(item => getVolume(item, 'sold', 'volume', 0.033));
+    artistsArr.forEach(item => getVolume(item, 'sold', 'volume', 0.033));
 
-    let twelweArtistsForHomePageArr = artists.slice(0, 12);
 
-    
+export {getVolume};
 export {artistsDB};
-export {artists};
-export  {twelweArtistsForHomePageArr};
+export {artistsArr};
