@@ -108,6 +108,7 @@ input:focus {
 
 .title {
   margin-bottom: 10px;
+  min-width: 315px;
 }
 
 .subtitle {
