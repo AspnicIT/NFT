@@ -80,11 +80,11 @@ function welcomeCollectionPage(objectCollection){
                     <div class="collect__info_block4">
                         <h5 class="collect__info_subtitle">Detales</h5>
                         <div class="collect__info_detales">
-                            <a href="#" class="collect__info_linkToDetales">
+                            <a href="#" class="collect__info_linkToDetales defaultLink">
                                 <img class="collect__info_globe" src="../src/icons/footer/Globe.svg" alt="">
                                 <p class="collect__info_text">View on Etherscan</p>
                             </a>
-                            <a href="#" class="collect__info_linkToDetales">
+                            <a href="#" class="collect__info_linkToDetales defaultLink">
                                 <img class="collect__info_globe" src="../src/icons/footer/Globe.svg" alt="">
                                 <p class="collect__info_text">View Original</p>
                             </a>
@@ -94,10 +94,10 @@ function welcomeCollectionPage(objectCollection){
                     <div class="collect__info_block5">
                         <h5 class="collect__info_subtitle">Tags</h5>
                         <div class="collect__info_tags">
-                            <a href="#" class="collect__info_tag">${this.tag1}</a>
-                            <a href="#" class="collect__info_tag">${this.tag2}</a>
-                            <a href="#" class="collect__info_tag">${this.tag3}</a>
-                            <a href="#" class="collect__info_tag">${this.tag4}</a>
+                            <a href="#" class="collect__info_tag defaultLink">${this.tag1}</a>
+                            <a href="#" class="collect__info_tag defaultLink">${this.tag2}</a>
+                            <a href="#" class="collect__info_tag defaultLink">${this.tag3}</a>
+                            <a href="#" class="collect__info_tag defaultLink">${this.tag4}</a>
                         </div>
                     </div>
                 </div>

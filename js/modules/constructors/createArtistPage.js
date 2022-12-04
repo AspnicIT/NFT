@@ -1,3 +1,4 @@
+import linkDefault from "../functional/linksDefault";
 
 function createArtistPage(objectFromTopList) {
     const topParent = document.querySelector('.welcome');
@@ -36,7 +37,7 @@ function createArtistPage(objectFromTopList) {
                     <div class="artist__btns">
                         <button class="artist__copykey">
                             <img src="../src/icons/Copy.svg" alt="copy" class="artist__copykey_img">
-                            0xc0E3...B79C
+                            <span class="copySpan">0xc0E3...B79C</span>
                         </button>
                         <button class="artist__follow">
                             <img src="../src/icons/Plus.svg" alt="plus" class="artist__follow_img">
@@ -68,15 +69,15 @@ function createArtistPage(objectFromTopList) {
                     <div class="artist__links">
                         <h5 class="artist__bio_title">Links</h5>
                         <div class="artist__links_block">
-                            <a href="#"><img src="../src/icons/footer/Globe.svg" alt="globe"
+                            <a class="defaultLink" href="#"><img src="../src/icons/footer/Globe.svg" alt="globe"
                                     class="artist__links_img"></a>
-                            <a href="#"><img src="../src/icons/footer/DiscordLogo.svg" alt="dscrd"
+                            <a class="defaultLink" href="#"><img src="../src/icons/footer/DiscordLogo.svg" alt="dscrd"
                                     class="artist__links_img"></a>
-                            <a href="#"><img src="../src/icons/footer/YoutubeLogo.svg" alt="YT"
+                            <a class="defaultLink" href="#"><img src="../src/icons/footer/YoutubeLogo.svg" alt="YT"
                                     class="artist__links_img"></a>
-                            <a href="#"><img src="../src/icons/footer/TwitterLogo.svg" alt="twit"
+                            <a class="defaultLink" href="#"><img src="../src/icons/footer/TwitterLogo.svg" alt="twit"
                                     class="artist__links_img"></a>
-                            <a href="#"><img src="../src/icons/footer/InstagramLogo.svg" alt="inst"
+                            <a class="defaultLink" href="#"><img src="../src/icons/footer/InstagramLogo.svg" alt="inst"
                                     class="artist__links_img"></a>
                         </div>
                     </div>
@@ -84,6 +85,17 @@ function createArtistPage(objectFromTopList) {
             </div>
             `;
                 topParent.append(welcome);
+                linkDefault(".defaultLink");
+               
+                let btn = document.querySelector('.artist__copykey'),
+                span = document.querySelector('.copySpan');
+        
+                    btn.addEventListener('click', () =>{
+                        navigator.clipboard.writeText('0xc0E3458OPRT7BH3NncfRE2B79C');
+                        alert('copied');
+                    });
+          
+                
             }
         }
 
@@ -99,5 +111,6 @@ function createArtistPage(objectFromTopList) {
 
     createPage(objectFromTopList);
 }
+
 
 export default createArtistPage;

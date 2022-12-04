@@ -8,6 +8,7 @@ import homePageBrowsersSection from './modules/functional/homePageBrowsersSectio
 import useLocalStorage from './modules/functional/localStorage';
 import insertHeader from './modules/innerHtml/header';
 import insertFooter from './modules/innerHtml/footer';
+import linkDefault from './modules/functional/linksDefault';
 import createArtistPage from './modules/constructors/createArtistPage';
 import tabsOnArtistPage from './modules/functional/tabsOnArtistPage';
 import welcomeCollectionPage from './modules/constructors/createWelcomeCollectionPage';
@@ -61,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         useLocalStorage('./html/collection.html', '.mirrorFromCollection', "collection");
         useLocalStorage('./html/collection.html', '.miror', "collection");
         timer('2023-06-22');
+        linkDefault('.defaultLink');
     }
 
     if(body.classList.contains('marketplace')){
@@ -109,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         useLocalStorage('#', '.mirrorFromAutor');
         useLocalStorage('./collection.html', '.mirrorFromCollection', "collection");
         tabsOnArtistPage();
+        
     }
 
     if(body.classList.contains('collection')){
@@ -127,6 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
         useLocalStorage('artist.html', '.mirrorFromAutor', "artist");
         useLocalStorage('artist.html', '.creats__btn', "artist");
         useLocalStorage('#', '.mirrorFromCollection', "collection");
+        linkDefault('.defaultLink');
     }
 
     if(body.classList.contains('acountPage')){
