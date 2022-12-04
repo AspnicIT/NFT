@@ -23,7 +23,7 @@ function welcomeCollectionPage(objectCollection){
             <div class="collect__container">
                 <div class="collect__timer">
                     <div class="collect__timer_inner">
-                        <a href="#" class="collect__timer_link">Place Bid</a>
+                        <a href="./wallet.html" class="collect__timer_link">Place Bid</a>
                     </div>
                     <div class="timer">
                         <div class="timer__body">

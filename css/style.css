@@ -351,7 +351,7 @@ input:focus {
 }
 .creats__img-1 {
   position: absolute;
-  top: 22px;
+  top: 19px;
   left: 34px;
 }
 .creats__grid {
@@ -933,6 +933,7 @@ input:focus {
 .artist__follow_img {
   margin-bottom: -4px;
   margin-right: 12px;
+  transition: 0.3s;
 }
 .artist__info {
   margin-bottom: 40px;
@@ -1328,4 +1329,8 @@ input:focus {
 
 a:hover {
   color: #f99dfc;
+}
+
+.rotate {
+  transform: rotate(-135deg);
 }/*# sourceMappingURL=style.css.map */

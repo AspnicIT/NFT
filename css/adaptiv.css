@@ -557,6 +557,8 @@
     width: 100%;
   }
   .creats__btn {
+    display: block;
+    text-align: center;
     width: 100%;
     max-width: 315px;
   }
@@ -787,8 +789,12 @@
     grid-template-columns: 20px 180px 0px 0px auto;
     padding-left: 18px;
   }
+  .toplist__header_item {
+    font-size: 12px;
+  }
   .toplist__list_item {
-    grid-template-columns: 20px 180px 0px 0px auto;
+    grid-template-columns: 20px 200px 0px 0px auto;
+    padding-left: 12px;
   }
   .toplist_chance {
     width: 0px;
@@ -814,7 +820,7 @@
     line-height: 22px;
   }
   .toplist__list_volume {
-    font-size: 14px;
+    font-size: 12px;
   }
   #today:before {
     content: "1d";

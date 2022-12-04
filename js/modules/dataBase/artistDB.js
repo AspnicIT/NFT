@@ -92,7 +92,7 @@ let artistsArr = Object.values(artistsDB).sort(sortRait);
     }
     artistsArr.forEach(item => getVolume(item, 'sold', 'volume', 0.033));
 
-
+export {sortRait};
 export {getVolume};
 export {artistsDB};
 export {artistsArr};

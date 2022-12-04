@@ -154,30 +154,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
 /* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
-/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
-/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
-/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _functional_linksDefault__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../functional/linksDefault */ "./js/modules/functional/linksDefault.js");
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.timers.js */ "./node_modules/core-js/modules/web.timers.js");
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.symbol.to-primitive.js */ "./node_modules/core-js/modules/es.symbol.to-primitive.js");
+/* harmony import */ var core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_primitive_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.date.to-primitive.js */ "./node_modules/core-js/modules/es.date.to-primitive.js");
+/* harmony import */ var core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_primitive_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _functional_linksDefault__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../functional/linksDefault */ "./js/modules/functional/linksDefault.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
 
 
 
@@ -217,12 +220,20 @@ function createArtistPage(objectFromTopList) {
           welcome.classList.add('artist__welcome');
           welcome.innerHTML = "\n            <div class=\"artist__topwall\">\n                <div class=\"artist__gradient\"></div>\n                <div class=\"artist__avatar\">\n                    <div class=\"artist__avawrap\">\n                        <img src=\"../src/icons/artists/".concat(this.avatar, ".jpg\" alt=\"").concat(this.avatar, "\">\n                    </div>\n                </div>\n            </div>\n            <style>\n                .artist__topwall{\n                    background-image: url(../src/img/artistPages/topwall/").concat(this.avatar, ".jpg);\n                } \n            </style>\n\n            <div id=\"welcomeArtist\" class=\"artist__container\">\n                <div class=\"artist__header\">\n                    <h2 class=\"artist__title\">").concat(this.name, "</h2>\n                    <div class=\"artist__btns\">\n                        <button class=\"artist__copykey\">\n                            <img src=\"../src/icons/Copy.svg\" alt=\"copy\" class=\"artist__copykey_img\">\n                            <span class=\"copySpan\">0xc0E3...B79C</span>\n                        </button>\n                        <button class=\"artist__follow\">\n                            <img src=\"../src/icons/Plus.svg\" alt=\"plus\" class=\"artist__follow_img\">\n                            Follow\n                        </button>\n                    </div>\n                </div>\n                <div class=\"artist__info\">\n                    <div class=\"artist__info_counter\">\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.volume, " <span>ETH</span></h4>\n                            <h5 class=\"artist__info_subtitle\">Volume</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.sold, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">NFTs Sold</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.followers, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">Followers</h5>\n                        </div>\n                    </div>\n\n                    <div class=\"artist__bio\">\n                        <h5 class=\"artist__bio_title\">Bio</h5>\n                        <div class=\"artist__info_subtitle\">").concat(this.bio, "</div>\n                    </div>\n\n                    <div class=\"artist__links\">\n                        <h5 class=\"artist__bio_title\">Links</h5>\n                        <div class=\"artist__links_block\">\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/Globe.svg\" alt=\"globe\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/DiscordLogo.svg\" alt=\"dscrd\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/YoutubeLogo.svg\" alt=\"YT\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/TwitterLogo.svg\" alt=\"twit\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/InstagramLogo.svg\" alt=\"inst\"\n                                    class=\"artist__links_img\"></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ");
           topParent.append(welcome);
-          (0,_functional_linksDefault__WEBPACK_IMPORTED_MODULE_13__["default"])(".defaultLink");
+          (0,_functional_linksDefault__WEBPACK_IMPORTED_MODULE_14__["default"])(".defaultLink");
           var btn = document.querySelector('.artist__copykey'),
-            span = document.querySelector('.copySpan');
+            spanBtn = document.querySelector('.copySpan'),
+            follow = document.querySelector('.artist__follow'),
+            followImg = document.querySelector('.artist__follow_img');
           btn.addEventListener('click', function () {
-            navigator.clipboard.writeText('0xc0E3458OPRT7BH3NncfRE2B79C');
-            alert('copied');
+            // navigator.clipboard.writeText('0xc0E3458OPRT7BH3NncfRE2B79C');
+            spanBtn.innerHTML = "number copied";
+            setTimeout(function () {
+              spanBtn.innerHTML = "0xc0E3...B79C";
+            }, 2000);
+          });
+          follow.addEventListener('click', function () {
+            followImg.classList.toggle('rotate');
           });
         }
       }]);
@@ -401,7 +412,7 @@ function welcomeCollectionPage(objectCollection) {
         value: function render() {
           var welcome = document.createElement('div');
           welcome.classList.add('collect__inner');
-          welcome.innerHTML = "\n                <div class=\"collect__topwall\"></div>\n            <div class=\"collect__container\">\n                <div class=\"collect__timer\">\n                    <div class=\"collect__timer_inner\">\n                        <a href=\"#\" class=\"collect__timer_link\">Place Bid</a>\n                    </div>\n                    <div class=\"timer\">\n                        <div class=\"timer__body\">\n                            <span class=\"discover__grid_span timer__title\">Auction ends in:</span>\n\n                            <div class=\"timer__blocks\">\n                                <div class=\"timer__block\">\n                                    <h3 id=\"hours\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Hours</span>\n                                </div>\n                                <h4>:</h4>\n                                <div class=\"timer__block\">\n                                    <h3 id=\"minutes\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Minutes</span>\n                                </div>\n                                <h4>:</h4>\n                                <div class=\"timer__block\">\n                                    <h3 id=\"seconds\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Seconds</span>\n                                </div>\n                            </div>\n\n\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"collect__info\">\n\n                    <div class=\"collect__info_block1\">\n                        <h2 class=\"collect__info_title\">".concat(this.title, "</h2>\n                        <p class=\"collect__info_date\">Minted on ").concat(this.date, "</p>\n                    </div>\n\n                    <div class=\"collect__info_block2\">\n                        <h5 class=\"collect__info_subtitle\">Created By</h5>\n                        <div class=\"nft__item_autor\">\n                            <img src=\"../src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                            <a href=\"../html/artist.html\" class=\"toplist__miror\">\n                                <div class=\"nft__item_nickname\">").concat(this.artist, "</div>\n                            </a>\n                        </div>\n                    </div>\n\n                    <div class=\"collect__info_block3\">\n                        <h5 class=\"collect__info_subtitle\">Description</h5>\n                        <article>\n                            <p class=\"collect__info_text\">\n                                ").concat(this.descr, "\n                            </p>\n                        </article>\n                    </div>\n\n                    <div class=\"collect__info_block4\">\n                        <h5 class=\"collect__info_subtitle\">Detales</h5>\n                        <div class=\"collect__info_detales\">\n                            <a href=\"#\" class=\"collect__info_linkToDetales defaultLink\">\n                                <img class=\"collect__info_globe\" src=\"../src/icons/footer/Globe.svg\" alt=\"\">\n                                <p class=\"collect__info_text\">View on Etherscan</p>\n                            </a>\n                            <a href=\"#\" class=\"collect__info_linkToDetales defaultLink\">\n                                <img class=\"collect__info_globe\" src=\"../src/icons/footer/Globe.svg\" alt=\"\">\n                                <p class=\"collect__info_text\">View Original</p>\n                            </a>\n                        </div>\n                    </div>\n\n                    <div class=\"collect__info_block5\">\n                        <h5 class=\"collect__info_subtitle\">Tags</h5>\n                        <div class=\"collect__info_tags\">\n                            <a href=\"#\" class=\"collect__info_tag defaultLink\">").concat(this.tag1, "</a>\n                            <a href=\"#\" class=\"collect__info_tag defaultLink\">").concat(this.tag2, "</a>\n                            <a href=\"#\" class=\"collect__info_tag defaultLink\">").concat(this.tag3, "</a>\n                            <a href=\"#\" class=\"collect__info_tag defaultLink\">").concat(this.tag4, "</a>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"collect__wrapTitle\">\n                    <h3 class=\"title\">More from this artist</h3>\n                    <div class=\"creats__wrapBtn content__btn\">\n                        \n                            <a id=\"").concat(this.artist, "\" href=\"../html/artist.html\" class=\"creats__btn\">\n                                <img src=\"../src/icons/ArrowRight.svg\" alt=\"\" class=\"creats__img-1 content__arrow\">\n                                Go To Artist Page\n                            </a>\n                     \n                    </div>\n                </div>\n            </div>\n                ");
+          welcome.innerHTML = "\n                <div class=\"collect__topwall\"></div>\n            <div class=\"collect__container\">\n                <div class=\"collect__timer\">\n                    <div class=\"collect__timer_inner\">\n                        <a href=\"./wallet.html\" class=\"collect__timer_link\">Place Bid</a>\n                    </div>\n                    <div class=\"timer\">\n                        <div class=\"timer__body\">\n                            <span class=\"discover__grid_span timer__title\">Auction ends in:</span>\n\n                            <div class=\"timer__blocks\">\n                                <div class=\"timer__block\">\n                                    <h3 id=\"hours\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Hours</span>\n                                </div>\n                                <h4>:</h4>\n                                <div class=\"timer__block\">\n                                    <h3 id=\"minutes\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Minutes</span>\n                                </div>\n                                <h4>:</h4>\n                                <div class=\"timer__block\">\n                                    <h3 id=\"seconds\" class=\"timer__counter\">59</h3>\n                                    <span class=\"discover__grid_span timer__subtitle\">Seconds</span>\n                                </div>\n                            </div>\n\n\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"collect__info\">\n\n                    <div class=\"collect__info_block1\">\n                        <h2 class=\"collect__info_title\">".concat(this.title, "</h2>\n                        <p class=\"collect__info_date\">Minted on ").concat(this.date, "</p>\n                    </div>\n\n                    <div class=\"collect__info_block2\">\n                        <h5 class=\"collect__info_subtitle\">Created By</h5>\n                        <div class=\"nft__item_autor\">\n                            <img src=\"../src/icons/artists/").concat(this.artist, ".jpg\" alt=\"ava\" class=\"nft__item_avatar\">\n                            <a href=\"../html/artist.html\" class=\"toplist__miror\">\n                                <div class=\"nft__item_nickname\">").concat(this.artist, "</div>\n                            </a>\n                        </div>\n                    </div>\n\n                    <div class=\"collect__info_block3\">\n                        <h5 class=\"collect__info_subtitle\">Description</h5>\n                        <article>\n                            <p class=\"collect__info_text\">\n                                ").concat(this.descr, "\n                            </p>\n                        </article>\n                    </div>\n\n                    <div class=\"collect__info_block4\">\n                        <h5 class=\"collect__info_subtitle\">Detales</h5>\n                        <div class=\"collect__info_detales\">\n                            <a href=\"#\" class=\"collect__info_linkToDetales defaultLink\">\n                                <img class=\"collect__info_globe\" src=\"../src/icons/footer/Globe.svg\" alt=\"\">\n                                <p class=\"collect__info_text\">View on Etherscan</p>\n                            </a>\n                            <a href=\"#\" class=\"collect__info_linkToDetales defaultLink\">\n                                <img class=\"collect__info_globe\" src=\"../src/icons/footer/Globe.svg\" alt=\"\">\n                                <p class=\"collect__info_text\">View Original</p>\n                            </a>\n                        </div>\n                    </div>\n\n                    <div class=\"collect__info_block5\">\n                        <h5 class=\"collect__info_subtitle\">Tags</h5>\n                        <div class=\"collect__info_tags\">\n                            <a href=\"#\" class=\"collect__info_tag defaultLink\">").concat(this.tag1, "</a>\n                            <a href=\"#\" class=\"collect__info_tag defaultLink\">").concat(this.tag2, "</a>\n                            <a href=\"#\" class=\"collect__info_tag defaultLink\">").concat(this.tag3, "</a>\n                            <a href=\"#\" class=\"collect__info_tag defaultLink\">").concat(this.tag4, "</a>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"collect__wrapTitle\">\n                    <h3 class=\"title\">More from this artist</h3>\n                    <div class=\"creats__wrapBtn content__btn\">\n                        \n                            <a id=\"").concat(this.artist, "\" href=\"../html/artist.html\" class=\"creats__btn\">\n                                <img src=\"../src/icons/ArrowRight.svg\" alt=\"\" class=\"creats__img-1 content__arrow\">\n                                Go To Artist Page\n                            </a>\n                     \n                    </div>\n                </div>\n            </div>\n                ");
           sectionParent.append(welcome);
           var topwall = document.querySelector('.collect__topwall');
           topwall.style.backgroundImage = "url(../src/img/topwallCollection/".concat(this.name, ".jpg)");
@@ -839,7 +850,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "artistsArr": () => (/* binding */ artistsArr),
 /* harmony export */   "artistsDB": () => (/* binding */ artistsDB),
-/* harmony export */   "getVolume": () => (/* binding */ getVolume)
+/* harmony export */   "getVolume": () => (/* binding */ getVolume),
+/* harmony export */   "sortRait": () => (/* binding */ sortRait)
 /* harmony export */ });
 /* harmony import */ var core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.sort.js */ "./node_modules/core-js/modules/es.array.sort.js");
 /* harmony import */ var core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -1072,6 +1084,7 @@ function getVolume(obj, sold, volume, cours) {
 artistsArr.forEach(function (item) {
   return getVolume(item, 'sold', 'volume', 0.033);
 });
+
 
 
 
@@ -1859,14 +1872,21 @@ function burgerButton() {
       headerOn();
     }
   });
+  burgerNav.addEventListener('click', function (e) {
+    if (e.target == burgerNav) {
+      headerOff();
+    }
+  });
   function headerOff() {
     burgerNav.classList.remove('thin');
+    document.body.style.overflow = '';
     setTimeout(function () {
       burgerNav.style.display = 'none';
     }, 700);
   }
   function headerOn() {
     burgerNav.style.display = 'block';
+    document.body.style.overflow = 'hidden';
     setTimeout(function () {
       burgerNav.classList.add('thin');
     }, 0);
@@ -2244,11 +2264,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.number.to-fixed.js */ "./node_modules/core-js/modules/es.number.to-fixed.js");
 /* harmony import */ var core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../dataBase/artistDB */ "./js/modules/dataBase/artistDB.js");
-/* harmony import */ var _constructors_creatorsList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../constructors/creatorsList */ "./js/modules/constructors/creatorsList.js");
-/* harmony import */ var _functional_localStorage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../functional/localStorage */ "./js/modules/functional/localStorage.js");
+/* harmony import */ var core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.array.sort.js */ "./node_modules/core-js/modules/es.array.sort.js");
+/* harmony import */ var core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_sort_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../dataBase/artistDB */ "./js/modules/dataBase/artistDB.js");
+/* harmony import */ var _constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../constructors/creatorsList */ "./js/modules/constructors/creatorsList.js");
+/* harmony import */ var _functional_localStorage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../functional/localStorage */ "./js/modules/functional/localStorage.js");
 
 
 
@@ -2258,34 +2280,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var toplist = document.querySelector('.toplist__list');
-var soldValue = [];
-_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr.forEach(function (item) {
-  return soldValue.push(item.sold);
-});
-function clear(parentElem, num) {
-  for (var i = 1; i <= num; i++) {
-    parentElem.firstChild.remove();
-  }
-}
-function tabArreys(newArr, percent) {
-  _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr.forEach(function (item) {
-    getSold(item, 'sold', percent, newArr);
-  });
-}
-function getSold(obj, sold, percent) {
-  var k = obj[sold] - obj[sold] * percent;
-  obj[sold] = k.toFixed();
-  (0,_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.getVolume)(obj, 'sold', 'volume', 0.033);
-}
-function recovery() {
-  _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr.forEach(function (item, i) {
-    item.sold = soldValue[i];
-    (0,_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.getVolume)(item, 'sold', 'volume', 0.033);
-  });
-}
+
+
 function topCreatorsTabs() {
-  (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_6__["default"])(_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr);
+  (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__["default"])(_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr);
   var dayBtn = document.querySelector('.tabDay'),
     weekBtn = document.querySelector('.tabWeek'),
     monthBtn = document.querySelector('.tabMonth'),
@@ -2294,6 +2292,11 @@ function topCreatorsTabs() {
     toWeek = document.getElementById('week'),
     toMonth = document.getElementById('month'),
     toTime = document.getElementById('time');
+  var toplist = document.querySelector('.toplist__list');
+  var soldValue = [];
+  _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr.forEach(function (item) {
+    return soldValue.push(item.sold);
+  });
   function active(btn, nameTab) {
     btn.classList.add('artist__btn_active');
     nameTab.classList.add('section_active');
@@ -2302,53 +2305,72 @@ function topCreatorsTabs() {
     btn.classList.remove('artist__btn_active');
     nameTab.classList.remove('section_active');
   }
-  dayBtn.addEventListener('click', function () {
-    active(dayBtn, toDay);
-    notActive(weekBtn, toWeek);
-    notActive(monthBtn, toMonth);
-    notActive(allTimeBtn, toTime);
-    clear(toplist, _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr.length);
+  function clear(parentElem, num) {
+    for (var i = 1; i <= num; i++) {
+      parentElem.firstChild.remove();
+    }
+  }
+  function recovery() {
+    _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr.forEach(function (item, i) {
+      item.sold = soldValue[i];
+      (0,_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.getVolume)(item, 'sold', 'volume', 0.033);
+    });
+  }
+  function newValue(arr) {
+    arr.forEach(function (item) {
+      var number;
+      number = Math.random() * (720 - 10) + 10;
+      item.sold = +number.toFixed();
+    });
+    arr.sort(_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.sortRait);
+  }
+  function tabArreys(newArr, percent) {
+    newArr.forEach(function (item) {
+      getSold(item, 'sold', percent);
+    });
+  }
+  function getSold(obj, sold, percent) {
+    var k = obj[sold] - obj[sold] * percent;
+    obj[sold] = k.toFixed();
+    (0,_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.getVolume)(obj, 'sold', 'volume', 0.033);
+  }
+  function changeTab(onBtn, onSection, offBtn1, offSec1, offBtn2, offSec2, offBtn3, offSec3, clearList, clearLength, nameArr, percent) {
+    active(onBtn, onSection);
+    notActive(offBtn1, offSec1);
+    notActive(offBtn2, offSec2);
+    notActive(offBtn3, offSec3);
+    clear(clearList, clearLength);
     recovery();
-    var dayArtist = _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr.slice();
-    tabArreys(dayArtist, 0.99);
-    (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_6__["default"])(dayArtist);
-    (0,_functional_localStorage__WEBPACK_IMPORTED_MODULE_7__["default"])('artist.html', '.toplist__list_miror', "artist");
+    nameArr = _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr.slice();
+    newValue(nameArr);
+    tabArreys(nameArr, percent);
+    // nameArr.sort(sortRait);
+    (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__["default"])(nameArr);
+    (0,_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('artist.html', '.toplist__list_miror', "artist");
+  }
+  dayBtn.addEventListener('click', function () {
+    var dayArtist;
+    changeTab(dayBtn, toDay, weekBtn, toWeek, monthBtn, toMonth, allTimeBtn, toTime, toplist, _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr.length, dayArtist, 0.99);
   });
   weekBtn.addEventListener('click', function () {
-    active(weekBtn, toWeek);
-    notActive(dayBtn, toDay);
-    notActive(monthBtn, toMonth);
-    notActive(allTimeBtn, toTime);
-    clear(toplist, _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr.length);
-    recovery();
-    var weekArtist = _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr.slice();
-    tabArreys(weekArtist, 0.95);
-    (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_6__["default"])(weekArtist);
-    (0,_functional_localStorage__WEBPACK_IMPORTED_MODULE_7__["default"])('artist.html', '.toplist__list_miror', "artist");
+    var weekArtist;
+    changeTab(weekBtn, toWeek, dayBtn, toDay, monthBtn, toMonth, allTimeBtn, toTime, toplist, _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr.length, weekArtist, 0.95);
   });
   monthBtn.addEventListener('click', function () {
-    active(monthBtn, toMonth);
-    notActive(dayBtn, toDay);
-    notActive(weekBtn, toWeek);
-    notActive(allTimeBtn, toTime);
-    clear(toplist, _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr.length);
-    recovery();
-    var monthArtit = _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr.slice();
-    tabArreys(monthArtit, 0.85);
-    (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_6__["default"])(monthArtit);
-    (0,_functional_localStorage__WEBPACK_IMPORTED_MODULE_7__["default"])('artist.html', '.toplist__list_miror', "artist");
+    var monthArtit;
+    changeTab(monthBtn, toMonth, weekBtn, toWeek, dayBtn, toDay, allTimeBtn, toTime, toplist, _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr.length, monthArtit, 0.85);
   });
   allTimeBtn.addEventListener('click', function () {
     active(allTimeBtn, toTime);
     notActive(dayBtn, toDay);
     notActive(weekBtn, toWeek);
     notActive(monthBtn, toMonth);
-    clear(toplist, _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr.length);
+    clear(toplist, _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr.length);
     recovery();
-    (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_6__["default"])(_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_5__.artistsArr);
-    (0,_functional_localStorage__WEBPACK_IMPORTED_MODULE_7__["default"])('artist.html', '.toplist__list_miror', "artist");
+    (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__["default"])(_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr);
+    (0,_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('artist.html', '.toplist__list_miror', "artist");
   });
-  (0,_functional_localStorage__WEBPACK_IMPORTED_MODULE_7__["default"])('artist.html', '.toplist__list_miror', "artist");
+  (0,_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('artist.html', '.toplist__list_miror', "artist");
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (topCreatorsTabs);
 

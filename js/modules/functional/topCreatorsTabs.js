@@ -1,35 +1,8 @@
 import { artistsArr } from "../dataBase/artistDB";
 import creatorsList from "../constructors/creatorsList";
+import { sortRait } from "../dataBase/artistDB";
 import {getVolume} from "../dataBase/artistDB";
 import useLocalStorage from "../functional/localStorage";
-
-let toplist = document.querySelector('.toplist__list');
-
-const soldValue = [];
-artistsArr.forEach((item) => soldValue.push(item.sold));
-
-function clear(parentElem, num){
-    for(let i = 1; i <= num; i++){
-        parentElem.firstChild.remove();
-    }
-}
-function tabArreys(newArr, percent){
-    artistsArr.forEach((item) => {getSold(item, 'sold', percent, newArr);});
-}
-
-function getSold(obj, sold, percent){
-    let k = obj[sold] - (obj[sold] * percent);
-    obj[sold] = k.toFixed();
-    getVolume(obj, 'sold', 'volume', 0.033);
-}
-function recovery(){
-    artistsArr.forEach((item, i) => {
-        item.sold = soldValue[i];
-        getVolume(item, 'sold', 'volume', 0.033);
-    });
-       
-}
-
 
 function topCreatorsTabs(){
      
@@ -45,53 +18,108 @@ function topCreatorsTabs(){
         toMonth = document.getElementById('month'),
         toTime = document.getElementById('time');
 
+        let toplist = document.querySelector('.toplist__list');
+
+        const soldValue = [];
+        artistsArr.forEach((item) => soldValue.push(item.sold));
+
         function active(btn, nameTab){
             btn.classList.add('artist__btn_active');
             nameTab.classList.add('section_active');
         }
-
+        
         function notActive(btn, nameTab){
             btn.classList.remove('artist__btn_active');
             nameTab.classList.remove('section_active');
         }
-
-        dayBtn.addEventListener('click', ()=> {
-            active(dayBtn, toDay);
-            notActive(weekBtn, toWeek);
-            notActive(monthBtn, toMonth);
-            notActive(allTimeBtn, toTime);
-            clear(toplist, artistsArr.length);
+        
+        function clear(parentElem, num){
+            for(let i = 1; i <= num; i++){
+                parentElem.firstChild.remove();
+            }
+        }
+        function recovery(){
+            artistsArr.forEach((item, i) => {
+                item.sold = soldValue[i];
+                getVolume(item, 'sold', 'volume', 0.033);
+            }); 
+        }
+        function newValue(arr){
+            arr.forEach((item) => {
+                let number;
+                number = Math.random() * (720 - 10) + 10;
+                item.sold = +number.toFixed();
+                
+            });
+            arr.sort(sortRait);
+        }
+        function tabArreys(newArr, percent){
+            newArr.forEach((item) => {getSold(item, 'sold', percent);});
+        }
+        
+        function getSold(obj, sold, percent){
+            let k = obj[sold] - (obj[sold] * percent);
+            obj[sold] = k.toFixed();
+            getVolume(obj, 'sold', 'volume', 0.033);
+        }
+        
+        
+        
+        function changeTab(
+            onBtn, onSection,
+            offBtn1, offSec1,
+            offBtn2, offSec2,
+            offBtn3, offSec3,
+            clearList, clearLength,
+            nameArr, percent
+        ){
+            active(onBtn, onSection);
+            notActive(offBtn1, offSec1);
+            notActive(offBtn2, offSec2);
+            notActive(offBtn3, offSec3);
+            clear(clearList, clearLength);
             recovery();
-            let dayArtist = artistsArr.slice();
-            tabArreys(dayArtist, 0.99); 
-            creatorsList(dayArtist);
+            nameArr = artistsArr.slice();
+            newValue(nameArr);
+            tabArreys(nameArr, percent); 
+            // nameArr.sort(sortRait);
+            creatorsList(nameArr);
             useLocalStorage('artist.html', '.toplist__list_miror', "artist");
+        }
 
+        
+        dayBtn.addEventListener('click', ()=> {
+            let dayArtist;
+            changeTab(
+                dayBtn, toDay,
+                weekBtn, toWeek,
+                monthBtn, toMonth,
+                allTimeBtn, toTime,
+                toplist, artistsArr.length,
+                dayArtist, 0.99
+            );
         });
         weekBtn.addEventListener('click', ()=> {
-            active(weekBtn, toWeek);
-            notActive(dayBtn, toDay);
-            notActive(monthBtn, toMonth);
-            notActive(allTimeBtn, toTime);
-            clear(toplist, artistsArr.length);
-            recovery();
-            let weekArtist = artistsArr.slice();
-            tabArreys(weekArtist, 0.95);
-            creatorsList(weekArtist);
-            useLocalStorage('artist.html', '.toplist__list_miror', "artist");
+            let weekArtist;
+            changeTab(
+                weekBtn, toWeek,
+                dayBtn, toDay,
+                monthBtn, toMonth,
+                allTimeBtn, toTime,
+                toplist, artistsArr.length,
+                weekArtist, 0.95
+            );
         });
         monthBtn.addEventListener('click', ()=> {
-            active(monthBtn, toMonth);
-            notActive(dayBtn, toDay);
-            notActive(weekBtn, toWeek);
-            notActive(allTimeBtn, toTime);
-            clear(toplist, artistsArr.length);
-            recovery();
-            let monthArtit = artistsArr.slice();
-            tabArreys(monthArtit, 0.85);
-            creatorsList(monthArtit);
-            useLocalStorage('artist.html', '.toplist__list_miror', "artist");
-            
+            let monthArtit;
+            changeTab(
+                monthBtn, toMonth,
+                weekBtn, toWeek,
+                dayBtn, toDay,
+                allTimeBtn, toTime,
+                toplist, artistsArr.length,
+                monthArtit, 0.85
+            );
         });
         allTimeBtn.addEventListener('click', ()=> {
             active(allTimeBtn, toTime);

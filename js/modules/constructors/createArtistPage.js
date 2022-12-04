@@ -88,11 +88,20 @@ function createArtistPage(objectFromTopList) {
                 linkDefault(".defaultLink");
                
                 let btn = document.querySelector('.artist__copykey'),
-                span = document.querySelector('.copySpan');
+                    spanBtn = document.querySelector('.copySpan'),
+                    follow = document.querySelector('.artist__follow'),
+                    followImg = document.querySelector('.artist__follow_img');
         
                     btn.addEventListener('click', () =>{
-                        navigator.clipboard.writeText('0xc0E3458OPRT7BH3NncfRE2B79C');
-                        alert('copied');
+                        // navigator.clipboard.writeText('0xc0E3458OPRT7BH3NncfRE2B79C');
+                        spanBtn.innerHTML = `number copied`;
+                        setTimeout(() => {
+                            spanBtn.innerHTML = `0xc0E3...B79C`; 
+                        }, 2000);
+                        
+                    });
+                    follow.addEventListener('click', () => {
+                        followImg.classList.toggle('rotate');
                     });
           
                 
