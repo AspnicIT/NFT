@@ -102,7 +102,7 @@ function welcomeCollectionPage(objectCollection){
                     </div>
                 </div>
                 <div class="collect__wrapTitle">
-                    <h3 class="title">More from this artist</h3>
+                    <h3 class="title collect__moreTitle">More from this artist</h3>
                     <div class="creats__wrapBtn content__btn">
                         
                             <a id="${this.artist}" href="../html/artist.html" class="creats__btn">

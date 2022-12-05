@@ -758,6 +758,9 @@
     font-size: 28px;
     line-height: 39px;
   }
+  .collect__moreTitle {
+    font-size: 26px;
+  }
   .collect__timer {
     top: 90px;
     left: 0;
