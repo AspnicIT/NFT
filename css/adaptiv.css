@@ -765,6 +765,9 @@
     top: 90px;
     left: 0;
   }
+  ._position {
+    top: 10px;
+  }
   .content {
     max-width: 315px;
   }
