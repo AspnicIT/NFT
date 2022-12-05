@@ -442,6 +442,9 @@
   }
 }
 @media (max-width: 800px) {
+  .title {
+    width: 315px;
+  }
   .header {
     width: 100%;
     max-width: 315px;

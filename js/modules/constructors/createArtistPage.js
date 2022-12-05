@@ -93,7 +93,7 @@ function createArtistPage(objectFromTopList) {
                     followImg = document.querySelector('.artist__follow_img');
         
                     btn.addEventListener('click', () =>{
-                        // navigator.clipboard.writeText('0xc0E3458OPRT7BH3NncfRE2B79C');
+                        navigator.clipboard.writeText('0xc0E3458OPRT7BH3NncfRE2B79C');
                         spanBtn.innerHTML = `number copied`;
                         setTimeout(() => {
                             spanBtn.innerHTML = `0xc0E3...B79C`; 

@@ -109,7 +109,6 @@ input:focus {
 
 .title {
   margin-bottom: 10px;
-  min-width: 315px;
 }
 
 .subtitle {
@@ -263,6 +262,7 @@ input:focus {
   line-height: 31px;
 }
 .nft__item_autor {
+  position: relative;
   display: flex;
   align-items: center;
   -moz-column-gap: 12px;
@@ -1146,6 +1146,11 @@ input:focus {
   display: inline-block;
   margin-bottom: -8px;
   margin-right: 10px;
+  transition: 0.7s;
+}
+.collect__info_linkToDetales:hover .collect__info_globe, .collect__info_linkToDetales:focus .collect__info_globe {
+  background: #fff;
+  border-radius: 20px;
 }
 .collect__info_tags {
   display: flex;
@@ -1324,7 +1329,9 @@ input:focus {
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 320px;
   height: 100%;
+  z-index: 2;
 }
 
 a:hover {

@@ -129,6 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         useLocalStorage('artist.html', '.mirrorFromAutor', "artist");
         useLocalStorage('artist.html', '.creats__btn', "artist");
+        useLocalStorage('artist.html', '.miror', "artist");
         useLocalStorage('#', '.mirrorFromCollection', "collection");
         linkDefault('.defaultLink');
     }
@@ -140,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(body.classList.contains('walletPage')){
         insertHeader();
         insertFooter();
+        linkDefault('.wallet__link');
     }
     
 

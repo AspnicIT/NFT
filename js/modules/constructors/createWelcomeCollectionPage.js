@@ -62,9 +62,9 @@ function welcomeCollectionPage(objectCollection){
                         <h5 class="collect__info_subtitle">Created By</h5>
                         <div class="nft__item_autor">
                             <img src="../src/icons/artists/${this.artist}.jpg" alt="ava" class="nft__item_avatar">
-                            <a href="../html/artist.html" class="toplist__miror">
-                                <div class="nft__item_nickname">${this.artist}</div>
-                            </a>
+                            <a id="${this.artist}"  href="../html/artist.html" class="miror"></a>
+                            <div class="nft__item_nickname">${this.artist}</div>
+                            
                         </div>
                     </div>
 
