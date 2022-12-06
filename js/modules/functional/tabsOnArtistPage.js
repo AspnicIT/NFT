@@ -1,7 +1,13 @@
-function tabsOnArtistPage() {
-    let btns = document.querySelectorAll('.artist__btn'),
-        section = document.querySelectorAll('.artist__section '),
-        counter = document.querySelectorAll('.artist__counter ');
+function tabsOnArtistPage(
+    btnsSelect,
+    sectionsSelect,
+    countrsSel,
+    sectActiveClass,
+    counterActiveClass
+    ) {
+    let btns = document.querySelectorAll(btnsSelect),
+        section = document.querySelectorAll(sectionsSelect),
+        counter = document.querySelectorAll(countrsSel);
 
     function active(elem, activClass){
         elem.classList.add(activClass);
@@ -14,11 +20,11 @@ function tabsOnArtistPage() {
     btns.forEach((item, i) => {
         item.addEventListener('click', () => {
 
-            section.forEach(item => unActive(item, 'section_active'));
-            counter.forEach(item => unActive(item, 'counter_active'));
+            section.forEach(item => unActive(item, sectActiveClass));
+            counter.forEach(item => unActive(item, counterActiveClass));
 
-            active(section[i], 'section_active');
-            active(counter[i], 'counter_active');
+            active(section[i], sectActiveClass);
+            active(counter[i], counterActiveClass);
         });
     });
 }

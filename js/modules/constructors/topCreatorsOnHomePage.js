@@ -1,5 +1,5 @@
-function topCreatorsOnHomePage(arrWithObj){
-    let parentElement = document.querySelector('.creats__grid');
+function topCreatorsOnHomePage(arrWithObj, parentSelect){
+    let parentElement = document.querySelector(parentSelect);
 
     function topTwelveCreators(obj){
         class TopCreatsOnHome {

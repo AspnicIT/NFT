@@ -1,4 +1,4 @@
-function timer(date){
+function timer(date, parentSelect){
     const deadLine = date;
 
 
@@ -55,7 +55,7 @@ function setClock(selector, endtime) {
         }
     }
 }
-setClock('.timer__blocks', deadLine);
+setClock(parentSelect, deadLine);
 
 
 }

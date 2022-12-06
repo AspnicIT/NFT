@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(body.classList.contains('home')){
 
-        burgerButton();
-        homePageWelcomeAdv(nftDBarr);
+        burgerButton('.header__burgerMenu', '.header__burgerNav', 'thin');
+        homePageWelcomeAdv(nftDBarr, '.main__right');
         trendingCollections(trendCollectArr, '.trend__container', '.');
-        topCreatorsOnHomePage(artistsArr.slice(0, 12));
+        topCreatorsOnHomePage(artistsArr.slice(0, 12), '.creats__grid');
         homePageBrowsersSection();
         useLocalStorage('./html/artist.html', '.toplist__list_miror', "artist");
         createNftCard(nft.happyRobot032, '.discover__grid', '.');
@@ -61,39 +61,54 @@ document.addEventListener('DOMContentLoaded', () => {
         useLocalStorage('./html/artist.html', '.mirrorFromAutor', "artist");
         useLocalStorage('./html/collection.html', '.mirrorFromCollection', "collection");
         useLocalStorage('./html/collection.html', '.miror', "collection");
-        timer('2023-06-22');
+        timer('2023-06-22', '.timer__blocks');
         linkDefault('.defaultLink');
     }
 
     if(body.classList.contains('marketplace')){
-        insertHeader();
-        insertFooter();
+        insertHeader('header');
+        insertFooter('footer');
         nftDBarr.forEach(item => createNftCard(item, '.artist__grid', '..'));
         useLocalStorage('./artist.html', '.mirrorFromAutor', "artist");
         useLocalStorage('./collection.html', '.mirrorFromCollection', "collection");
         trendingCollections(collectItemsArr, '.content__grid', '..');
         useLocalStorage('./collection.html', '.miror', "collection");
-        marketplaceTabs(nftDBarr, collectDbArr);
-        searchigMarketplace();
+        marketplaceTabs(
+            nftDBarr, collectDbArr,
+            '.counterNft', '.counterCollection',
+            '.nftTab', '.collectTab',
+            '.sectionNft', '.sectionCollection',
+            '.discover__grid_item', '.trend__card',
+            'hide', 'artist__btn_active',
+            'section_active', 'counter_active'
+            );
+        searchigMarketplace('.search__input', '.discover__grid_item', '.trend__card', 'hide');
     }
 
 
     if(body.classList.contains('toplist')){
-        insertHeader();
-        insertFooter();
-        topCreatorsTabs();
+        insertHeader('header');
+        insertFooter('footer');
+        topCreatorsTabs(
+            '.toplist__list',
+            '.tabDay', '.tabWeek',
+            '.tabMonth', '.tabAll', 
+            'today', 'week',
+            'month', 'time',
+            'artist__btn_active', 'section_active'
+        );
     }
 
     
     if(body.classList.contains('artistPage')){
-        insertHeader();
-        insertFooter();
+        insertHeader('header');
+        insertFooter('footer');
         let artistId;
         
         if(localStorage.getItem('artist')){
             artistId = localStorage.getItem('artist');
         }
-        createArtistPage(artistsDB[artistId]);
+        createArtistPage(artistsDB[artistId], '.welcome');
 
         //chek for development stage. Not enough pictures. for production only 'topAutors' function.
         if(artistId === 'lindsey' ||
@@ -110,13 +125,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }     
         useLocalStorage('#', '.mirrorFromAutor');
         useLocalStorage('./collection.html', '.mirrorFromCollection', "collection");
-        tabsOnArtistPage();
-        
+        tabsOnArtistPage(
+            '.artist__btn',
+            '.artist__section',
+            '.artist__counter',
+            'section_active',
+            'counter_active'
+        );
     }
 
     if(body.classList.contains('collection')){
-        insertHeader();
-        insertFooter();
+        insertHeader('header');
+        insertFooter('footer');
         let collectionId;
         if(localStorage.getItem('collection')){
             collectionId = localStorage.getItem('collection');
@@ -135,12 +155,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if(body.classList.contains('acountPage')){
-        insertHeader();
-        insertFooter();
+        insertHeader('header');
+        insertFooter('footer');
     }
     if(body.classList.contains('walletPage')){
-        insertHeader();
-        insertFooter();
+        insertHeader('header');
+        insertFooter('footer');
         linkDefault('.wallet__link');
     }
     

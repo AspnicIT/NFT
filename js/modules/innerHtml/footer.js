@@ -1,7 +1,7 @@
 import linkDefault from "../functional/linksDefault";
 
-function insertFooter() {
-let parentElement = document.querySelector('footer');
+function insertFooter(parentSelect) {
+let parentElement = document.querySelector(parentSelect);
 
     let footerContent = document.createElement('div');
     footerContent.classList.add('footer');

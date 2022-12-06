@@ -1,8 +1,8 @@
 import burgerButton from '../functional/burgerButton';
 
 
-function insertHeader() {
-    let parentElement = document.querySelector('header');   
+function insertHeader(parentSelector) {
+    let parentElement = document.querySelector(parentSelector);   
 
     let headerContent = document.createElement('div');
     headerContent.classList.add('header');
@@ -34,7 +34,7 @@ function insertHeader() {
 
         parentElement.append(headerContent);
 
-        burgerButton();
+        burgerButton('.header__burgerMenu', '.header__burgerNav', 'thin');
 }
 
 export default insertHeader;

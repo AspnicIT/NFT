@@ -1,10 +1,10 @@
-function burgerButton(){
-    const burgerBtn = document.querySelector('.header__burgerMenu'),
-      burgerNav = document.querySelector('.header__burgerNav');
+function burgerButton(btnSelect, navSelect, activeClass){
+    const burgerBtn = document.querySelector(btnSelect),
+      burgerNav = document.querySelector(navSelect);
 
    burgerBtn.addEventListener('click', () => {
 
-    if(burgerNav.classList.contains('thin')){
+    if(burgerNav.classList.contains(activeClass)){
         headerOff();
     } else {
          headerOn();
@@ -18,7 +18,7 @@ function burgerButton(){
    });
 
     function headerOff(){
-        burgerNav.classList.remove('thin');
+        burgerNav.classList.remove(activeClass);
         document.body.style.overflow = '';
 
         setTimeout(() => {
@@ -30,7 +30,7 @@ function burgerButton(){
         burgerNav.style.display = 'block';
         document.body.style.overflow = 'hidden';
         setTimeout(() => {
-            burgerNav.classList.add('thin');
+            burgerNav.classList.add(activeClass);
         }, 0);
     }
 }

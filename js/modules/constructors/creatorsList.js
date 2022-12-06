@@ -1,5 +1,5 @@
-function creatorsList(arrDB) {
-    const parentElem = document.querySelector('.toplist__list');
+function creatorsList(arrDB, parenSelector) {
+    const parentElem = document.querySelector(parenSelector);
     
 
 

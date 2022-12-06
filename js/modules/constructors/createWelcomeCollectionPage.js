@@ -115,7 +115,7 @@ function welcomeCollectionPage(objectCollection){
                 sectionParent.append(welcome);
                 const topwall = document.querySelector('.collect__topwall');
                 topwall.style.backgroundImage = `url(../src/img/topwallCollection/${this.name}.jpg)`;
-                timer(obj.endSale);
+                timer(obj.endSale, '.timer__blocks');
             }
         }
         new WelcomeCollection(

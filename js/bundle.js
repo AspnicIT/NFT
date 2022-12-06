@@ -200,8 +200,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
-function createArtistPage(objectFromTopList) {
-  var topParent = document.querySelector('.welcome');
+function createArtistPage(objectFromTopList, parentSelector) {
+  var topParent = document.querySelector(parentSelector);
   function createPage(obj) {
     var NewPage = /*#__PURE__*/function () {
       function NewPage(avatar, name, sold, volume, followers, bio) {
@@ -218,7 +218,7 @@ function createArtistPage(objectFromTopList) {
         value: function render() {
           var welcome = document.createElement('div');
           welcome.classList.add('artist__welcome');
-          welcome.innerHTML = "\n            <div class=\"artist__topwall\">\n                <div class=\"artist__gradient\"></div>\n                <div class=\"artist__avatar\">\n                    <div class=\"artist__avawrap\">\n                        <img src=\"../src/icons/artists/".concat(this.avatar, ".jpg\" alt=\"").concat(this.avatar, "\">\n                    </div>\n                </div>\n            </div>\n            <style>\n                .artist__topwall{\n                    background-image: url(../src/img/artistPages/topwall/").concat(this.avatar, ".jpg);\n                } \n            </style>\n\n            <div id=\"welcomeArtist\" class=\"artist__container\">\n                <div class=\"artist__header\">\n                    <h2 class=\"artist__title\">").concat(this.name, "</h2>\n                    <div class=\"artist__btns\">\n                        <button class=\"artist__copykey\">\n                            <img src=\"../src/icons/Copy.svg\" alt=\"copy\" class=\"artist__copykey_img\">\n                            <span class=\"copySpan\">0xc0E3...B79C</span>\n                        </button>\n                        <button class=\"artist__follow\">\n                            <img src=\"../src/icons/Plus.svg\" alt=\"plus\" class=\"artist__follow_img\">\n                            Follow\n                        </button>\n                    </div>\n                </div>\n                <div class=\"artist__info\">\n                    <div class=\"artist__info_counter\">\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.volume, " <span>ETH</span></h4>\n                            <h5 class=\"artist__info_subtitle\">Volume</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.sold, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">NFTs Sold</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.followers, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">Followers</h5>\n                        </div>\n                    </div>\n\n                    <div class=\"artist__bio\">\n                        <h5 class=\"artist__bio_title\">Bio</h5>\n                        <div class=\"artist__info_subtitle\">").concat(this.bio, "</div>\n                    </div>\n\n                    <div class=\"artist__links\">\n                        <h5 class=\"artist__bio_title\">Links</h5>\n                        <div class=\"artist__links_block\">\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/Globe.svg\" alt=\"globe\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/DiscordLogo.svg\" alt=\"dscrd\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/YoutubeLogo.svg\" alt=\"YT\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/TwitterLogo.svg\" alt=\"twit\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/InstagramLogo.svg\" alt=\"inst\"\n                                    class=\"artist__links_img\"></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ");
+          welcome.innerHTML = "\n            <div class=\"artist__topwall\">\n                <div class=\"artist__gradient\"></div>\n                <div class=\"artist__avatar\">\n                    <div class=\"artist__avawrap\">\n                        <img src=\"../src/icons/artists/".concat(this.avatar, ".jpg\" alt=\"").concat(this.avatar, "\">\n                    </div>\n                </div>\n            </div>\n            <style>\n                .artist__topwall{\n                    background-image: url(../src/img/artistPages/topwall/").concat(this.avatar, ".jpg);\n                } \n            </style>\n\n            <div id=\"welcomeArtist\" class=\"artist__container\">\n                <div class=\"artist__header\">\n                    <h2 class=\"artist__title\">").concat(this.name, "</h2>\n                    <div class=\"artist__btns\">\n                        <button class=\"artist__copykey\">\n                            <img src=\"../src/icons/Copy.svg\" alt=\"copy\" class=\"artist__copykey_img\">\n                            <span class=\"copySpan\">0xc0E3...B79C</span>\n                        </button>\n                        <button class=\"artist__follow\">\n                            \n                            <svg class=\"artist__follow_img\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2.5 10C2.5 9.65482 2.77982 9.375 3.125 9.375H16.875C17.2202 9.375 17.5 9.65482 17.5 10C17.5 10.3452 17.2202 10.625 16.875 10.625H3.125C2.77982 10.625 2.5 10.3452 2.5 10Z\" fill=\"#A259FF\"/>\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10 2.5C10.3452 2.5 10.625 2.77982 10.625 3.125V16.875C10.625 17.2202 10.3452 17.5 10 17.5C9.65482 17.5 9.375 17.2202 9.375 16.875V3.125C9.375 2.77982 9.65482 2.5 10 2.5Z\" fill=\"#A259FF\"/>\n                            </svg>\n\n                            Follow\n                        </button>\n                    </div>\n                </div>\n                <div class=\"artist__info\">\n                    <div class=\"artist__info_counter\">\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.volume, " <span>ETH</span></h4>\n                            <h5 class=\"artist__info_subtitle\">Volume</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.sold, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">NFTs Sold</h5>\n                        </div>\n                        <div class=\"artist__info_block\">\n                            <h4 class=\"artist__info_num\">").concat(this.followers, "+</h4>\n                            <h5 class=\"artist__info_subtitle\">Followers</h5>\n                        </div>\n                    </div>\n\n                    <div class=\"artist__bio\">\n                        <h5 class=\"artist__bio_title\">Bio</h5>\n                        <div class=\"artist__info_subtitle\">").concat(this.bio, "</div>\n                    </div>\n\n                    <div class=\"artist__links\">\n                        <h5 class=\"artist__bio_title\">Links</h5>\n                        <div class=\"artist__links_block\">\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/Globe.svg\" alt=\"globe\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/DiscordLogo.svg\" alt=\"dscrd\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/YoutubeLogo.svg\" alt=\"YT\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/TwitterLogo.svg\" alt=\"twit\"\n                                    class=\"artist__links_img\"></a>\n                            <a class=\"defaultLink\" href=\"#\"><img src=\"../src/icons/footer/InstagramLogo.svg\" alt=\"inst\"\n                                    class=\"artist__links_img\"></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ");
           topParent.append(welcome);
           (0,_functional_linksDefault__WEBPACK_IMPORTED_MODULE_14__["default"])(".defaultLink");
           var btn = document.querySelector('.artist__copykey'),
@@ -416,7 +416,7 @@ function welcomeCollectionPage(objectCollection) {
           sectionParent.append(welcome);
           var topwall = document.querySelector('.collect__topwall');
           topwall.style.backgroundImage = "url(../src/img/topwallCollection/".concat(this.name, ".jpg)");
-          (0,_functional_timer__WEBPACK_IMPORTED_MODULE_13__["default"])(obj.endSale);
+          (0,_functional_timer__WEBPACK_IMPORTED_MODULE_13__["default"])(obj.endSale, '.timer__blocks');
         }
       }]);
       return WelcomeCollection;
@@ -491,8 +491,8 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function creatorsList(arrDB) {
-  var parentElem = document.querySelector('.toplist__list');
+function creatorsList(arrDB, parenSelector) {
+  var parentElem = document.querySelector(parenSelector);
   function topList(obj) {
     var ListItem = /*#__PURE__*/function () {
       function ListItem(number, avatar, name, change, sold, volume) {
@@ -588,8 +588,8 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function homePageWelcomeAdv(arr) {
-  var parentEllement = document.querySelector('.main__right');
+function homePageWelcomeAdv(arr, parentSelect) {
+  var parentEllement = document.querySelector(parentSelect);
   function welcom(obj) {
     var WelcomeAdv = /*#__PURE__*/function () {
       function WelcomeAdv(img, title, artist) {
@@ -703,8 +703,8 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function topCreatorsOnHomePage(arrWithObj) {
-  var parentElement = document.querySelector('.creats__grid');
+function topCreatorsOnHomePage(arrWithObj, parentSelect) {
+  var parentElement = document.querySelector(parentSelect);
   function topTwelveCreators(obj) {
     var TopCreatsOnHome = /*#__PURE__*/function () {
       function TopCreatsOnHome(number, avatar, name, volume) {
@@ -1862,11 +1862,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.timers.js */ "./node_modules/core-js/modules/web.timers.js");
 /* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_0__);
 
-function burgerButton() {
-  var burgerBtn = document.querySelector('.header__burgerMenu'),
-    burgerNav = document.querySelector('.header__burgerNav');
+function burgerButton(btnSelect, navSelect, activeClass) {
+  var burgerBtn = document.querySelector(btnSelect),
+    burgerNav = document.querySelector(navSelect);
   burgerBtn.addEventListener('click', function () {
-    if (burgerNav.classList.contains('thin')) {
+    if (burgerNav.classList.contains(activeClass)) {
       headerOff();
     } else {
       headerOn();
@@ -1878,7 +1878,7 @@ function burgerButton() {
     }
   });
   function headerOff() {
-    burgerNav.classList.remove('thin');
+    burgerNav.classList.remove(activeClass);
     document.body.style.overflow = '';
     setTimeout(function () {
       burgerNav.style.display = 'none';
@@ -1888,7 +1888,7 @@ function burgerButton() {
     burgerNav.style.display = 'block';
     document.body.style.overflow = 'hidden';
     setTimeout(function () {
-      burgerNav.classList.add('thin');
+      burgerNav.classList.add(activeClass);
     }, 0);
   }
 }
@@ -2024,34 +2024,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function marketplaceTabs(arrNft, arrCollect) {
-  var counterNft = document.querySelector('.counterNft'),
-    counterCollection = document.querySelector('.counterCollection');
+function marketplaceTabs(arrNft, arrCollect, countNftSelect, countCollectSelect, nftBtnSel, collectBtnSel, sectNftSel, sectCollectSel, nftCardsSel, collectCardSel, hide, btnActivClass, sectActiveClass, counterAaactiveClass) {
+  var counterNft = document.querySelector(countNftSelect),
+    counterCollection = document.querySelector(countCollectSelect);
   counterNft.innerHTML = arrNft.length;
   counterCollection.innerHTML = arrCollect.length;
-  var nftBtn = document.querySelector('.nftTab'),
-    collectBtn = document.querySelector('.collectTab'),
-    sectionNft = document.querySelector('.sectionNft'),
-    sectionCollection = document.querySelector('.sectionCollection'),
-    nftCards = document.querySelectorAll('.discover__grid_item'),
-    collectCards = document.querySelectorAll('.trend__card');
+  var nftBtn = document.querySelector(nftBtnSel),
+    collectBtn = document.querySelector(collectBtnSel),
+    sectionNft = document.querySelector(sectNftSel),
+    sectionCollection = document.querySelector(sectCollectSel),
+    nftCards = document.querySelectorAll(nftCardsSel),
+    collectCards = document.querySelectorAll(collectCardSel);
   collectCards.forEach(function (item) {
-    return item.classList.add('hide');
+    return item.classList.add(hide);
   });
   function active(btn, section, counter, arr) {
-    btn.classList.add('artist__btn_active');
-    section.classList.add('section_active');
-    counter.classList.add('counter_active');
+    btn.classList.add(btnActivClass);
+    section.classList.add(sectActiveClass);
+    counter.classList.add(counterAaactiveClass);
     arr.forEach(function (item) {
-      return item.classList.remove('hide');
+      return item.classList.remove(hide);
     });
   }
   function offActive(btn, section, counter, arr) {
-    btn.classList.remove('artist__btn_active');
-    section.classList.remove('section_active');
-    counter.classList.remove('counter_active');
+    btn.classList.remove(btnActivClass);
+    section.classList.remove(sectActiveClass);
+    counter.classList.remove(counterAaactiveClass);
     arr.forEach(function (item) {
-      return item.classList.add('hide');
+      return item.classList.add(hide);
     });
   }
   nftBtn.addEventListener('click', function (e) {
@@ -2096,33 +2096,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function searchigMarketplace() {
-  var input = document.querySelector('.search__input'),
-    btnSearch = document.querySelector('.search__btn'),
-    nfts = document.querySelectorAll('.discover__grid_item'),
-    collects = document.querySelectorAll('.trend__card');
+function searchigMarketplace(inputSel, nftsSel, collectsSel, hideClass) {
+  var input = document.querySelector(inputSel),
+    nfts = document.querySelectorAll(nftsSel),
+    collects = document.querySelectorAll(collectsSel);
   input.oninput = function () {
     var value = this.value.trim();
     if (value) {
       nfts.forEach(function (item) {
         var words = item.innerText.toUpperCase();
         if (words.search(value.toUpperCase()) == -1) {
-          item.classList.add('hide');
+          item.classList.add();
         } else {
-          item.classList.remove('hide');
+          item.classList.remove(hideClass);
         }
       });
       collects.forEach(function (item) {
         var words = item.innerText.toUpperCase();
         if (words.search(value.toUpperCase()) == -1) {
-          item.classList.add('hide');
+          item.classList.add(hideClass);
         } else {
-          item.classList.remove('hide');
+          item.classList.remove(hideClass);
         }
       });
     } else {
       collects.forEach(function (item) {
-        return item.classList.remove('hide');
+        return item.classList.remove(hideClass);
       });
     }
   };
@@ -2151,10 +2150,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function tabsOnArtistPage() {
-  var btns = document.querySelectorAll('.artist__btn'),
-    section = document.querySelectorAll('.artist__section '),
-    counter = document.querySelectorAll('.artist__counter ');
+function tabsOnArtistPage(btnsSelect, sectionsSelect, countrsSel, sectActiveClass, counterActiveClass) {
+  var btns = document.querySelectorAll(btnsSelect),
+    section = document.querySelectorAll(sectionsSelect),
+    counter = document.querySelectorAll(countrsSel);
   function active(elem, activClass) {
     elem.classList.add(activClass);
   }
@@ -2164,13 +2163,13 @@ function tabsOnArtistPage() {
   btns.forEach(function (item, i) {
     item.addEventListener('click', function () {
       section.forEach(function (item) {
-        return unActive(item, 'section_active');
+        return unActive(item, sectActiveClass);
       });
       counter.forEach(function (item) {
-        return unActive(item, 'counter_active');
+        return unActive(item, counterActiveClass);
       });
-      active(section[i], 'section_active');
-      active(counter[i], 'counter_active');
+      active(section[i], sectActiveClass);
+      active(counter[i], counterActiveClass);
     });
   });
 }
@@ -2195,7 +2194,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
-function timer(date) {
+function timer(date, parentSelect) {
   var deadLine = date;
   function getTimeRemaining(endtime) {
     var days, hours, minutes, seconds;
@@ -2239,7 +2238,7 @@ function timer(date) {
       }
     }
   }
-  setClock('.timer__blocks', deadLine);
+  setClock(parentSelect, deadLine);
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (timer);
 
@@ -2282,28 +2281,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function topCreatorsTabs() {
-  (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__["default"])(_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr);
-  var dayBtn = document.querySelector('.tabDay'),
-    weekBtn = document.querySelector('.tabWeek'),
-    monthBtn = document.querySelector('.tabMonth'),
-    allTimeBtn = document.querySelector('.tabAll'),
-    toDay = document.getElementById('today'),
-    toWeek = document.getElementById('week'),
-    toMonth = document.getElementById('month'),
-    toTime = document.getElementById('time');
-  var toplist = document.querySelector('.toplist__list');
+function topCreatorsTabs(parentForCreators, btnDaySel, btnWeekSel, btnMonthSel, btnAllTimeSel, daySectSel, weekSectSel, monthSectSel, allTimeSectSel, btnActiveClass, sectionActiveClass) {
+  (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__["default"])(_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr, parentForCreators);
+  var dayBtn = document.querySelector(btnDaySel),
+    weekBtn = document.querySelector(btnWeekSel),
+    monthBtn = document.querySelector(btnMonthSel),
+    allTimeBtn = document.querySelector(btnAllTimeSel),
+    toDay = document.getElementById(daySectSel),
+    toWeek = document.getElementById(weekSectSel),
+    toMonth = document.getElementById(monthSectSel),
+    toTime = document.getElementById(allTimeSectSel);
+  var toplist = document.querySelector(parentForCreators);
   var soldValue = [];
   _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr.forEach(function (item) {
     return soldValue.push(item.sold);
   });
   function active(btn, nameTab) {
-    btn.classList.add('artist__btn_active');
-    nameTab.classList.add('section_active');
+    btn.classList.add(btnActiveClass);
+    nameTab.classList.add(sectionActiveClass);
   }
   function notActive(btn, nameTab) {
-    btn.classList.remove('artist__btn_active');
-    nameTab.classList.remove('section_active');
+    btn.classList.remove(btnActiveClass);
+    nameTab.classList.remove(sectionActiveClass);
   }
   function clear(parentElem, num) {
     for (var i = 1; i <= num; i++) {
@@ -2345,7 +2344,7 @@ function topCreatorsTabs() {
     newValue(nameArr);
     tabArreys(nameArr, percent);
     // nameArr.sort(sortRait);
-    (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__["default"])(nameArr);
+    (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__["default"])(nameArr, parentForCreators);
     (0,_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('artist.html', '.toplist__list_miror', "artist");
   }
   dayBtn.addEventListener('click', function () {
@@ -2367,7 +2366,7 @@ function topCreatorsTabs() {
     notActive(monthBtn, toMonth);
     clear(toplist, _dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr.length);
     recovery();
-    (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__["default"])(_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr);
+    (0,_constructors_creatorsList__WEBPACK_IMPORTED_MODULE_7__["default"])(_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_6__.artistsArr, parentForCreators);
     (0,_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('artist.html', '.toplist__list_miror', "artist");
   });
   (0,_functional_localStorage__WEBPACK_IMPORTED_MODULE_8__["default"])('artist.html', '.toplist__list_miror', "artist");
@@ -2389,8 +2388,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _functional_linksDefault__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functional/linksDefault */ "./js/modules/functional/linksDefault.js");
 
-function insertFooter() {
-  var parentElement = document.querySelector('footer');
+function insertFooter(parentSelect) {
+  var parentElement = document.querySelector(parentSelect);
   var footerContent = document.createElement('div');
   footerContent.classList.add('footer');
   footerContent.innerHTML = "\n    <div class=\"footer__container\">\n    <div class=\"footer__left\">\n        <a href=\"../index.html\" class=\"header__logo footer__logo\">\n            <div class=\"header__imgs\">\n                <img src=\"../src/icons/header/logo_top.svg\" alt=\"logo\" class=\"header__img header__img_logo-1\">\n\n                <img src=\"../src/icons/NFT Marketplace.svg\" alt=\"\" class=\"header__title\">\n            </div>\n        </a>\n        <p class=\"footer__text\">NFT marketplace UI created with Anima for Figma.</p>\n        <p class=\"footer__text footer__join\">Join our community</p>\n\n        <div class=\"footer__contacts\">\n            <div class=\"footer__svg footer__discord\">\n                <div class=\"artist__links_block\">\n                    <a class=\"defaultLink\" href=\"#\">\n                        <svg class=\"artist__links_img\" width=\"33\" height=\"32\" viewBox=\"0 0 33 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                            <path d=\"M12.293 19.5C13.1214 19.5 13.793 18.8284 13.793 18C13.793 17.1716 13.1214 16.5 12.293 16.5C11.4645 16.5 10.793 17.1716 10.793 18C10.793 18.8284 11.4645 19.5 12.293 19.5Z\" fill=\"#858584\"/>\n                            <path d=\"M20.293 19.5C21.1214 19.5 21.793 18.8284 21.793 18C21.793 17.1716 21.1214 16.5 20.293 16.5C19.4645 16.5 18.793 17.1716 18.793 18C18.793 18.8284 19.4645 19.5 20.293 19.5Z\" fill=\"#858584\"/>\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.2856 10.0006C14.1178 9.98454 11.9608 10.3065 9.89211 10.9548C9.3651 11.12 8.80398 10.8267 8.63881 10.2997C8.47364 9.77266 8.76697 9.21154 9.29397 9.04637C11.5586 8.33661 13.9199 7.98379 16.293 8.00057C18.6662 7.98379 21.0275 8.33661 23.2921 9.04637C23.8191 9.21154 24.1124 9.77266 23.9473 10.2997C23.7821 10.8267 23.221 11.12 22.694 10.9548C20.6253 10.3065 18.4683 9.98454 16.3004 10.0006H16.2856Z\" fill=\"#858584\"/>\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8.63881 21.7012C8.80398 21.1742 9.3651 20.8809 9.89211 21.046C11.9608 21.6944 14.1178 22.0163 16.2856 22.0003H16.3004C18.4683 22.0163 20.6253 21.6944 22.694 21.046C23.221 20.8809 23.7821 21.1742 23.9473 21.7012C24.1124 22.2282 23.8191 22.7893 23.2921 22.9545C21.0275 23.6643 18.6662 24.0171 16.293 24.0003C13.9199 24.0171 11.5586 23.6643 9.29397 22.9545C8.76697 22.7893 8.47364 22.2282 8.63881 21.7012Z\" fill=\"#858584\"/>\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M20.5124 4.81024C20.9429 4.56754 21.4476 4.4917 21.9303 4.59714C23.2479 4.88268 24.5378 5.28326 25.7853 5.79426C26.0661 5.90254 26.3183 6.07398 26.5224 6.29541C26.7286 6.5192 26.88 6.78788 26.9645 7.08017L31.2003 21.2246C31.3108 21.593 31.3134 21.9855 31.2077 22.3554C31.102 22.7253 30.8925 23.0571 30.604 23.3116L30.5989 23.3161C28.5314 25.1151 25.73 26.4767 22.5481 27.2567C22.1061 27.3694 21.6387 27.3256 21.2252 27.1326C20.8134 26.9404 20.4806 26.6122 20.2828 26.2035L18.7745 23.2119C18.5259 22.7188 18.7241 22.1174 19.2173 21.8688C19.7104 21.6202 20.3118 21.8184 20.5604 22.3115L22.0729 25.3115L22.074 25.3137C25.0119 24.5933 27.506 23.3562 29.286 21.8073L29.9425 22.5617L29.2809 21.8119C29.2827 21.8103 29.284 21.8082 29.2846 21.8059C29.2853 21.8036 29.2853 21.8012 29.2846 21.7989L25.0485 7.65368C25.045 7.65227 25.0414 7.65084 25.0379 7.64939C23.895 7.18051 22.713 6.81314 21.5057 6.55155L21.5035 6.55107C21.5005 6.55042 21.4974 6.55089 21.4947 6.5524C21.4923 6.55375 21.4904 6.55587 21.4893 6.5584L20.5044 9.53807C20.3311 10.0625 19.7655 10.347 19.2411 10.1737C18.7167 10.0004 18.4322 9.43476 18.6055 8.91038L19.5959 5.91419C19.7554 5.44609 20.0817 5.05312 20.5124 4.81024Z\" fill=\"#858584\"/>\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.0912 6.5524C11.0885 6.55089 11.0854 6.55042 11.0824 6.55107L11.0802 6.55155C9.87285 6.81314 8.69089 7.18051 7.54798 7.64939C7.54446 7.65084 7.54092 7.65227 7.53737 7.65368L3.30139 21.7986C3.30071 21.8009 3.30061 21.8036 3.30126 21.8059C3.30185 21.808 3.30297 21.8099 3.30449 21.8114C5.08418 23.3583 7.57657 24.5939 10.5119 25.3137L10.513 25.3115L12.0255 22.3115C12.2741 21.8184 12.8755 21.6202 13.3686 21.8688C13.8618 22.1174 14.06 22.7188 13.8114 23.2119L12.3031 26.2035C12.1052 26.6122 11.7724 26.9404 11.3607 27.1326C10.9472 27.3256 10.4798 27.3694 10.0378 27.2567C6.85584 26.4767 4.05447 25.1151 1.98701 23.3161L1.98183 23.3116C1.69336 23.0571 1.4839 22.7252 1.37821 22.3554C1.27256 21.9856 1.27508 21.5932 1.38546 21.2248C1.38549 21.2248 1.38543 21.2249 1.38546 21.2248L5.62136 7.08019C5.70588 6.78789 5.85723 6.51921 6.06348 6.29541C6.26754 6.07398 6.51976 5.90254 6.80056 5.79426C8.04843 5.28312 9.33874 4.88246 10.6567 4.5969C11.1391 4.49181 11.6433 4.56772 12.0735 4.81024C12.5042 5.05312 12.8305 5.4461 12.99 5.9142L12.9929 5.92287L13.9804 8.91038C14.1537 9.43476 13.8692 10.0004 13.3448 10.1737C12.8204 10.347 12.2548 10.0624 12.0815 9.53807L11.0965 6.55839C11.0955 6.55586 11.0936 6.55375 11.0912 6.5524Z\" fill=\"#858584\"/>\n                            <path d=\"M12.293 19.5C13.1214 19.5 13.793 18.8284 13.793 18C13.793 17.1716 13.1214 16.5 12.293 16.5C11.4645 16.5 10.793 17.1716 10.793 18C10.793 18.8284 11.4645 19.5 12.293 19.5Z\" fill=\"#858584\"/>\n                            <path d=\"M20.293 19.5C21.1214 19.5 21.793 18.8284 21.793 18C21.793 17.1716 21.1214 16.5 20.293 16.5C19.4645 16.5 18.793 17.1716 18.793 18C18.793 18.8284 19.4645 19.5 20.293 19.5Z\" fill=\"#858584\"/>\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.2856 10.0006C14.1178 9.98454 11.9608 10.3065 9.89211 10.9548C9.3651 11.12 8.80398 10.8267 8.63881 10.2997C8.47364 9.77266 8.76697 9.21154 9.29397 9.04637C11.5586 8.33661 13.9199 7.98379 16.293 8.00057C18.6662 7.98379 21.0275 8.33661 23.2921 9.04637C23.8191 9.21154 24.1124 9.77266 23.9473 10.2997C23.7821 10.8267 23.221 11.12 22.694 10.9548C20.6253 10.3065 18.4683 9.98454 16.3004 10.0006H16.2856Z\" fill=\"#858584\"/>\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8.63881 21.7012C8.80398 21.1742 9.3651 20.8809 9.89211 21.046C11.9608 21.6944 14.1178 22.0163 16.2856 22.0003H16.3004C18.4683 22.0163 20.6253 21.6944 22.694 21.046C23.221 20.8809 23.7821 21.1742 23.9473 21.7012C24.1124 22.2282 23.8191 22.7893 23.2921 22.9545C21.0275 23.6643 18.6662 24.0171 16.293 24.0003C13.9199 24.0171 11.5586 23.6643 9.29397 22.9545C8.76697 22.7893 8.47364 22.2282 8.63881 21.7012Z\" fill=\"#858584\"/>\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M20.5124 4.81024C20.9429 4.56754 21.4476 4.4917 21.9303 4.59714C23.2479 4.88268 24.5378 5.28326 25.7853 5.79426C26.0661 5.90254 26.3183 6.07398 26.5224 6.29541C26.7286 6.5192 26.88 6.78788 26.9645 7.08017L31.2003 21.2246C31.3108 21.593 31.3134 21.9855 31.2077 22.3554C31.102 22.7253 30.8925 23.0571 30.604 23.3116L30.5989 23.3161C28.5314 25.1151 25.73 26.4767 22.5481 27.2567C22.1061 27.3694 21.6387 27.3256 21.2252 27.1326C20.8134 26.9404 20.4806 26.6122 20.2828 26.2035L18.7745 23.2119C18.5259 22.7188 18.7241 22.1174 19.2173 21.8688C19.7104 21.6202 20.3118 21.8184 20.5604 22.3115L22.0729 25.3115L22.074 25.3137C25.0119 24.5933 27.506 23.3562 29.286 21.8073L29.9425 22.5617L29.2809 21.8119C29.2827 21.8103 29.284 21.8082 29.2846 21.8059C29.2853 21.8036 29.2853 21.8012 29.2846 21.7989L25.0485 7.65368C25.045 7.65227 25.0414 7.65084 25.0379 7.64939C23.895 7.18051 22.713 6.81314 21.5057 6.55155L21.5035 6.55107C21.5005 6.55042 21.4974 6.55089 21.4947 6.5524C21.4923 6.55375 21.4904 6.55587 21.4893 6.5584L20.5044 9.53807C20.3311 10.0625 19.7655 10.347 19.2411 10.1737C18.7167 10.0004 18.4322 9.43476 18.6055 8.91038L19.5959 5.91419C19.7554 5.44609 20.0817 5.05312 20.5124 4.81024Z\" fill=\"#858584\"/>\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.0912 6.5524C11.0885 6.55089 11.0854 6.55042 11.0824 6.55107L11.0802 6.55155C9.87285 6.81314 8.69089 7.18051 7.54798 7.64939C7.54446 7.65084 7.54092 7.65227 7.53737 7.65368L3.30139 21.7986C3.30071 21.8009 3.30061 21.8036 3.30126 21.8059C3.30185 21.808 3.30297 21.8099 3.30449 21.8114C5.08418 23.3583 7.57657 24.5939 10.5119 25.3137L10.513 25.3115L12.0255 22.3115C12.2741 21.8184 12.8755 21.6202 13.3686 21.8688C13.8618 22.1174 14.06 22.7188 13.8114 23.2119L12.3031 26.2035C12.1052 26.6122 11.7724 26.9404 11.3607 27.1326C10.9472 27.3256 10.4798 27.3694 10.0378 27.2567C6.85584 26.4767 4.05447 25.1151 1.98701 23.3161L1.98183 23.3116C1.69336 23.0571 1.4839 22.7252 1.37821 22.3554C1.27256 21.9856 1.27508 21.5932 1.38546 21.2248C1.38549 21.2248 1.38543 21.2249 1.38546 21.2248L5.62136 7.08019C5.70588 6.78789 5.85723 6.51921 6.06348 6.29541C6.26754 6.07398 6.51976 5.90254 6.80056 5.79426C8.04843 5.28312 9.33874 4.88246 10.6567 4.5969C11.1391 4.49181 11.6433 4.56772 12.0735 4.81024C12.5042 5.05312 12.8305 5.4461 12.99 5.9142L12.9929 5.92287L13.9804 8.91038C14.1537 9.43476 13.8692 10.0004 13.3448 10.1737C12.8204 10.347 12.2548 10.0624 12.0815 9.53807L11.0965 6.55839C11.0955 6.55586 11.0936 6.55375 11.0912 6.5524Z\" fill=\"#858584\"/>\n                            </svg>\n                    </a>\n                    <a class=\"defaultLink\" href=\"#\">\n                        <svg class=\"artist__links_img\" width=\"33\" height=\"32\" viewBox=\"0 0 33 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13.8211 11.1183C14.1463 10.9443 14.5408 10.9634 14.8477 11.168L20.8477 15.168C21.1259 15.3534 21.293 15.6656 21.293 16C21.293 16.3344 21.1259 16.6466 20.8477 16.8321L14.8477 20.8321C14.5408 21.0366 14.1463 21.0557 13.8211 20.8817C13.496 20.7077 13.293 20.3688 13.293 20V12C13.293 11.6312 13.496 11.2923 13.8211 11.1183ZM15.293 13.8685V18.1315L18.4902 16L15.293 13.8685Z\" fill=\"#858584\"/>\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.2915 5.05082L16.2746 5.05078L16.2118 5.05081C16.1573 5.05093 16.0779 5.05133 15.9761 5.05241C15.7724 5.05457 15.4786 5.05947 15.1136 5.07043C14.3841 5.09232 13.3675 5.13847 12.2167 5.23563C9.9403 5.42782 7.04225 5.82669 4.81105 6.6792L4.79635 6.68495C4.35808 6.86039 3.96717 7.13637 3.65515 7.49064C3.34313 7.84491 3.11874 8.26755 3.00008 8.72447L2.99911 8.72824C2.6877 9.9468 2.29297 12.2065 2.29297 16.0008C2.29297 19.7952 2.6877 22.0549 2.99911 23.2734L3.00008 23.2772C3.11874 23.7341 3.34313 24.1568 3.65515 24.511C3.96717 24.8653 4.35807 25.1413 4.79635 25.3167L4.81105 25.3225C7.04225 26.175 9.9403 26.5739 12.2167 26.766C13.3675 26.8632 14.3841 26.9094 15.1136 26.9312C15.4786 26.9422 15.7724 26.9471 15.9761 26.9493C16.0779 26.9504 16.1573 26.9507 16.2118 26.9509L16.2746 26.9509L16.2915 26.9509H16.2945L16.3113 26.9509L16.3741 26.9509C16.4286 26.9507 16.508 26.9504 16.6099 26.9493C16.8135 26.9471 17.1074 26.9422 17.4724 26.9312C18.2018 26.9094 19.2184 26.8632 20.3693 26.766C22.6456 26.5739 25.5437 26.175 27.7749 25.3225L27.7896 25.3167C28.2279 25.1413 28.6188 24.8653 28.9308 24.511C29.2428 24.1568 29.4672 23.7341 29.5859 23.2772L29.5868 23.2734C29.8982 22.0549 30.293 19.7952 30.293 16.0008C30.293 12.2065 29.8982 9.9468 29.5868 8.72824L29.5859 8.72447C29.4672 8.26755 29.2428 7.84491 28.9308 7.49064C28.6188 7.13637 28.2279 6.86039 27.7896 6.68495L27.7749 6.6792C25.5437 5.82669 22.6456 5.42782 20.3693 5.23563C19.2184 5.13847 18.2018 5.09232 17.4724 5.07043C17.1074 5.05947 16.8135 5.05457 16.6099 5.05241C16.508 5.05133 16.4286 5.05093 16.3741 5.05081L16.3113 5.05078L16.2945 5.05082H16.2915ZM16.2877 24.9509L16.2984 24.9508L16.3016 24.9509L16.3147 24.9509L16.3697 24.9509C16.4188 24.9508 16.4926 24.9504 16.5886 24.9494C16.7807 24.9473 17.0616 24.9427 17.4124 24.9321C18.1146 24.9111 19.0941 24.8666 20.201 24.7731C22.4371 24.5843 25.0971 24.2028 27.0526 23.4574C27.1974 23.3984 27.3265 23.3066 27.4299 23.1892C27.5344 23.0705 27.6097 22.929 27.6497 22.7761C27.9132 21.7438 28.293 19.6539 28.293 16.0008C28.293 12.3478 27.9132 10.2578 27.6497 9.22562C27.6097 9.07265 27.5344 8.93117 27.4299 8.81251C27.3265 8.69512 27.1974 8.60331 27.0526 8.54424C25.0971 7.79889 22.4371 7.41733 20.201 7.22854C19.0941 7.13509 18.1146 7.09061 17.4124 7.06953C17.0616 7.059 16.7807 7.05433 16.5886 7.0523C16.4926 7.05128 16.4188 7.05092 16.3697 7.05081L16.3147 7.05078L16.3016 7.05081L16.2987 7.05082L16.2876 7.05088L16.2844 7.05081L16.2713 7.05078L16.2163 7.05081C16.1671 7.05092 16.0933 7.05128 15.9973 7.0523C15.8052 7.05433 15.5244 7.059 15.1736 7.06953C14.4713 7.09061 13.4918 7.13509 12.3849 7.22854C10.1489 7.41733 7.48887 7.79889 5.53336 8.54424C5.38858 8.60331 5.25942 8.69513 5.15603 8.81251C5.05152 8.93117 4.97626 9.07265 4.93627 9.22562C4.6727 10.2578 4.29297 12.3478 4.29297 16.0008C4.29297 19.6539 4.6727 21.7438 4.93627 22.7761C4.97626 22.929 5.05152 23.0705 5.15603 23.1892C5.25942 23.3066 5.38857 23.3984 5.53335 23.4574C7.48886 24.2028 10.1489 24.5843 12.3849 24.7731C13.4918 24.8666 14.4713 24.9111 15.1736 24.9321C15.5244 24.9427 15.8052 24.9473 15.9973 24.9494C16.0933 24.9504 16.1671 24.9508 16.2163 24.9509L16.2713 24.9509L16.2844 24.9509L16.2877 24.9509Z\" fill=\"#858584\"/>\n                            </svg>\n                            \n                    </a>\n                    <a class=\"defaultLink\" href=\"#\">\n                        <svg class=\"artist__links_img\" width=\"33\" height=\"32\" viewBox=\"0 0 33 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                            <path d=\"M16.2927 11.0005C16.2927 8.25045 18.6052 5.96295 21.3552 6.00045C22.3182 6.01157 23.2576 6.3006 24.0603 6.8328C24.863 7.365 25.495 8.11771 25.8802 9.00045H30.2927L26.2552 13.038C25.9946 17.0937 24.1993 20.8979 21.2342 23.6773C18.269 26.4566 14.3567 28.0025 10.2927 28.0005C6.29267 28.0005 5.29267 26.5005 5.29267 26.5005C5.29267 26.5005 9.29267 25.0005 11.2927 22.0005C11.2927 22.0005 3.29267 18.0005 5.29267 7.00045C5.29267 7.00045 10.2927 12.0005 16.2927 13.0005V11.0005Z\" stroke=\"#858584\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                            </svg>\n                            \n                    </a>\n                    <a class=\"defaultLink\" href=\"#\">\n                        <svg class=\"artist__links_img\" width=\"33\" height=\"32\" viewBox=\"0 0 33 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.293 12C14.0838 12 12.293 13.7909 12.293 16C12.293 18.2091 14.0838 20 16.293 20C18.5021 20 20.293 18.2091 20.293 16C20.293 13.7909 18.5021 12 16.293 12ZM10.293 16C10.293 12.6863 12.9793 10 16.293 10C19.6067 10 22.293 12.6863 22.293 16C22.293 19.3137 19.6067 22 16.293 22C12.9793 22 10.293 19.3137 10.293 16Z\" fill=\"#858584\"/>\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.793 5.5C8.03154 5.5 5.79297 7.73858 5.79297 10.5V21.5C5.79297 24.2614 8.03154 26.5 10.793 26.5H21.793C24.5544 26.5 26.793 24.2614 26.793 21.5V10.5C26.793 7.73858 24.5544 5.5 21.793 5.5H10.793ZM3.79297 10.5C3.79297 6.63401 6.92698 3.5 10.793 3.5H21.793C25.659 3.5 28.793 6.63401 28.793 10.5V21.5C28.793 25.366 25.659 28.5 21.793 28.5H10.793C6.92698 28.5 3.79297 25.366 3.79297 21.5V10.5Z\" fill=\"#858584\"/>\n                            <path d=\"M22.793 11C23.6214 11 24.293 10.3284 24.293 9.5C24.293 8.67157 23.6214 8 22.793 8C21.9645 8 21.293 8.67157 21.293 9.5C21.293 10.3284 21.9645 11 22.793 11Z\" fill=\"#858584\"/>\n                            </svg>   \n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"footer__center\">\n        <h5 class=\"footer__center_title\">Explore</h5>\n        <a href=\"./marketplace.html\" class=\"footer__text\">Marketplace</a>\n        <a href=\"./topCreators.html\" class=\"footer__text\">Rankings</a>\n        <a href=\"./wallet.html\" class=\"footer__text\">Connect a wallet</a>\n    </div>\n    <div class=\"footer__right\">\n        <h5 class=\"footer__center_title\">Join our weekly digest</h5>\n        <p class=\"footer__text footer__right_central\">Get exclusive promotions & updates straight to your inbox.\n        </p>\n        <div class=\"footer__form\">\n            <form class=\"join__right_form footer__right_form\">\n                <input type=\"email\" class=\"join__right_input footer__right_input\"\n                    placeholder=\"Enter your email here\">\n                <button type=\"submit\" class=\"join__right_btn footer__right_btn\">\n                    <img src=\"../src/icons/Envelope.svg\" alt=\"Envelope\">\n                    <span>Subscribe</span>\n                </button>\n            </form>\n        </div>\n    </div>\n    </div>\n    <p class=\"footer__bottom\">\n        \u24B8 NFT Market. Use this template freely.\n    </p>";
@@ -2414,13 +2413,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _functional_burgerButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functional/burgerButton */ "./js/modules/functional/burgerButton.js");
 
-function insertHeader() {
-  var parentElement = document.querySelector('header');
+function insertHeader(parentSelector) {
+  var parentElement = document.querySelector(parentSelector);
   var headerContent = document.createElement('div');
   headerContent.classList.add('header');
   headerContent.innerHTML = "\n        <a href=\"../index.html\" class=\"header__logo\">\n\n            <img src=\"../src/icons/header/logo_top.svg\" alt=\"logo\" class=\"header__img\">\n\n            <img src=\"../src/icons/NFT Marketplace.svg\" alt=\"\" class=\"header__title\">\n        </a>\n\n        <nav class=\"header__nav header__burgerNav\">\n            <ul class=\"header__ul\">\n                <li class=\"header__link\"><a href=\"./marketplace.html\">Marketplace</a></li>\n                <li class=\"header__link\"><a href=\"./topCreators.html\">Rankings</a></li>\n                <li class=\"header__link\"><a href=\"./wallet.html\">Connect a wallet</a></li>\n                <a href=\"./create_acount.html\" class=\"signUP\">\n                    <img src=\"../src/icons/header/sign-1.svg\" alt=\"\" class=\"signUP__img-1\">\n                    <img src=\"../src/icons/header/sign-2.svg\" alt=\"\" class=\"signUP__img-2\">\n                    <span>Sign Up</span>\n                </a>\n            </ul>\n        </nav>\n\n        <button class=\"header__burgerMenu\">\n            <div class=\"header__burgerMenu_line\">\n                </d>\n        </button>";
   parentElement.append(headerContent);
-  (0,_functional_burgerButton__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  (0,_functional_burgerButton__WEBPACK_IMPORTED_MODULE_0__["default"])('.header__burgerMenu', '.header__burgerNav', 'thin');
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (insertHeader);
 
@@ -9003,10 +9002,10 @@ function otherAutors() {
 document.addEventListener('DOMContentLoaded', function () {
   var body = document.querySelector('body');
   if (body.classList.contains('home')) {
-    (0,_modules_functional_burgerButton__WEBPACK_IMPORTED_MODULE_4__["default"])();
-    (0,_modules_constructors_homePageWelcomeAdv__WEBPACK_IMPORTED_MODULE_5__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_22__.nftDBarr);
+    (0,_modules_functional_burgerButton__WEBPACK_IMPORTED_MODULE_4__["default"])('.header__burgerMenu', '.header__burgerNav', 'thin');
+    (0,_modules_constructors_homePageWelcomeAdv__WEBPACK_IMPORTED_MODULE_5__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_22__.nftDBarr, '.main__right');
     (0,_modules_constructors_trendingCollections__WEBPACK_IMPORTED_MODULE_6__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_22__.trendCollectArr, '.trend__container', '.');
-    (0,_modules_constructors_topCreatorsOnHomePage__WEBPACK_IMPORTED_MODULE_7__["default"])(_modules_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_21__.artistsArr.slice(0, 12));
+    (0,_modules_constructors_topCreatorsOnHomePage__WEBPACK_IMPORTED_MODULE_7__["default"])(_modules_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_21__.artistsArr.slice(0, 12), '.creats__grid');
     (0,_modules_functional_homePageBrowsersSection__WEBPACK_IMPORTED_MODULE_8__["default"])();
     (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./html/artist.html', '.toplist__list_miror', "artist");
     (0,_modules_constructors_createNftCards__WEBPACK_IMPORTED_MODULE_16__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_22__.nft.happyRobot032, '.discover__grid', '.');
@@ -9015,12 +9014,12 @@ document.addEventListener('DOMContentLoaded', function () {
     (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./html/artist.html', '.mirrorFromAutor', "artist");
     (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./html/collection.html', '.mirrorFromCollection', "collection");
     (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./html/collection.html', '.miror', "collection");
-    (0,_modules_functional_timer__WEBPACK_IMPORTED_MODULE_20__["default"])('2023-06-22');
+    (0,_modules_functional_timer__WEBPACK_IMPORTED_MODULE_20__["default"])('2023-06-22', '.timer__blocks');
     (0,_modules_functional_linksDefault__WEBPACK_IMPORTED_MODULE_12__["default"])('.defaultLink');
   }
   if (body.classList.contains('marketplace')) {
-    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])();
-    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])();
+    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])('header');
+    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])('footer');
     _modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_22__.nftDBarr.forEach(function (item) {
       return (0,_modules_constructors_createNftCards__WEBPACK_IMPORTED_MODULE_16__["default"])(item, '.artist__grid', '..');
     });
@@ -9028,22 +9027,22 @@ document.addEventListener('DOMContentLoaded', function () {
     (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./collection.html', '.mirrorFromCollection', "collection");
     (0,_modules_constructors_trendingCollections__WEBPACK_IMPORTED_MODULE_6__["default"])(_modules_constructors_creatObjectOfCollections__WEBPACK_IMPORTED_MODULE_24__.collectItemsArr, '.content__grid', '..');
     (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./collection.html', '.miror', "collection");
-    (0,_modules_functional_marketplaceTabs__WEBPACK_IMPORTED_MODULE_18__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_22__.nftDBarr, _modules_dataBase_collectDb__WEBPACK_IMPORTED_MODULE_23__.collectDbArr);
-    (0,_modules_functional_searchMarketplace__WEBPACK_IMPORTED_MODULE_17__["default"])();
+    (0,_modules_functional_marketplaceTabs__WEBPACK_IMPORTED_MODULE_18__["default"])(_modules_dataBase_nftDB__WEBPACK_IMPORTED_MODULE_22__.nftDBarr, _modules_dataBase_collectDb__WEBPACK_IMPORTED_MODULE_23__.collectDbArr, '.counterNft', '.counterCollection', '.nftTab', '.collectTab', '.sectionNft', '.sectionCollection', '.discover__grid_item', '.trend__card', 'hide', 'artist__btn_active', 'section_active', 'counter_active');
+    (0,_modules_functional_searchMarketplace__WEBPACK_IMPORTED_MODULE_17__["default"])('.search__input', '.discover__grid_item', '.trend__card', 'hide');
   }
   if (body.classList.contains('toplist')) {
-    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])();
-    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])();
-    (0,_modules_functional_topCreatorsTabs__WEBPACK_IMPORTED_MODULE_19__["default"])();
+    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])('header');
+    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])('footer');
+    (0,_modules_functional_topCreatorsTabs__WEBPACK_IMPORTED_MODULE_19__["default"])('.toplist__list', '.tabDay', '.tabWeek', '.tabMonth', '.tabAll', 'today', 'week', 'month', 'time', 'artist__btn_active', 'section_active');
   }
   if (body.classList.contains('artistPage')) {
-    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])();
-    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])();
+    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])('header');
+    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])('footer');
     var artistId;
     if (localStorage.getItem('artist')) {
       artistId = localStorage.getItem('artist');
     }
-    (0,_modules_constructors_createArtistPage__WEBPACK_IMPORTED_MODULE_13__["default"])(_modules_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_21__.artistsDB[artistId]);
+    (0,_modules_constructors_createArtistPage__WEBPACK_IMPORTED_MODULE_13__["default"])(_modules_dataBase_artistDB__WEBPACK_IMPORTED_MODULE_21__.artistsDB[artistId], '.welcome');
 
     //chek for development stage. Not enough pictures. for production only 'topAutors' function.
     if (artistId === 'lindsey' || artistId === 'kianaST' || artistId === 'allison' || artistId === 'davisWorkman' || artistId === 'angel' || artistId === 'lydia' || artistId === 'philip') {
@@ -9053,11 +9052,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('#', '.mirrorFromAutor');
     (0,_modules_functional_localStorage__WEBPACK_IMPORTED_MODULE_9__["default"])('./collection.html', '.mirrorFromCollection', "collection");
-    (0,_modules_functional_tabsOnArtistPage__WEBPACK_IMPORTED_MODULE_14__["default"])();
+    (0,_modules_functional_tabsOnArtistPage__WEBPACK_IMPORTED_MODULE_14__["default"])('.artist__btn', '.artist__section', '.artist__counter', 'section_active', 'counter_active');
   }
   if (body.classList.contains('collection')) {
-    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])();
-    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])();
+    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])('header');
+    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])('footer');
     var collectionId;
     if (localStorage.getItem('collection')) {
       collectionId = localStorage.getItem('collection');
@@ -9075,12 +9074,12 @@ document.addEventListener('DOMContentLoaded', function () {
     (0,_modules_functional_linksDefault__WEBPACK_IMPORTED_MODULE_12__["default"])('.defaultLink');
   }
   if (body.classList.contains('acountPage')) {
-    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])();
-    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])();
+    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])('header');
+    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])('footer');
   }
   if (body.classList.contains('walletPage')) {
-    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])();
-    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])();
+    (0,_modules_innerHtml_header__WEBPACK_IMPORTED_MODULE_10__["default"])('header');
+    (0,_modules_innerHtml_footer__WEBPACK_IMPORTED_MODULE_11__["default"])('footer');
     (0,_modules_functional_linksDefault__WEBPACK_IMPORTED_MODULE_12__["default"])('.wallet__link');
   }
 });

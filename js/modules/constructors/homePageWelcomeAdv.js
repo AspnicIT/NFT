@@ -1,5 +1,5 @@
-function homePageWelcomeAdv(arr){
-    let parentEllement = document.querySelector('.main__right');
+function homePageWelcomeAdv(arr, parentSelect){
+    let parentEllement = document.querySelector(parentSelect);
 
     function welcom(obj){
         class WelcomeAdv {

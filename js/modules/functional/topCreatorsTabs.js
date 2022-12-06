@@ -4,33 +4,40 @@ import { sortRait } from "../dataBase/artistDB";
 import {getVolume} from "../dataBase/artistDB";
 import useLocalStorage from "../functional/localStorage";
 
-function topCreatorsTabs(){
+function topCreatorsTabs(
+    parentForCreators, 
+    btnDaySel, btnWeekSel, 
+    btnMonthSel, btnAllTimeSel,
+    daySectSel, weekSectSel,
+    monthSectSel, allTimeSectSel,
+    btnActiveClass, sectionActiveClass
+    ){
      
-    creatorsList(artistsArr);
+    creatorsList(artistsArr, parentForCreators);
 
-    const dayBtn = document.querySelector('.tabDay'),
-        weekBtn = document.querySelector('.tabWeek'),
-        monthBtn = document.querySelector('.tabMonth'),
-        allTimeBtn = document.querySelector('.tabAll'),
+    const dayBtn = document.querySelector(btnDaySel),
+        weekBtn = document.querySelector(btnWeekSel),
+        monthBtn = document.querySelector(btnMonthSel),
+        allTimeBtn = document.querySelector(btnAllTimeSel),
 
-        toDay = document.getElementById('today'),
-        toWeek = document.getElementById('week'),
-        toMonth = document.getElementById('month'),
-        toTime = document.getElementById('time');
+        toDay = document.getElementById(daySectSel),
+        toWeek = document.getElementById(weekSectSel),
+        toMonth = document.getElementById(monthSectSel),
+        toTime = document.getElementById(allTimeSectSel);
 
-        let toplist = document.querySelector('.toplist__list');
+        let toplist = document.querySelector(parentForCreators);
 
         const soldValue = [];
         artistsArr.forEach((item) => soldValue.push(item.sold));
 
         function active(btn, nameTab){
-            btn.classList.add('artist__btn_active');
-            nameTab.classList.add('section_active');
+            btn.classList.add(btnActiveClass);
+            nameTab.classList.add(sectionActiveClass);
         }
         
         function notActive(btn, nameTab){
-            btn.classList.remove('artist__btn_active');
-            nameTab.classList.remove('section_active');
+            btn.classList.remove(btnActiveClass);
+            nameTab.classList.remove(sectionActiveClass);
         }
         
         function clear(parentElem, num){
@@ -83,7 +90,7 @@ function topCreatorsTabs(){
             newValue(nameArr);
             tabArreys(nameArr, percent); 
             // nameArr.sort(sortRait);
-            creatorsList(nameArr);
+            creatorsList(nameArr, parentForCreators);
             useLocalStorage('artist.html', '.toplist__list_miror', "artist");
         }
 
@@ -128,7 +135,7 @@ function topCreatorsTabs(){
             notActive(monthBtn, toMonth);
             clear(toplist, artistsArr.length);
             recovery();
-            creatorsList(artistsArr);
+            creatorsList(artistsArr, parentForCreators);
             useLocalStorage('artist.html', '.toplist__list_miror', "artist");
         });
 

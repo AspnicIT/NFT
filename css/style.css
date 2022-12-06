@@ -1340,4 +1340,9 @@ a:hover {
 
 .rotate {
   transform: rotate(-135deg);
+  color: red;
+}
+
+.rotate path {
+  fill: #fff;
 }/*# sourceMappingURL=style.css.map */
