@@ -1,8 +1,8 @@
-function searchigMarketplace(inputSel, nftsSel, collectsSel, hideClass){
+function searchigMarketplace(){
     
-    let input = document.querySelector(inputSel),
-        nfts = document.querySelectorAll(nftsSel),
-        collects = document.querySelectorAll(collectsSel);
+    let input = document.querySelector('.search__input'),
+        nfts = document.querySelectorAll('.discover__grid_item'),
+        collects = document.querySelectorAll('.trend__card');
 
         input.oninput = function(){
            let value = this.value.trim();
@@ -13,20 +13,20 @@ function searchigMarketplace(inputSel, nftsSel, collectsSel, hideClass){
             nfts.forEach((item) => {
                 let words = item.innerText.toUpperCase();
                 if(words.search(value.toUpperCase()) == -1){
-                    item.classList.add();
+                    item.classList.add('hide');
                 } else{
-                    item.classList.remove(hideClass);
+                    item.classList.remove('hide');
                 }
             });
             collects.forEach((item) => {
                 let words = item.innerText.toUpperCase();
                 if(words.search(value.toUpperCase()) == -1){
-                    item.classList.add(hideClass);
+                    item.classList.add('hide');
                 } else{
-                    item.classList.remove(hideClass);
+                    item.classList.remove('hide');
                 }
             });
-           } else{collects.forEach(item => item.classList.remove(hideClass));}
+           } else{collects.forEach(item => item.classList.remove('hide'));}
         };
 }
 

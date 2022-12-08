@@ -2096,32 +2096,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function searchigMarketplace(inputSel, nftsSel, collectsSel, hideClass) {
-  var input = document.querySelector(inputSel),
-    nfts = document.querySelectorAll(nftsSel),
-    collects = document.querySelectorAll(collectsSel);
+function searchigMarketplace() {
+  var input = document.querySelector('.search__input'),
+    nfts = document.querySelectorAll('.discover__grid_item'),
+    collects = document.querySelectorAll('.trend__card');
   input.oninput = function () {
     var value = this.value.trim();
     if (value) {
       nfts.forEach(function (item) {
         var words = item.innerText.toUpperCase();
         if (words.search(value.toUpperCase()) == -1) {
-          item.classList.add();
+          item.classList.add('hide');
         } else {
-          item.classList.remove(hideClass);
+          item.classList.remove('hide');
         }
       });
       collects.forEach(function (item) {
         var words = item.innerText.toUpperCase();
         if (words.search(value.toUpperCase()) == -1) {
-          item.classList.add(hideClass);
+          item.classList.add('hide');
         } else {
-          item.classList.remove(hideClass);
+          item.classList.remove('hide');
         }
       });
     } else {
       collects.forEach(function (item) {
-        return item.classList.remove(hideClass);
+        return item.classList.remove('hide');
       });
     }
   };
